@@ -8,28 +8,23 @@
   "..\\components\\Layout.js -> ./Menue.js": {
     "id": "./components/Menue.js",
     "files": [
-      "static/chunks/vendors-node_modules_next_image_js.js",
-      "static/chunks/vendors-node_modules_babel_runtime_helpers_esm_readOnlyError_js-node_modules_next_dist_next-s-4a231e.js",
+      "static/chunks/vendors-node_modules_next_image_js-node_modules_next_link_js.js",
+      "static/chunks/vendors-node_modules_next_dist_next-server_lib_head_js.js",
       "static/chunks/components_Menue_js.js"
+    ]
+  },
+  "..\\components\\Layout.js -> ./StripeContact": {
+    "id": "./components/StripeContact.js",
+    "files": [
+      "static/chunks/vendors-node_modules_next_image_js-node_modules_next_link_js.js",
+      "static/chunks/vendors-node_modules_next_dist_next-server_lib_head_js.js",
+      "static/chunks/components_StripeContact_js.js"
     ]
   },
   "..\\components\\MainPage.js -> ./SectionAbout": {
     "id": "./components/SectionAbout.js",
     "files": [
       "static/chunks/components_SectionAbout_js.js"
-    ]
-  },
-  "..\\components\\MainPage.js -> ./SectionPortfolio": {
-    "id": "./components/SectionPortfolio.js",
-    "files": [
-      "static/chunks/vendors-node_modules_babel_runtime_helpers_esm_defineProperty_js-node_modules_next_dist_build-fd9b22.js",
-      "static/chunks/components_SectionPortfolio_js.js"
-    ]
-  },
-  "..\\components\\MainPage.js -> ./SectionService": {
-    "id": "./components/SectionService.js",
-    "files": [
-      "static/chunks/components_SectionService_js.js"
     ]
   },
   "..\\node_modules\\next\\dist\\client\\next-dev.js -> ./dev/noop": {
@@ -41,8 +36,8 @@
   "index.js -> ../components/MainPage": {
     "id": "./components/MainPage.js",
     "files": [
-      "static/chunks/vendors-node_modules_next_image_js.js",
-      "static/chunks/vendors-node_modules_next_amp_js-node_modules_next_document_js-node_modules_next_link_js.js",
+      "static/chunks/vendors-node_modules_next_image_js-node_modules_next_link_js.js",
+      "static/chunks/vendors-node_modules_next_dist_client_router_js-node_modules_next_dist_client_with-router_js--733734.js",
       "static/chunks/components_MainPage_js.js"
     ]
   }

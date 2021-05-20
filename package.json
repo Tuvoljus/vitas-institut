@@ -1,11 +1,11 @@
 {
-  "name": "Web-Metropolis",
+  "name": "vitasinstitut",
   "version": "1.0.0",
-  "description": "Web-Metropolis",
+  "description": "Vitas-Institut",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Tuvoljus/q-solutions.git"
+    "url": "https://github.com/Tuvoljus/vitas-institut.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,11 +19,13 @@
   "license": "ISC",
   "dependencies": {
     "@popperjs/core": "^2.9.2",
+    "@react-icons/all-files": "^4.1.0",
     "bootstrap": "^5.0.0-beta3",
     "get-orientation": "^1.1.2",
     "next": "^10.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-icons": "^4.2.0",
     "sass": "^1.32.2",
     "styled-components": "^5.2.3"
   },

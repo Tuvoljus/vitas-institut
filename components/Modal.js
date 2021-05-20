@@ -4,14 +4,16 @@ import Image from 'next/image'
 
 import styles from '../scss/Portfolio.module.scss'
 
-const Modal = ({ show, onClose, children, title, picture, alt, fade }) => {
+const Modal = ({ show, onClose, children, title, picture, alt, isFade, isShow }) => {
   const [isBrowser, setIsBrowser] = useState(false);
+  
 
   useEffect(() => {
     setIsBrowser(true);
-  }, []);
+  },[]);
 
-  fade = fade;
+
+
 
   const handleCloseClick = (e) => {
     e.preventDefault();
@@ -19,7 +21,7 @@ const Modal = ({ show, onClose, children, title, picture, alt, fade }) => {
   };
 
   const modalContent = show ? (
-     <div tabindex="-1" role="dialog" aria-hidden="true" className={`modal ${styles.modal} show`} style={{display: 'block', paddingRight: '17px', paddingLeft: '17px'}}>
+     <div tabIndex="-1" role="dialog" aria-hidden="true" className={`modal ${styles.modal} ${isShow} ${isFade}`} style={{display: 'block', paddingRight: '17px', paddingLeft: '17px'}}>
         <div role="document" className={`modal-dialog ${styles.modalDialog}`}>
           <div className={`modal-content ${styles.modalContent}`}>
             <button type="button" data-dismiss="modal" aria-label="Close" onClick={handleCloseClick} className={`${styles.closeButton} btn-close`} >
@@ -49,13 +51,13 @@ const Modal = ({ show, onClose, children, title, picture, alt, fade }) => {
       </div>
   ) : null;
 
-  if (isBrowser) {
-    return ReactDOM.createPortal(
+  if (isBrowser) {      
+    return ReactDOM.createPortal(      
       modalContent,
       document.getElementById("modal-root")
     );
   } else {
-    return null;
+    return null;    
   }
 };
 

@@ -4,8 +4,6 @@ import Image from 'next/image'
 import dynamic from 'next/dynamic'
 import { useAmp } from 'next/amp'
 const SectionAbout = dynamic(() => import('./SectionAbout'))
-const SectionService = dynamic(() => import('./SectionService'))
-const SectionPortfolio = dynamic(() => import('./SectionPortfolio'))
 
 
 
@@ -16,37 +14,39 @@ const MainPage = () => {
     return (
         <>
         <header>
-            <section className="hero" id="hero">
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="text col-lg-6 col-md-12">
-                            <h3 className="h4 text-uppercase text-shadow text-thin">Die Agentur für anspruchsvolle Projekte!</h3>
-                            <h1 className="text-shadow">Web Metropolis</h1>
-                                <p>Wir sind die Agentur für Internetprojekte und 3D.</p>
-                                <a href="#about" className="btn btn-light text-primary get-started link-scroll">
-                                    About us
-                                </a>
-                        </div>
-                            <div className="mockup col-lg-6 d-none d-lg-block">
-                                {isAmp ? (
-                                    <amp-img layout="responsive" width="1000" height="1333" quality="10" src="/img_webp/HeaderFoto_Alexander.webp" alt="Alexander Keil" />
-                                ) : (
-                                    <Image layout='responsive' width={1000} height={1333} quality="10" src="/img/HeaderFoto_Alexander.png" alt="Alexander Keil"/> 
-                                )}                              
+            <div className="jumbotron" style={{padding: '3rem', backgroundColor: '#d7d7d7'}}>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md-4 col-sm-4">
+                                <Image src="/img/Bernhard.jpg" layout='responsive' width={188} height={187} quality="10" />
                             </div>
-                    </div>
+                            <div className="col-md-8 col-sm-8 align-self-center" style={{paddingLeft: '3rem'}}>
+                                <h5>
+                                    Willkommen mit Ihren Schmerzen und Ihrem Stress in meiner Privatpraxis.
+                                </h5>
+                                <span>
+                                    <ul>
+                                        <li>Was wirkt bei Ihnen am besten?</li>
+                                        <li>Dazu finden wir gemeinsame Lösungen.</li>
+                                        <li>Ich behandle Sie mit Kopf, Herz und Händen.</li>
+                                        <li>Sie lernen sich und Ihren Körper besser kennen.</li>
+                                        <li>Sie bekommen viel Hilfe zur Selbsthilfe.</li>
+                                        <li>Ich nehme mir viel Zeit für Ihre Bedürfnisse (mind. 50 Minuten).</li>
+                                    </ul>
+                                </span>
+                                <span style={{fontWeight: '600'}}>
+                                    Seit 35 Jahren ist Ihre neue Lebensqualität mein Ansporn.
+                                </span>
+                            </div>
+                        </div>
                 </div>
-                </section>   
+            </div>
         </header>
         <main>
-            <SectionAbout />
-            <SectionService />
-            <SectionPortfolio />
-         
-                
+            <SectionAbout />               
         </main>
             {/* <NextScript /> */}
-            <script src="./font_icons/svgxuse.js"></script>
+           
         </>    
     )
 }
