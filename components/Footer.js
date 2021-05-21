@@ -1,5 +1,4 @@
 import styles from '../scss/Footer.module.scss';
-import Logo from "../public/img/Logo_Vitas_Institut.svg"
 
 import Link from 'next/link'
 import Image from 'next/image'
@@ -12,15 +11,15 @@ const Footer = () => {
         <>
         <footer id="contact" className={[styles.mainFooter]}>
             <div className="container">
-                    <div className="row">                        
-                        <div className="col-sm-2 col-md-2 col-xl-2">
-                            <Image src="/img/Logo_Vitas_Institut.svg" layout='responsive' width={50} height={50} quality="10" />
+                    <div className="row ">                        
+                        <div className="col-sm-2 col-md-2 col-xl-2 ">
+                            <Image src="/img/Logo_Vitas_Institut_weiß.svg" layout='responsive' width={50} height={50} quality="10" />
                         </div>
                 
-                        <div className="col-sm-5 col-md-4 col-xl-5">
+                        <div className="col-sm-5 col-md-4 col-xl-5  align-self-center">
                             <ul className={[styles.siteLinks]} style={{listStyle: 'none'}}>
-                                <h3>Kontakt</h3>
-                                <p>Bernhard Käser</p>
+                                <h3 style={{color: 'white'}}>Kontakt</h3>
+                                <p style={{color: '969696'}}>Bernhard Käser</p>
                                 <li><GiSmartphone /> 089 - 23 23 06 70</li>
                                 <li><AiOutlineMail />   bk@vitas-institut.de</li>
                             </ul>
