@@ -97,27 +97,21 @@ const divStyle = {
     
     return (
         <>        
-          <nav className="navbar navbar-default navbar-fixed-top h-100" style={{minHeight: '80px'}}>
-            <div className="container">
-            <div className="row">
-              <div className="col-md-3 col-sm-3">
-                <Logo />
-              </div>
-              <div className="col-md-4 col-sm-4">
-               <GiSmartphone /> 089 - 23 23 06 70
-              </div>
-              <div className="col-md-5 col-sm-5">
-                <AiOutlineMail />   bk@vitas-institut.de
-              </div>             
-            </div> 
-            
-               
-                
-                               
-            
-                            
+          
+          <div className="container">           
+              <div className="row">
+                <div className="col-2 col-xl-2">
+                  <Logo />
+                </div>
+                <div className="col-xl-2 align-self-center">
+                  <GiSmartphone /> 089 - 23 23 06 70
+                </div>
+                <div className="col col-xl-8 align-self-center">
+                  <AiOutlineMail />   bk@vitas-institut.de
+                </div>             
+              </div>          
             </div>
-          </nav>             
+                       
           <nav className={`navbar navbar-expand-lg navbar-light ${fixedTop} c-bg`}>
             <div className="container">              
               <a className="navbar-brand" href="#page-top" style={divStyle}>
