@@ -100,13 +100,13 @@ const divStyle = {
           
           <div className="container">           
               <div className="row">
-                <div className="col-2 col-xl-2">
+                <div className="col-2 col-md-2 col-xl-2">
                   <Logo />
                 </div>
-                <div className="col-xl-2 align-self-center">
+                <div className="col-md-2 col-xl-2 align-self-center">
                   <GiSmartphone /> 089 - 23 23 06 70
                 </div>
-                <div className="col col-xl-8 align-self-center">
+                <div className="col-md-2 col-xl-8 align-self-center">
                   <AiOutlineMail />   bk@vitas-institut.de
                 </div>             
               </div>          
