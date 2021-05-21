@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useAmp } from 'next/amp'
+// import { useAmp } from 'next/amp'
 
 import SubMenue from '../components/SubMenue'
 
 
-export const config = { amp: 'hybrid' }
+// export const config = { amp: 'hybrid' }
 
 const SectionBehandlungen = () => {
     const [isCollapse, setIsCollapse] = useState('');
