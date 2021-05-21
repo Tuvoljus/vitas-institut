@@ -20,14 +20,13 @@
   "dependencies": {
     "@popperjs/core": "^2.9.2",
     "@react-icons/all-files": "^4.1.0",
+    "@svgr/webpack": "^5.5.0",
     "bootstrap": "^5.0.0-beta3",
     "get-orientation": "^1.1.2",
     "next": "^10.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-icons": "^4.2.0",
-    "sass": "^1.32.2",
-    "styled-components": "^5.2.3"
+    "sass": "^1.32.2"
   },
   "devDependencies": {
     "@ijsto/eslint-config": "3.0.1",

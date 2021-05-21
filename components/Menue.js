@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Logo from "../public/img/Logo_Vitas_Institut.svg"
 import { GiSmartphone } from "@react-icons/all-files/gi/GiSmartphone"
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail"
 // import { GiSmartphone } from 'react-icons/gi'
@@ -52,7 +53,7 @@ const divStyle = {
           setCustomBorder('blue');
           setCustomToggler('custom-toggler');
           // setScrolling('c-bg');
-          setBrandColor('#0000cc')
+          setBrandColor('#1663b1')
           
       } else {
         // upscroll code
@@ -99,15 +100,21 @@ const divStyle = {
           <nav className="navbar navbar-default navbar-fixed-top h-100" style={{minHeight: '80px'}}>
             <div className="container">
             <div className="row">
-              
-                <span><GiSmartphone /> 089 - 23 23 06 70</span>
-                              
+              <div className="col-md-3 col-sm-3">
+                <Logo />
+              </div>
+              <div className="col-md-4 col-sm-4">
+               <GiSmartphone /> 089 - 23 23 06 70
+              </div>
+              <div className="col-md-5 col-sm-5">
+                <AiOutlineMail />   bk@vitas-institut.de
+              </div>             
             </div> 
-            <div className="row">
+            
                
-                <span><AiOutlineMail />   bk@vitas-institut.de</span>
+                
                                
-            </div>
+            
                             
             </div>
           </nav>             
