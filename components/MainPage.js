@@ -27,7 +27,10 @@ const MainPage = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-4 col-sm-4">
-                                <Image src="/img/Bernhard_Kaeser.JPG" layout='responsive' width={1936} height={2335} quality="10" />
+                                <div style={{boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'}}>
+                                    <Image src="/img/Bernhard_Kaeser.JPG" layout='responsive' width={1936} height={2335} quality="10" />
+                                </div>
+                                
                             </div>
                             <div className="col-md-8 col-sm-8 align-self-center" style={{paddingLeft: '3rem'}}>
                                 <h5>
