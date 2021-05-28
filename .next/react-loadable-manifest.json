@@ -39,7 +39,7 @@
     "id": "./components/MainPage.js",
     "files": [
       "static/chunks/vendors-node_modules_next_image_js-node_modules_next_link_js.js",
-      "static/chunks/vendors-node_modules_next_dist_client_router_js-node_modules_next_dist_client_with-router_js--733734.js",
+      "static/chunks/vendors-node_modules_next_dist_client_router_js-node_modules_next_dist_client_with-router_js--e28c4c.js",
       "static/chunks/components_MainPage_js.js"
     ]
   }

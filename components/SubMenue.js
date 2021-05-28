@@ -1,7 +1,8 @@
+import styles from '../scss/Submenue.module.scss';
 import React, { useState } from 'react'
 import Link from 'next/link'
 
-
+import M2 from './submenue/M2';
 
 export const config = { amp: 'hybrid' }
 
@@ -9,17 +10,22 @@ const SubMenue = () => {
     const [isCollapseOne, setIsCollapseOne] = useState('');
     const [isCollapseTwo, setIsCollapseTwo] = useState('');
     const [isCollapseThree, setIsCollapseThree] = useState('');
-    
-    // const [showSublink, setShowSublink] = useState('');
+    const [isShow, setShow] = useState('');
 
-    // const showCollapse1 = () => {
-    //     if (showSublink != 'show'){
-    //     setShowSublink('show')
-    // }else {
-    //     setShowSublink('');
-    // }
-    // };
-    
+    function handleClick(){
+        console.log("I was clicked");
+        setShow('show');
+        console.log(isShow)
+    };
+
+    const handleShow = () => {
+        if(isShow != 'show'){
+            setShow('show')
+        } else {
+            setShow('')
+        }        
+    }
+
     const toggleOne = () => {
         if (isCollapseOne != 'show') {
           setIsCollapseOne('show')
@@ -46,9 +52,16 @@ const SubMenue = () => {
 
     return (
         <nav className="sidebar card py-2 mb-4">
-            <ul className="nav flex-column" id="nav_accordion">
+            <ul className={`nav flex-column ${[styles.siteLinks]} `} id="nav_accordion" >
                 <li className="nav-item">
-                    <a className="nav-link" href="#"> Was kann behandelt werden?  Indikationen </a>
+                <Link href="/">
+                    <M2 pushShow={isShow} content="Was kann behandelt werden?  Indikationen" onChildClick={handleClick}/>
+                </Link>
+                    
+                    
+                    <Link href="/">
+                        <a className="nav-link" onClick={handleShow}> Was kann behandelt werden?  Indikationen </a>                        
+                    </Link>                        
                 </li>
                              <li className="nav-item has-submenu">
                                     <a className="nav-link" href="#" onClick={toggleOne} id="sb1"> Klassische Krankengymnastik/ Manuelle Therapien  </a>
