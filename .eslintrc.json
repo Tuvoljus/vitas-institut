@@ -5,11 +5,9 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended",
-        [
-          "eslint:recommended",
-          "next"
-        ]
+        "plugin:react/recommended",        
+        "next"
+        
     ],
     "parserOptions": {
         "ecmaFeatures": {
