@@ -4,15 +4,18 @@ module.exports = {
   images: {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
   },
-  
+  extends: [
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:@next/next/recommended',
+  ],
   webpack(config) {
-    
     config.module.rules.push({
       test: /\.svg$/,
-      use: ["@svgr/webpack"]
+      use: ["@svgr/webpack"],
     });
     return config;
-  }
+  },
   // webpack: (config }) => {
   //     config.module.push({
   //        plugins: [
@@ -27,6 +30,5 @@ module.exports = {
   //     })
   //   return config
   // }
-  
 };
   
