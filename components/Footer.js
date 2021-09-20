@@ -1,4 +1,4 @@
-import styles from '../scss/Footer.module.scss';
+import styles from '../scss/Footer.module.scss'
 
 import Link from 'next/link'
 import Image from 'next/image'
@@ -90,9 +90,8 @@ const Footer = () => {
                 </div>
             </div>   
         </footer>        
-    </>
-        
+    </>        
     )
 }
 
-export default Footer;
+export default Footer
