@@ -33,7 +33,7 @@ const SectionBehandlungen = () => {
         <div>
           <Container>
             <Row>
-              <Col height="500px" className="d-flex">
+              <Col className="d-flex">
                 <h1
                   style={{ position: "absolute", zIndex: "2" }}
                   className="d-flex align-items-center"
@@ -50,6 +50,7 @@ const SectionBehandlungen = () => {
               height="420"
               src="/img_webp/Header_Bild_Rot.webp"
               alt="HeaderImage Bernhard Käser"
+              quality="10"
             />
           ) : (
             <Image
