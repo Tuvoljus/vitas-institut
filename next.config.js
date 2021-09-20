@@ -5,9 +5,10 @@ module.exports = {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
   },
   extends: [
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:@next/next/recommended',
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@next/next/recommended",
+    "eslint:recommended", "next",
   ],
   webpack(config) {
     config.module.rules.push({
