@@ -6,6 +6,9 @@ module.exports = {
   },
  
   webpack(config) {
+     extends: [
+    'plugin:@next/next/recommended',
+  ],
     config.module.rules.push({
       test: /\.svg$/,
       use: ["@svgr/webpack"]
