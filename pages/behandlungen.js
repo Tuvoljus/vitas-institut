@@ -49,8 +49,7 @@ const SectionBehandlungen = () => {
               width="1920"
               height="420"
               src="/img_webp/Header_Bild_Rot.webp"
-              alt="HeaderImage Bernhard Käser"
-              quality="10"
+              alt="HeaderImage Bernhard Käser"              
             />
           ) : (
             <Image
