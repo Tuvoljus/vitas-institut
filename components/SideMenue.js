@@ -139,16 +139,8 @@ const SideMenue = (props) => {
               </Link>
             </Card.Header>
           </Card>
-          <Accordion.Item eventKey="1">
-            <Link
-              href="/behandlungen/Klassische_Massage"
-              replace
-              scroll={false}
-            >
-              <a style={{ textDecoration: "none" }}>
-                <Accordion.Header>Klassische Massage</Accordion.Header>
-              </a>
-            </Link>
+          <Accordion.Item eventKey="1">            
+                <Accordion.Header>Klassische Massage</Accordion.Header>             
             <Accordion.Body>
               <div
                 style={{
