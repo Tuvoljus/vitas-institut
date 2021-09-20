@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import Image from 'next/image'
 import { useAmp } from 'next/amp'
+
+import { ColorFont, vl } from '../scss/styles.module.scss'
 
 
 export const config = { amp: 'hybrid' }
@@ -8,17 +8,20 @@ export const config = { amp: 'hybrid' }
 const SectionAbout = () => {    
     return (
         <> 
-            <section id="about" className="about">               
+            <section id="about" className={`about ${ColorFont}`}>               
                 <div className="container text-center">                
                     <h1 className="small-heading">Über mich</h1>
                                      
                 </div>
                 <div className="container" style={{marginTop: '3rem'}}>
                     <div className="row">
-                        <div className="col-md-4">
-                            <h5>Stationen:</h5> 
+                        <div className="col-md-2">
+                            <h3>Stationen:</h3> 
                         </div>
-                        <div className="col-md-8">
+                        <div className="col-md-2" className={vl}>
+
+                        </div>
+                        <div className="col-md-8" style={{paddingLeft: '5rem', fontSize: '1.5em'}}>
                             <p>
                                 Sport-Klinik Damp, <br />
                                 Rehazentrum Damp, <br />

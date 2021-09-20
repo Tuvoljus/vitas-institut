@@ -1,208 +1,122 @@
 import React, { useState, useEffect } from 'react'
-import Link from 'next/link'
+import Image from 'next/image'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
+
+import { BsPlus } from "@react-icons/all-files/bs/BsPlus"
+import { iconStyle } from '../../scss/Icons.module.scss'
+import { Container } from 'react-bootstrap';
+
+import { vl } from '../../scss/styles.module.scss'
+import SideMenue from '../../components/SideMenue';
+import MobileSideMenue from '../../components/MobileSideMenue';
 
 
 // export const config = { amp: 'hybrid' }
 
-const was_kann_behandelt_werden = () => {
-    const [isCollapseOne, setIsCollapseOne] = useState('');
-    const [isCollapseTwo, setIsCollapseTwo] = useState('');
-    const [isCollapseThree, setIsCollapseThree] = useState('');
-    const [isShow, setShow] = useState('');
+const was_kann_behandelt_werden = () => {   
+    const [show, setShow] = useState(false);
 
-    function handleClick(){
-        console.log("I was clicked");
-        setShow('show');
-        console.log(isShow)
-    };
-
-    const handleShow = () => {
-        if(isShow != 'show'){
-            setShow('show')
-        } else {
-            setShow('')
-        }        
-    }
-
-    const toggleOne = () => {
-        if (isCollapseOne != 'show') {
-          setIsCollapseOne('show')
-        } else {
-            setIsCollapseOne('')
-      }         
-    };
-
-    const toggleTwo = () => {
-        if (isCollapseOne != 'show') {
-          setIsCollapseTwo('show')
-        } else {
-            setIsCollapseTwo('')
-      }         
-    };
-
-    const toggleThree = () => {
-        if (isCollapseOne != 'show') {
-          setIsCollapseThree('show')
-        } else {
-            setIsCollapseThree('')
-      }         
-    };
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     return (
-        <> 
-            <div className="jumbotron" style={{padding: '3rem', backgroundColor: '#d7d7d7'}}>
-                <div className="container">
-                    <div className="row">
-                        <div className="col col-md-4">
-                            
-                        </div>
-                        <div className="col col-md-4 align-self-center">
-                            <h1>Was kann behandelt werden? - Indikationen</h1>
-                        </div>
-                    </div>
-                    
-                </div>
+        <>
+            <div>
+                <Container>
+                    <Row style={{position: 'absolute', zIndex: '2'}} className="align-self-center">
+                        <h1>                                
+                                Einführung Behandlungen
+                        </h1>
+                    </Row>
+                </Container>
+                <Image src="/img/Header_Bild_Rot.jpg" layout='responsive'  objectFit="cover" width={1920} height={420} quality="10"/>
             </div>
-            <div className="jumbotron" style={{paddingTop: '3rem', backgroundColor:'rgba(225,225,225, .5)'}}>
-            <div className="container" >
-                <div className="row">
+            <section className="d-none d-sm-block">
+                <Container >
+                    <Row>
                     {/* Sitemenue */}
-                    <div className="col col-md-3">
-                        <nav className="sidebar card py-2 mb-4">
-            <ul className="nav flex-column"   id="nav_accordion" >
-                <li className="nav-item">
-                
-                    
-                    <Link href="/">
-                        <a className="nav-link" onClick={handleShow}> Was kann behandelt werden?  Indikationen </a>                        
-                    </Link>                        
-                </li>
-                             <li className="nav-item has-submenu">
-                                    <a className="nav-link" href="#" onClick={toggleOne} id="sb1"> Klassische Krankengymnastik/ Manuelle Therapien  </a>
-                                            <ul className={`submenu collapse ${isCollapseOne}`} style={{listStyle: 'none'}}>
-                                        <li><a className="nav-link" href="#">Schmerztherapie nach Liebscher & Bracht </a></li>
-                                        <li><a className="nav-link" href="#">Golgi Punkt Schmerztherapie </a></li>
-                                        <li><a className="nav-link" href="#">Manuelle Therapie / Marnitz / Cyriax </a> </li>
-                                        <li><a className="nav-link" href="#">Methode nach Dr. Furter </a> </li>
-                                        <li><a className="nav-link" href="#">Matrix-Rhythmus-Therapie MaRhyThe </a> </li>
-                                        <li><a className="nav-link" href="#">Novafon Schallwellenbehandllung </a> </li>                               
-                                    </ul>
+                        <Col md={4}>
+                            <SideMenue />
+                        </Col>
+                        {/* Main Content */}
+                        <Col md={1} className={vl} style={{color: 'black', }}>
+                            
+                        </Col>
+                        <Col md={7}>
+                            <div style={{ paddingLeft: '3rem',  color: '#707070' }}>
+                                <h2 className="mx-auto">
+                                    Was kann behandelt werden?<br/>
+                                            Indikationen
+                                </h2>
+                                
+                            
+                            <div className="lead">
+                                Behandlungen folgender Beschwerden                            
+                                </div>
+                                <br/>
+                            <div className="lead">
+                                Der Bereich von Gelenken, Muskulatur, Bindegewebe
+                                </div>
+                                <br/>
+                            <div style={{listStyle: 'none', lineHeight: '2.5rem', fontSize: '18px'}}>
+                                <li>
+                                    <BsPlus className={iconStyle}/>  Arthrose
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#"> Massage </a>
+                                <li>
+                                    <BsPlus className={iconStyle}/>  Karpaltunnelsyndrom
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#"> 	
-                                        Pneumatische Pulsations-Massage (Pneumatron 200)
-                                    </a>
+                                <li>
+                                    <BsPlus className={iconStyle}/>  Schmerzen der Wirbelsäule
                                 </li>
-                                <li className="nav-item has-submenu">
-                                    <a className="nav-link" href="#" onClick={toggleTwo} id="sb2"> 
-                                        Klassische Massage
-                                    </a>
-                                    <ul className={`submenu collapse ${isCollapseTwo}`} style={{listStyle: 'none'}}>
-                                        <li><a className="nav-link" href="#">Bindegewebsmassage</a></li>
-                                        <li><a className="nav-link" href="#">Colon-Massage / Viscerale Mobilisation</a></li>
-                                        <li><a className="nav-link" href="#">Triggerpunktbehandlung</a> </li>
-                                        <li><a className="nav-link" href="#">Saugwellen-Therapie</a> </li>                                                                       
-                                    </ul>
+                                <li>
+                                    <BsPlus className={iconStyle}/>  Chronische Schmerzen
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#"> 	
-                                        Lymph-Mobilisation
-                                    </a>
+                                <li>
+                                    <BsPlus className={iconStyle}/>  Chronische Ischialgie
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#"> 	
-                                        Reflexzonen-Therapie
-                                    </a>
+                                <li>
+                                    <BsPlus className={iconStyle}/>  Kopfschmerzen; Migräne
                                 </li>
-                                <li className="nav-item has-submenu">
-                                    <a className="nav-link" href="#" onClick={toggleThree} id="sb2"> 
-                                        Scenar-Therapie
-                                    </a>
-                                    <ul className={`submenu collapse ${isCollapseThree}`} style={{listStyle: 'none'}}>
-                                        <li>
-                                            <a className="nav-link" href="#">
-                                                Denas Therapie
-                                            </a>
-                                        </li>
-                                    </ul>
+                                <li>
+                                    <BsPlus className={iconStyle}/>  Chronische Sinusitis
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Osflow Schwingungsplatte </a>
+                                <li>
+                                    <BsPlus className={iconStyle}/>  nach Herzinfarkt
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Ruhe finden/ Entspannungs-Methoden </a>
+                                <li>
+                                    <BsPlus className={iconStyle}/>  einige Arten von Asthma bronchiale
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Ruhe finden/ Stressreduktion / MFT EFT Methode </a>
+                                <li>
+                                    <BsPlus className={iconStyle}/>  chronische Bronchitis
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#"> EMDR-Coaching </a>
-                                </li>                       
-                            </ul>
-                        </nav>
-                    </div>
-                    {/* Main Content */}
-                    <div className="col col-md-9" style={{backgroundColor: 'white', padding: '3rem', border: '1px solid rgba(0, 0, 0, 0.125)', borderRadius: '.7rem', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'}}>
-                        <h4>Behandlung folgender Beschwerden</h4>
-                        <h5> Der Bereich von Gelenken, Muskulatur, Bindegewebe</h5>
-                        <ul>
-                            <li>
-                                Arthrose 
-                            </li>
-                            <li>
-                                Karpaltunnelsyndrom
-                            </li>
-                            <li>
-                                Schmerzen der Wirbelsäule
-                            </li>
-                            <li>
-                                Chronische Schmerzen
-                            </li>
-                            <li>
-                                Chronische Ischialgie 
-                            </li>
-                            <li>
-                                Kopfschmerzen; Migräne 
-                            </li>
-                            <li>
-                                Chronische Sinusitis 
-                            </li>
-                            <li>
-                                nach Herzinfarkt 
-                            </li>
-                            <li>
-                                einige Arten von Asthma bronchiale
-                            </li>
-                            <li>
-                                 chronische Bronchitis
-                            </li>
-                            <li>
-                                Gastritis, Kolitis
-                            </li>
-                            <li>
-                                Menstruationsbeschwerden
-                            </li>
-                            <li>
-                                Ovarialzysten
-                            </li>
-                            <li>
-                                 Chronische Blasenentzündung
-                            </li>
-                            <li>
-                                Prostatabeschwerden
-                            </li>
-                            <li>
-                               Schlecht heilende Brüche
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            </div>
+                                <li>
+                                    <BsPlus className={iconStyle}/>  Gastritis, Kolitis
+                                </li>
+                                <li>
+                                    <BsPlus className={iconStyle}/>  Menstruationsbeschwerden
+                                </li>
+                                <li>
+                                    <BsPlus className={iconStyle}/>  Ovarialzysten
+                                </li>
+                                <li>
+                                    <BsPlus className={iconStyle}/>  Chronische Blasenentzündung
+                                </li>
+                                <li>
+                                    <BsPlus className={iconStyle}/>  Prostatabeschwerden
+                                </li>
+                                <li>
+                                    <BsPlus className={iconStyle}/>  Schlecht heilende Brüche
+                                </li>
+                            </div>
+                            </div>
+                            
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+            <MobileSideMenue />     
         </>
     )
 }

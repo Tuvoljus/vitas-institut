@@ -2,3 +2,27 @@
 //     color: #1663b1;
 // }
 
+
+.sideMenue a:hover{
+    border: 2px solid #1663B1;
+    z-index: 1050;
+    background-color: #e7f1ff;
+}
+
+.sideMenue li:hover   a{
+    // border: 2px solid #1663B1;
+    padding: .38rem .875rem !important;
+    background-color: #e7f1ff;
+    z-index: 1050;
+}
+
+.sideIcon {
+    position: fixed;
+    text-align: center;
+    top: 70%;
+}
+
+// .sideMenueMargin li a {
+//     margin: 4px;
+    
+// }

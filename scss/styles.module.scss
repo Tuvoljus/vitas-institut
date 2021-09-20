@@ -1,0 +1,29 @@
+.bgWrap {
+    // position: absolute;
+    height: 35vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+@media only screen and (max-width: 1488px) {
+  .bgWrap {
+    height: 100vh;
+  }
+}
+
+.ColorFont {
+  color: #707070;
+}
+
+.vl {
+    border:         none;
+    border-left:    1px  solid rgba($color: #707070, $alpha: 1.0);
+    height:         50vh;
+    width:          1px;
+    margin-left: 3rem;
+}
+// .textResponsive {
+//     font-size: calc(100% + 1vw + 1vh);
+//   }
+

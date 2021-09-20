@@ -1,165 +1,68 @@
-import React, { useState, useEffect } from 'react'
-import Link from 'next/link'
+import React from 'react'
 import Image from 'next/image'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
+import { ColorFont } from '../scss/styles.module.scss'
+
+import { Navbar } from 'react-bootstrap'
+// import AccordionItem from 'react-bootstrap/esm/AccordionItem'
+// import AccordionBody from 'react-bootstrap/esm/AccordionBody'
+
+
 // import { useAmp } from 'next/amp'
 // import {M2} from '../components/submenue/M2'
-import styles from '../scss/Submenue.module.scss';
+
 // import SubMenue from '../components/SubMenue'
 // import MainBehandlung from '../components/MainBehandlung'
 
+import dynamic from 'next/dynamic'
+import { useAmp } from 'next/amp'
 
-// export const config = { amp: 'hybrid' }
+const MobileSideMenue = dynamic(() => import('../components/MobileSideMenue'))
+import SideMenue from '../components/SideMenue'
+
+
+export const config = { amp: 'hybrid' }
 
 const SectionBehandlungen = () => {
-    const [isCollapseOne, setIsCollapseOne] = useState('');
-    const [isCollapseTwo, setIsCollapseTwo] = useState('');
-    const [isCollapseThree, setIsCollapseThree] = useState('');
-
-    const toggleOne = () => {
-        if (isCollapseOne != 'show') {
-          setIsCollapseOne('show')
-        } else {
-            setIsCollapseOne('')
-      }         
-    };
-
-    const toggleTwo = () => {
-        if (isCollapseOne != 'show') {
-          setIsCollapseTwo('show')
-        } else {
-            setIsCollapseTwo('')
-      }         
-    };
-
-    const toggleThree = () => {
-        if (isCollapseOne != 'show') {
-          setIsCollapseThree('show')
-        } else {
-            setIsCollapseThree('')
-      }         
-    };
 
     return (
-        <> 
-            <div className="jumbotron" style={{padding: '3rem', backgroundColor: '#d7d7d7'}}>
-                <div className="container">
-                    <div className="row">
-                        <div className="col col-md-4">
-                            <h1>                                
-                                Einführung Behandlungen
-                            </h1>
-                        </div>
-                        <div className="col col-md-4 align-self-center">
-                            <p>
-                                Sie bekommen einen kurzen Überblick über die wichtigsten Behandlungsmöglichkeiten. <br /><br />
-                                Oft bewährt sich eine Kombination einzelner Techniken. <br /> <br />
-                                Durch Ihre Rückmeldungen während und nach den Behandlungen sind diese ganz individuell auf Ihre aktuellen Bedürfnisse abgestimmt.
-                            </p>
-                        </div>
-                    </div>
+        <>        
+            <div>
+                <Container>
+                    <Row>
+                        <Col height="500px" className="d-flex">
+                            <h1 style={{ position: 'absolute', zIndex: '2' }} className=" d-flex align-items-center">Einführung Behandlungen</h1>
+                        </Col>
+                    </Row>
                     
-                </div>
-            </div>
-            <div className="jumbotron" style={{paddingTop: '3rem', backgroundColor:'rgba(225,225,225, .5)'}}>
-                <div className="container" >
-                <div className="row">
+                </Container>
+                <Image src="/img/Header_Bild_Rot.jpg" layout='responsive' objectFit="cover" width={1920} height={420} quality="10" style={{position: 'relative'}} />          
+            </div>            
+                    
+                         
+            <section className="d-none d-sm-block">
+                <Container>
+                    <Row>
                     {/* Sitemenue */}
-                    <div className="col col-md-3">
-                        <nav className="sidebar card py-2 mb-4">
-                <ul className="nav flex-column"  >
-                    <li className="nav-item">                   
-                        <Link href="behandlungen/was_kann_alles_behandelt_werden">
-                            <a className="nav-link"> Was kann behandelt werden?  Indikationen </a>                        
-                        </Link>                        
-                                    </li>
-                                    <hr />
-                                <li className="nav-item has-submenu">
-                                        <a className="nav-link" href="#" onClick={toggleOne} id="sb1">
-                                            Klassische Krankengymnastik/ Manuelle Therapien
-                                        </a>
-                                        <ul className={`submenu collapse ${isCollapseOne}`} style={{listStyle: 'none'}}>
-                                            <li style={{backgroundColor: 'lightgrey', marginLeft: '-2rem', paddingLeft: '2rem'}}><a className="nav-link" href="#">Schmerztherapie nach Liebscher & Bracht </a></li>
-                                            <li><a className="nav-link" href="#">Golgi Punkt Schmerztherapie </a></li>
-                                            <li><a className="nav-link" href="#">Manuelle Therapie / Marnitz / Cyriax </a> </li>
-                                            <li><a className="nav-link" href="#">Methode nach Dr. Furter </a> </li>
-                                            <li><a className="nav-link" href="#">Matrix-Rhythmus-Therapie MaRhyThe </a> </li>
-                                            <li><a className="nav-link" href="#">Novafon Schallwellenbehandllung </a> </li>                               
-                                        </ul>
-                                    </li>
-                                    <hr />
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#"> Massage </a>
-                                    </li>
-                                    <hr />
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#"> 	
-                                            Pneumatische Pulsations-Massage (Pneumatron 200)
-                                        </a>
-                                    </li>
-                                    <hr />
-                                    <li className="nav-item has-submenu">
-                                        <a className="nav-link" href="#" onClick={toggleTwo} id="sb2"> 
-                                            Klassische Massage
-                                        </a>
-                                        <ul className={`submenu collapse ${isCollapseTwo}`} style={{listStyle: 'none'}}>
-                                            <li><a className="nav-link" href="#">Bindegewebsmassage</a></li>
-                                            <li><a className="nav-link" href="#">Colon-Massage / Viscerale Mobilisation</a></li>
-                                            <li><a className="nav-link" href="#">Triggerpunktbehandlung</a> </li>
-                                            <li><a className="nav-link" href="#">Saugwellen-Therapie</a> </li>                                                                       
-                                        </ul>
-                                    </li>
-                                    <hr />
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#"> 	
-                                            Lymph-Mobilisation
-                                        </a>
-                                    </li>
-                                    <hr />
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#"> 	
-                                            Reflexzonen-Therapie
-                                        </a>
-                                    </li>
-                                    <hr />
-                                    <li className="nav-item has-submenu">
-                                        <a className="nav-link" href="#" onClick={toggleThree} id="sb2"> 
-                                            Scenar-Therapie
-                                        </a>
-                                        <ul className={`submenu collapse ${isCollapseThree}`} style={{listStyle: 'none'}}>
-                                            <li>
-                                                <a className="nav-link" href="#">
-                                                    Denas Therapie
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <hr />
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Osflow Schwingungsplatte </a>
-                                    </li>
-                                    <hr />
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Ruhe finden/ Entspannungs-Methoden </a>
-                                    </li>
-                                    <hr />
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Ruhe finden/ Stressreduktion / MFT EFT Methode </a>
-                                    </li>
-                                    <hr />
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#"> EMDR-Coaching </a>
-                                    </li>                       
-                                </ul>
-                            </nav>
-                        </div>
+                        <Col md={4}>
+                          <SideMenue />  
+                        </Col>
                         {/* Main Content */}
-                        <div className="col col-md-9">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+                        <Col md={8} className={ColorFont}>
+                            <h2 >Einführung Behandlungen</h2>
+                            <p>
+                                Sie bekommen einen kurzen Überblick über die wichtigsten Behandlungsmöglichkeiten.<br/>
+                                Oft bewährt sich eine Kombination einzelner Techniken.<br/>
+                                Durch Ihre Rückmeldungen während und nach den Behandlungen sind diese ganz individuell auf Ihre aktuellen Bedürfnisse abgestimmt.<br/>
+                            </p>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+            <MobileSideMenue />          
         </>
     )
 }
