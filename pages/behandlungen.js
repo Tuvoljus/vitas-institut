@@ -45,7 +45,7 @@ const SectionBehandlungen = () => {
           </Container>
           {isAmp ? (
             <amp-img
-              layout="responsive"
+              
               width="1920"
               height="420"
               src="/img_webp/Header_Bild_Rot.webp"
