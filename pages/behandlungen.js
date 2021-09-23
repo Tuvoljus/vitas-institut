@@ -17,11 +17,12 @@ import { Navbar } from 'react-bootstrap'
 
 import dynamic from 'next/dynamic'
 // import { useAmp } from 'next/amp'
-const MobileSideMenue = dynamic(() => import('../components/MobileSideMenue'))
+// const MobileSideMenue = dynamic(() => import('../components/MobileSideMenue'))
 import SideMenue from '../components/SideMenue'
+import MobileSideMenue from '../components/MobileSideMenue' 
 
 
-export const config = { amp: 'hybrid' }
+// export const config = { amp: 'hybrid' }
 
 const SectionBehandlungen = () => {
   // const isAmp = useAmp();
