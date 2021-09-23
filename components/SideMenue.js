@@ -269,7 +269,7 @@ const SideMenue = (props) => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/was_kann_alles_behandelt_werden"
+                href="/behandlungen/Entspannungs-Methoden"
                 replace
                 scroll={false}
               >
@@ -282,7 +282,7 @@ const SideMenue = (props) => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/was_kann_alles_behandelt_werden"
+                href="/behandlungen/Stressreduktion_EFT"
                 replace
                 scroll={false}
               >
@@ -295,7 +295,7 @@ const SideMenue = (props) => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/was_kann_alles_behandelt_werden"
+                href="/behandlungen/EMDR-Coaching"
                 replace
                 scroll={false}
               >

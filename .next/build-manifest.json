@@ -24,15 +24,25 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/behandlungen/EMDR-Coaching": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/behandlungen/EMDR-Coaching.js"
+    ],
     "/behandlungen/Klassische_Massage": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/behandlungen/Klassische_Massage.js"
     ],
-    "/behandlungen/Osflow_Schwingungsplatte": [
+    "/behandlungen/Stressreduktion_EFT": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/behandlungen/Osflow_Schwingungsplatte.js"
+      "static/chunks/pages/behandlungen/Stressreduktion_EFT.js"
+    ],
+    "/behandlungen/was_kann_alles_behandelt_werden": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/behandlungen/was_kann_alles_behandelt_werden.js"
     ]
   },
   "ampFirstPages": []

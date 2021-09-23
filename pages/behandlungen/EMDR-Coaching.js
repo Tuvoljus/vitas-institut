@@ -13,7 +13,7 @@ import MobileSideMenue from "../../components/MobileSideMenue";
 
 // export const config = { amp: 'hybrid' }
 
-const Entspannungs_Methoden = () => {
+const EMDR_Coaching = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -27,9 +27,7 @@ const Entspannungs_Methoden = () => {
             style={{ position: "absolute", zIndex: "2" }}
             className="align-self-center"
           >
-            <h1>
-              Ruhe finden/Entspannungstechniken/ Entspannungsmethoden lernen
-            </h1>
+            <h1>EMDR-Coaching</h1>
           </Row>
         </Container>
         <Image
@@ -52,43 +50,42 @@ const Entspannungs_Methoden = () => {
             <Col md={1} className={vl} style={{ color: "black" }}></Col>
             <Col md={7}>
               <div style={{ paddingLeft: "3rem", color: "#707070" }}>
-                <h2 className="mx-auto">
-                  Ruhe finden/Entspannungstechniken/ Entspannungsmethoden lernen
-                </h2>
-                <div className="lead">
-                  alle Techniken ausführlich unter{" "}
-                  <b>
-                    <a href="https://www.vitas-stressmanagement.de/">
-                      www.vitas-stressmanagement.de
-                    </a>
-                  </b>
-                </div>
+                <h2 className="mx-auto">EMDR-Coaching</h2>
+
                 <br />
                 <p>
-                  Seit 1978 sind Entspannungstechniken, Entspannungsmethoden
-                  immer ein „Forschungsschwerpunkt" von mir gewesen.
+                  Die EMDR-Methode stammt ursprünglich aus der Trauma-Therapie
+                  und wird dort seit Jahren erfolgreich verwendet.
+                </p>
+                <p>
+                  Das Kernelement der Methode sind Augenbewegungen oder links-
+                  rechts- wechselnde Körperstimmulationen. Die neurologische
+                  Stress-Verarbeitung im Gehirn wird hierbei unterstützt.
+                </p>
+                <p>
+                  So einfach die Methode schein, sie ist als Stress-Werkzeug
+                  äußerst wirkungsvoll. Wenn Sie damit kein Trauma, sondern
+                  ihren Alltagsstress loslassen wollen, unterstützt Sie diese
+                  Technik sehr elegant.
+                </p>
+                <p>
+                  Auch zum Ressourcen aufspüren, oder einfach um das Denken und
+                  Fühlen wieder anzukurbeln, ist EMDR ideal.
+                </p>
+                <p style={{ fontWeight: "600" }}>
+                  <a href="https://www.wingwave.com/coaching/was-ist-wingwave.html">
+                    www.wingwave.com/coaching/was-ist-wingwave
+                  </a>
+                </p>
+                <p>
+                  Ich verwende diese Methode bei mir in der Praxis für Coaching
+                  und körperliches Entspannungs-Training.
                 </p>
                 <p>
                   <b>
-                    Entspannungs-Methoden, die Sie minuten-, oder sogar nur
-                    sekundenweise anwenden. Überall und unauffällig in Ihrem
-                    Alltag {">"} schnelle Wege zur Ruhe. Entspannungstechniken
-                    lernen in München. Ruhe finden.
-                  </b>
-                </p>
-                <p>
-                  Sie haben im Alltag meist keine 20 Minuten Zeit zur
-                  Entspannung. Schnelle Wege zur Ruhe sind auch "Notfallhilfen".
-                  Daher bekommen Sie bewährte, überprüfte Techniken an die Hand.
-                  Sie erzeugen in wenigen Minuten körperliche und seelische
-                  Beruhigung. Sie wählen aus, was zu Ihnen passt. Was bringt
-                  spürbar den größten Nutzen für Sie.
-                </p>
-                <p>
-                  <b>
-                    Die Selbsthilfen sind fast überall minuten-oder sogar nur
-                    sekundenweise durchführbar. Entspannungs-Methoden lernen in
-                    München! Ruhe finden in sich!
+                    WENN SIE EMDR IM RAHMEN EINER PSYCHOTHERAPIE ERLEBEN WOLLEN;
+                    WENDEN SIE SICH BITTE AN EINEN AUSGEBILDETETN
+                    PSYCHOTHERAPEUTEN!!
                   </b>
                 </p>
               </div>
@@ -101,4 +98,4 @@ const Entspannungs_Methoden = () => {
   );
 };
 
-export default Entspannungs_Methoden
+export default EMDR_Coaching

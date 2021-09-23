@@ -3,5 +3,7 @@
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
   "/behandlungen/Klassische_Massage": "pages/behandlungen/Klassische_Massage.js",
-  "/behandlungen/Osflow_Schwingungsplatte": "pages/behandlungen/Osflow_Schwingungsplatte.js"
+  "/behandlungen/Stressreduktion_EFT": "pages/behandlungen/Stressreduktion_EFT.js",
+  "/behandlungen/was_kann_alles_behandelt_werden": "pages/behandlungen/was_kann_alles_behandelt_werden.js",
+  "/behandlungen/EMDR-Coaching": "pages/behandlungen/EMDR-Coaching.js"
 }
