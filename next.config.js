@@ -7,8 +7,7 @@ module.exports = {
   extends: [
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:@next/next/recommended",
-    "eslint:recommended", "next",
+    "plugin:@next/next/recommended",    
   ],
   webpack(config) {
     config.module.rules.push({
