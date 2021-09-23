@@ -10,16 +10,13 @@ import { Navbar } from 'react-bootstrap'
 // import AccordionItem from 'react-bootstrap/esm/AccordionItem'
 // import AccordionBody from 'react-bootstrap/esm/AccordionBody'
 
-
-// import { useAmp } from 'next/amp'
 // import {M2} from '../components/submenue/M2'
 
 // import SubMenue from '../components/SubMenue'
 // import MainBehandlung from '../components/MainBehandlung'
 
 import dynamic from 'next/dynamic'
-import { useAmp } from 'next/amp'
-
+// import { useAmp } from 'next/amp'
 const MobileSideMenue = dynamic(() => import('../components/MobileSideMenue'))
 import SideMenue from '../components/SideMenue'
 
@@ -27,11 +24,10 @@ import SideMenue from '../components/SideMenue'
 export const config = { amp: 'hybrid' }
 
 const SectionBehandlungen = () => {
-  const isAmp = useAmp();
+  // const isAmp = useAmp();
   
   
-  return (
-      
+  return ( 
       <>
         <div>
           <Container>
@@ -45,16 +41,7 @@ const SectionBehandlungen = () => {
                 </h1>
               </Col>
             </Row>
-          </Container>
-          {isAmp ? (
-            <amp-img
-              
-              width="1920"
-              height="420"
-              src="/img_webp/Header_Bild_Rot.webp"
-              alt="HeaderImage Bernhard Käser"              
-            />
-          ) : (
+          </Container>          
             <Image
               src="/img/Header_Bild_Rot.jpg"
               layout="responsive"
@@ -63,8 +50,7 @@ const SectionBehandlungen = () => {
               height={420}
               quality="10"
               style={{ position: "relative" }}
-            />
-          )}
+            />         
         </div>
         <section className="d-none d-sm-block">
           <Container>
