@@ -29,10 +29,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/behandlungen/Klassische_Massage.js"
     ],
-    "/behandlungen/was_kann_alles_behandelt_werden": [
+    "/behandlungen/Osflow_Schwingungsplatte": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/behandlungen/was_kann_alles_behandelt_werden.js"
+      "static/chunks/pages/behandlungen/Osflow_Schwingungsplatte.js"
     ]
   },
   "ampFirstPages": []

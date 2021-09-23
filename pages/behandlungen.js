@@ -27,8 +27,11 @@ import SideMenue from '../components/SideMenue'
 export const config = { amp: 'hybrid' }
 
 const SectionBehandlungen = () => {
-    const isAmp = useAmp();
-    return (
+  const isAmp = useAmp();
+  
+  
+  return (
+      
       <>
         <div>
           <Container>
@@ -63,13 +66,12 @@ const SectionBehandlungen = () => {
             />
           )}
         </div>
-
         <section className="d-none d-sm-block">
           <Container>
             <Row>
               {/* Sitemenue */}
               <Col md={4}>
-                <SideMenue />
+                <SideMenue/>
               </Col>
               {/* Main Content */}
               <Col md={8} className={ColorFont}>

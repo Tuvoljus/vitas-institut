@@ -34,14 +34,14 @@ const Klassische_Massage = () => {
                 <Image src="/img/Header_Bild_Rot.jpg" layout='responsive'  objectFit="cover" width={1920} height={420} quality="10"/>
             </div>
             <section className="d-none d-sm-block">
-                <Container >
+                <Container>
                     <Row>
                     {/* Sitemenue */}
                         <Col md={4}>
-                            <SideMenue />
+                            <SideMenue/>
                         </Col>
                         {/* Main Content */}
-                        <Col md={1} className={vl} style={{color: 'black', }}>
+                        <Col md={1} className={vl} style={{color: 'black' }}>
                             
                         </Col>
                         <Col md={7}>
@@ -52,10 +52,8 @@ const Klassische_Massage = () => {
                                 <br />
                                 <p>
                                     Physiotherapeutische Behandlung von Gewebe und Muskeln durch Druck- u. Zugreize mit den klassischen Griffarten Streichung, Reibung, Knetung oder Walkung, Klopfung und Erschütterung.
-                                </p>
-                            
-                            </div>
-                            
+                                </p>                            
+                            </div>                            
                         </Col>
                     </Row>
                 </Container>

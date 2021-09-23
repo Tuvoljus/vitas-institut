@@ -1,20 +1,22 @@
 import React from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
-import Container from 'react-bootstrap/Container'
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
 
 const SideMenue = (props) => {
+  // const [openAccordion, setOpenAccordion] = useState ('')
+
+  // OnEventClick() {
+    
+  //   }
+
     return (
       <>
         <Accordion flush>
           <Card>
             <Card.Header>
-              <Link
-                href="/behandlungen"
-                replace
-                scroll={false}
-              >
+              <Link href="/behandlungen" replace scroll={false}>
                 <a style={{ textDecoration: "none" }}>
                   Einführung Behandlungen
                 </a>
@@ -34,8 +36,8 @@ const SideMenue = (props) => {
               </Link>
             </Card.Header>
           </Card>
-          <Accordion.Item eventKey="0">
-            <Accordion.Header>
+          <Accordion.Item>
+            <Accordion.Header eventKey="0">
               Klassische Krankengymnastik/ <br /> Manuelle Therapien
             </Accordion.Header>
             <Accordion.Body>
@@ -139,8 +141,8 @@ const SideMenue = (props) => {
               </Link>
             </Card.Header>
           </Card>
-          <Accordion.Item eventKey="1">            
-                <Accordion.Header>Klassische Massage</Accordion.Header>             
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>Klassische Massage</Accordion.Header>
             <Accordion.Body>
               <div
                 style={{
@@ -151,18 +153,16 @@ const SideMenue = (props) => {
               >
                 <li>
                   <Link
-                    href="/behandlungen/was_kann_alles_behandelt_werden"
+                    href="/behandlungen/Bindegewebsmassage"
                     replace
                     scroll={false}
                   >
-                    <a style={{ textDecoration: "none" }}>
-                      Bindegewebsmassage
-                    </a>
+                    <a style={{ textDecoration: "none" }}>Bindegewebsmassage</a>
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/behandlungen/was_kann_alles_behandelt_werden"
+                    href="/behandlungen/Colonmassage_Viscerale_Mobilisation"
                     replace
                     scroll={false}
                   >
@@ -174,7 +174,7 @@ const SideMenue = (props) => {
 
                 <li>
                   <Link
-                    href="/behandlungen/was_kann_alles_behandelt_werden"
+                    href="/behandlungen/Triggerpunktbehandlung"
                     replace
                     scroll={false}
                   >
@@ -186,7 +186,7 @@ const SideMenue = (props) => {
 
                 <li>
                   <Link
-                    href="/behandlungen/was_kann_alles_behandelt_werden"
+                    href="/behandlungen/Saugwellen_Therapie"
                     replace
                     scroll={false}
                   >
@@ -201,7 +201,7 @@ const SideMenue = (props) => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/was_kann_alles_behandelt_werden"
+                href="/behandlungen/Atemtherapie_der_befreite_Atem"
                 replace
                 scroll={false}
               >
@@ -214,7 +214,7 @@ const SideMenue = (props) => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/was_kann_alles_behandelt_werden"
+                href="/behandlungen/Lymph_Mobilisation_Lymphdrainage"
                 replace
                 scroll={false}
               >
@@ -225,13 +225,11 @@ const SideMenue = (props) => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/was_kann_alles_behandelt_werden"
+                href="/behandlungen/Reflexzonen_Therapie"
                 replace
                 scroll={false}
               >
-                <a style={{ textDecoration: "none" }}>
-                  Reflexzonen-Therapie
-                </a>
+                <a style={{ textDecoration: "none" }}>Reflexzonen-Therapie</a>
               </Link>
             </Card.Header>
           </Card>
@@ -247,7 +245,7 @@ const SideMenue = (props) => {
               >
                 <li>
                   <Link
-                    href="/behandlungen/was_kann_alles_behandelt_werden"
+                    href="/behandlungen/Scenar_Therapie"
                     replace
                     scroll={false}
                   >
@@ -259,12 +257,10 @@ const SideMenue = (props) => {
           </Accordion.Item>
           <Card>
             <Card.Header>
-              <Link href="/behandlungen/was_kann_alles_behandelt_werden">
-                <a
-                  style={{ textDecoration: "none" }}
-                  replace
-                  scroll={false}
-                >
+              <Link
+                href="/behandlungen/Osflow_Schwingungsplatte"
+              >
+                <a style={{ textDecoration: "none" }} replace scroll={false}>
                   Osflow Schwingungsplatte
                 </a>
               </Link>

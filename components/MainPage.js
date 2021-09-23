@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-
 import { iconStyle } from '../scss/Icons.module.scss'
 import { ColorFont } from '../scss/styles.module.scss'
 
@@ -14,9 +13,6 @@ import { useAmp } from 'next/amp'
 import { BsPlus } from "@react-icons/all-files/bs/BsPlus"
 
 const SectionAbout = dynamic(() => import('./SectionAbout'))
-
-
-
 
 export const config = { amp: 'hybrid' }
 
