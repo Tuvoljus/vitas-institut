@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import { BsPlus } from "@react-icons/all-files/bs/BsPlus";
-import { iconStyle } from "../../scss/Icons.module.scss";
+
 import { Container } from "react-bootstrap";
 
 import { vl } from "../../scss/styles.module.scss";
@@ -14,10 +13,6 @@ import MobileSideMenue from "../../components/MobileSideMenue";
 // export const config = { amp: 'hybrid' }
 
 const Scenar_Therapie = () => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   return (
     <>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -14,10 +14,6 @@ import MobileSideMenue from "../../components/MobileSideMenue";
 // export const config = { amp: 'hybrid' }
 
 const Osflow_Schwingungsplatte = () => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   return (
     <>

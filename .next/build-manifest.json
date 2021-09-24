@@ -24,25 +24,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/behandlungen/Atemtherapie_der_befreite_Atem": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/behandlungen/Atemtherapie_der_befreite_Atem.js"
+    ],
     "/behandlungen/EMDR-Coaching": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/behandlungen/EMDR-Coaching.js"
-    ],
-    "/behandlungen/Klassische_Massage": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/behandlungen/Klassische_Massage.js"
-    ],
-    "/behandlungen/Stressreduktion_EFT": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/behandlungen/Stressreduktion_EFT.js"
-    ],
-    "/behandlungen/was_kann_alles_behandelt_werden": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/behandlungen/was_kann_alles_behandelt_werden.js"
     ]
   },
   "ampFirstPages": []

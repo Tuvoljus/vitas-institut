@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import { BsPlus } from "@react-icons/all-files/bs/BsPlus";
-import { iconStyle } from "../../scss/Icons.module.scss";
 import { Container } from "react-bootstrap";
 
 import { vl } from "../../scss/styles.module.scss";
@@ -14,10 +12,6 @@ import MobileSideMenue from "../../components/MobileSideMenue";
 // export const config = { amp: 'hybrid' }
 
 const Atemtherapie_der_befreite_Atem = () => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   return (
     <>
@@ -86,20 +80,20 @@ const Atemtherapie_der_befreite_Atem = () => {
                   Atemerkrankungen wie z.B. Bronchitis, Asthma, behandelt.
                 </p>
                 <p>
-                  Beim <b>"befreiten Atem"</b> geht es um eine bessere
-                  Körperwahrnehmung, tiefe körperliche und psychische
-                  Entspannung. Meine Hände sind mit Ihrem Körper im „Gespräch".
-                  Durch die Berührung können Muskel-verspannungen, Atem und
-                  Emotionen gelöst werden. Auf diese Weise ist ein tieferer
-                  Zugang zu sich selbst möglich.
+                  Beim <b> &quot;befreiten Atem&quot;</b> geht es um eine
+                  bessere Körperwahrnehmung, tiefe körperliche und psychische
+                  Entspannung. Meine Hände sind mit Ihrem Körper im
+                  &bdquo;Gespräch&rdquo;. Durch die Berührung können
+                  Muskel-verspannungen, Atem und Emotionen gelöst werden. Auf
+                  diese Weise ist ein tieferer Zugang zu sich selbst möglich.
                 </p>
                 <p>
-                  Viele Emotionen sind in unserem „Muskelpanzer" eingefroren.
-                  Gelegentliche tiefe Seufzer der Erleichterung oder auch ein
-                  paar unwillkürliche Tränen lockern diesen „Panzer". Seelische
-                  Schmerzen, Ängste und Trauer, das große Thema der mangelnden
-                  Eigenliebe, drücken sich in Körperhaltung, Atem- und
-                  Bewegungsmustern aus.
+                  Viele Emotionen sind in unserem &bdquo;Muskelpanzer&rdquo;
+                  eingefroren. Gelegentliche tiefe Seufzer der Erleichterung
+                  oder auch ein paar unwillkürliche Tränen lockern diesen
+                  &bdquo;Panzer&rdquo;. Seelische Schmerzen, Ängste und Trauer,
+                  das große Thema der mangelnden Eigenliebe, drücken sich in
+                  Körperhaltung, Atem- und Bewegungsmustern aus.
                 </p>
                 <p>
                   Durch die aufmerksame Beobachtung und die achtsame Berührung,
