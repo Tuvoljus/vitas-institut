@@ -2,6 +2,7 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/behandlungen/EMDR-Coaching": "pages/behandlungen/EMDR-Coaching.js",
-  "/": "pages/index.js"
+  "/behandlungen": "pages/behandlungen.js",
+  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
+  "/behandlungen/EMDR-Coaching": "pages/behandlungen/EMDR-Coaching.js"
 }
