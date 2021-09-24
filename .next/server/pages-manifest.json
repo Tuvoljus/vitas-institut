@@ -2,9 +2,8 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/behandlungen": "pages/behandlungen.js",
   "/behandlungen/EMDR-Coaching": "pages/behandlungen/EMDR-Coaching.js",
-  "/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht": "pages/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht.js",
-  "/behandlungen/was_kann_alles_behandelt_werden": "pages/behandlungen/was_kann_alles_behandelt_werden.js",
-  "/behandlungen/Bindegewebsmassage": "pages/behandlungen/Bindegewebsmassage.js"
+  "/behandlungen": "pages/behandlungen.js",
+  "/behandlungen/Bindegewebsmassage": "pages/behandlungen/Bindegewebsmassage.js",
+  "/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht": "pages/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht.js"
 }

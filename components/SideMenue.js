@@ -36,8 +36,8 @@ const SideMenue = (props) => {
               </Link>
             </Card.Header>
           </Card>
-          <Accordion.Item>
-            <Accordion.Header eventKey="0">
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>
               Klassische Krankengymnastik/ <br /> Manuelle Therapien
             </Accordion.Header>
             <Accordion.Body>
@@ -257,9 +257,7 @@ const SideMenue = (props) => {
           </Accordion.Item>
           <Card>
             <Card.Header>
-              <Link
-                href="/behandlungen/Osflow_Schwingungsplatte"
-              >
+              <Link href="/behandlungen/Osflow_Schwingungsplatte">
                 <a style={{ textDecoration: "none" }} replace scroll={false}>
                   Osflow Schwingungsplatte
                 </a>
@@ -294,11 +292,7 @@ const SideMenue = (props) => {
           </Card>
           <Card>
             <Card.Header>
-              <Link
-                href="/behandlungen/EMDR-Coaching"
-                replace
-                scroll={false}
-              >
+              <Link href="/behandlungen/EMDR-Coaching" replace scroll={false}>
                 <a style={{ textDecoration: "none" }}>EMDR-Coaching</a>
               </Link>
             </Card.Header>

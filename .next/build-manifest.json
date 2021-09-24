@@ -43,11 +43,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht.js"
-    ],
-    "/behandlungen/was_kann_alles_behandelt_werden": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/behandlungen/was_kann_alles_behandelt_werden.js"
     ]
   },
   "ampFirstPages": []
