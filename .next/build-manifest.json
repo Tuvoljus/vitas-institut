@@ -29,20 +29,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/behandlungen.js"
     ],
-    "/behandlungen/Bindegewebsmassage": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/behandlungen/Bindegewebsmassage.js"
-    ],
     "/behandlungen/EMDR-Coaching": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/behandlungen/EMDR-Coaching.js"
-    ],
-    "/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht.js"
     ]
   },
   "ampFirstPages": []
