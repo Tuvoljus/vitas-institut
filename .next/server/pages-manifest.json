@@ -2,6 +2,11 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
+  "/behandlungen/Atemtherapie_der_befreite_Atem": "pages/behandlungen/Atemtherapie_der_befreite_Atem.js",
   "/behandlungen/EMDR-Coaching": "pages/behandlungen/EMDR-Coaching.js",
-  "/behandlungen/Atemtherapie_der_befreite_Atem": "pages/behandlungen/Atemtherapie_der_befreite_Atem.js"
+  "/": "pages/index.js",
+  "/behandlungen": "pages/behandlungen.js",
+  "/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht": "pages/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht.js",
+  "/behandlungen/Scenar_Therapie": "pages/behandlungen/Scenar_Therapie.js",
+  "/behandlungen/Manuelle_Therapie_Marnitz_Cyriax": "pages/behandlungen/Manuelle_Therapie_Marnitz_Cyriax.js"
 }
