@@ -29,35 +29,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/behandlungen": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/behandlungen.js"
-    ],
-    "/behandlungen/Atemtherapie_der_befreite_Atem": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/behandlungen/Atemtherapie_der_befreite_Atem.js"
-    ],
     "/behandlungen/EMDR-Coaching": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/behandlungen/EMDR-Coaching.js"
-    ],
-    "/behandlungen/Manuelle_Therapie_Marnitz_Cyriax": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/behandlungen/Manuelle_Therapie_Marnitz_Cyriax.js"
-    ],
-    "/behandlungen/Scenar_Therapie": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/behandlungen/Scenar_Therapie.js"
-    ],
-    "/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht.js"
     ]
   },
   "ampFirstPages": []
