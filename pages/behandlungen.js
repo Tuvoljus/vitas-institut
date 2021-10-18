@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import { vl } from "../scss/styles.module.scss";
 
 import { ColorFont } from '../scss/styles.module.scss'
 
@@ -28,59 +29,66 @@ const SectionBehandlungen = () => {
   // const isAmp = useAmp();
   
   
-  return ( 
-      <>
-        <div>
-          <Container>
-            <Row>
-              <Col className="d-flex">
-                <h1
-                  style={{ position: "absolute", zIndex: "2" }}
-                  className="d-flex align-items-center"
-                >
-                  Einführung Behandlungen
-                </h1>
-              </Col>
-            </Row>
-          </Container>          
-            <Image
-              src="/img/Header_Bild_Rot.jpg"
-              layout="responsive"
-              objectFit="cover"
-              width={1920}
-              height={420}
-              quality="10"
-              style={{ position: "relative" }}
-            />         
-        </div>
-        <section className="d-none d-sm-block">
-          <Container>
-            <Row>
-              {/* Sitemenue */}
-              <Col md={4}>
-                <SideMenue/>
-              </Col>
-              {/* Main Content */}
-              <Col md={8} className={ColorFont}>
-                <h2>Einführung Behandlungen</h2>
-                <p>
-                  Sie bekommen einen kurzen Überblick über die wichtigsten
-                  Behandlungsmöglichkeiten.
-                  <br />
-                  Oft bewährt sich eine Kombination einzelner Techniken.
-                  <br />
-                  Durch Ihre Rückmeldungen während und nach den Behandlungen
-                  sind diese ganz individuell auf Ihre aktuellen Bedürfnisse
-                  abgestimmt.
-                  <br />
-                </p>
-              </Col>
-            </Row>
-          </Container>
-        </section>
-        <MobileSideMenue />
-      </>
-    );
+  return (
+    <>
+      <section>
+        <Container>
+          <Row>
+            <Col className="d-flex align-items-center justify-content-center">
+              <h1
+                style={{ position: "absolute", zIndex: "2" }}
+                className="d-flex align-items-center"
+              >
+                Einführung Behandlungen
+              </h1>
+            </Col>
+          </Row>
+        </Container>
+        <Image
+          fluid
+          src="/img/Header_Bild_Rot.jpg"
+          layout="fill"
+          objectFit="cover"
+          width={1936}
+          height={720}
+          quality="10"
+          style={{ position: "relative" }}
+        />
+      </section>
+      <section className="d-none d-sm-block">
+        <Container>
+          <Row>
+            {/* Sitemenue */}
+            <Col md={4}>
+              <SideMenue />
+            </Col>
+            <Col
+              md={1}
+              className={vl}
+              style={{ color: "black" }}
+              className="d-none d-sm-block"
+            ></Col>
+            {/* Main Content */}
+            <Col md={8} className={ColorFont}>
+              <h2>Einführung Behandlungen</h2>
+              <p>
+                Sie bekommen einen kurzen Überblick über die wichtigsten
+                Behandlungsmöglichkeiten.
+                <br />
+                Oft bewährt sich eine Kombination einzelner Techniken.
+                <br />
+                Durch Ihre Rückmeldungen während und nach den Behandlungen sind
+                diese ganz individuell auf Ihre aktuellen Bedürfnisse
+                abgestimmt.
+                <br />
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <MobileSideMenue />
+    </>
+  );
 }
 
 export default SectionBehandlungen

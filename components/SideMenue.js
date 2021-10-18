@@ -257,8 +257,12 @@ const SideMenue = (props) => {
           </Accordion.Item>
           <Card>
             <Card.Header>
-              <Link href="/behandlungen/Osflow_Schwingungsplatte">
-                <a style={{ textDecoration: "none" }} replace scroll={false}>
+              <Link
+                href="/behandlungen/Osflow_Schwingungsplatte"
+                replace
+                scroll={false}
+              >
+                <a style={{ textDecoration: "none" }}>
                   Osflow Schwingungsplatte
                 </a>
               </Link>

@@ -98,7 +98,7 @@ const divStyle = {
     return (
         <>        
           
-          <div className="container">           
+          <div className="container" style={{paddingTop: '1rem'}}>           
               <div className="row">
                 <div className="col-2 col-md-2 col-xl-2">
               <Logo />

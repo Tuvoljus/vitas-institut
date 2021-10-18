@@ -24,15 +24,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/behandlungen": [
+    "/behandlungen/Klassische_Massage": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/behandlungen.js"
-    ],
-    "/behandlungen/EMDR-Coaching": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/behandlungen/EMDR-Coaching.js"
+      "static/chunks/pages/behandlungen/Klassische_Massage.js"
     ]
   },
   "ampFirstPages": []
