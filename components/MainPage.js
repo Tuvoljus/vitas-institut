@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import NextScript from 'next/document'
+
+
 import Container from 'react-bootstrap/Container'
 
 import Row from 'react-bootstrap/Row'
@@ -7,8 +7,6 @@ import Col from 'react-bootstrap/Col'
 
 import { iconStyle } from '../scss/Icons.module.scss'
 import { ColorFont } from '../scss/styles.module.scss'
-import { imageContainer, image, maxImageSize } from '../scss/styles.module.scss'
-import TestChapter from './TestChapter'
 
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
@@ -21,8 +19,8 @@ export const config = { amp: 'hybrid' }
 
 const MainPage = () => {
     const isAmp = useAmp();
-  const ImagePath = "/img/Header_Bild_Gruen.JPG";
-  const ImagePathWebP = "/img_webp/Header_Bild_Gruen.webp";
+  // const ImagePath = "/img/Header_Bild_Gruen.JPG";
+  // const ImagePathWebP = "/img_webp/Header_Bild_Gruen.webp";
   
     // const iconStyle = {
     //     color: "#1663b1",
