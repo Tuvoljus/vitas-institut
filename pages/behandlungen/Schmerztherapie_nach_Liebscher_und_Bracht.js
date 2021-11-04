@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-import { Container } from 'react-bootstrap';
+import  Container  from 'react-bootstrap/Container';
 
 import { vl } from '../../scss/styles.module.scss'
 import SideMenue from '../../components/SideMenue';
@@ -13,7 +13,6 @@ import MobileSideMenue from '../../components/MobileSideMenue';
 // export const config = { amp: 'hybrid' }
 
 const Schmerztherapie_nach_Liebscher_und_Bracht = () => {   
-
     return (
       <>
         <section>

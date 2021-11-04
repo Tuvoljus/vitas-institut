@@ -50,9 +50,9 @@ const Stressreduktion_EFT = () => {
                 <p>
                   MFT, EFT, MET, BSFF, WWT, ED x TM, NEAM, TFT, TAT, E.T.T,
                   Energy EFT, sind alles sehr ähnliche Verfahren der
-                  "energetischen Psychologie". Sie dienen der Auflösung von
-                  Energie-Blockaden. Körperlicher oder emotionaler Stress
-                  bedeutet im Körper messbar immer ein Energie-Problem.
+                  &ldquo;energetischen Psychologie&ldquo;. Sie dienen der
+                  Auflösung von Energie-Blockaden. Körperlicher oder emotionaler
+                  Stress bedeutet im Körper messbar immer ein Energie-Problem.
                 </p>
                 <p>
                   Jeder kann diese Methoden erlernen und an sich selbst und
@@ -109,9 +109,9 @@ const Stressreduktion_EFT = () => {
                   als <b>sehr wirkungsvolle Instrumente</b> erweisen.{" "}
                 </p>
                 <p>
-                  Die "energetische Psychologie" kann einzeln oder kombiniert
-                  werden. Auch in Verbindung mit anderen Methoden, ist sie als
-                  Selbstbehandlungs-Instrument ausgezeichnet.
+                  Die &ldquo;energetische Psychologie&ldquo; kann einzeln oder
+                  kombiniert werden. Auch in Verbindung mit anderen Methoden,
+                  ist sie als Selbstbehandlungs-Instrument ausgezeichnet.
                 </p>
                 <p>
                   Das sanfte Klopfen, bzw. nur Berühren der Punkte, unterstützt
@@ -119,20 +119,21 @@ const Stressreduktion_EFT = () => {
                   Sätze aussprechen, wird die gesamte Körperenergie gestützt.
                   Die vorher automatisch ablaufende Körperreaktion (Schwitzen,
                   Rotwerden, Unruhe, Muskelanspannung, Atemstockung) wird vom
-                  Gedanken an das Problem „entkoppelt". Mit beruhigtem Körper
-                  denken Sie danach ganz neutral an das Thema.
+                  Gedanken an das Problem &#8222;entkoppelt&#8220;. Mit
+                  beruhigtem Körper denken Sie danach ganz neutral an das Thema.
                 </p>
                 <p>
                   Eine wesentliche Arbeit hierbei ist das Entkräften der
-                  sogenannten „Psychischen Umkehrung" - ein
+                  sogenannten &#8222;Psychischen Umkehrung&#8220; - ein
                   Selbstsabotageprogramm, das sich häufig in verborgenen
-                  „Glaubens"sätzen zeigt. Wir können etwas nicht verändern,
-                  solange wir es nicht akzeptieren.
+                  &#8222;Glaubens&#8220;sätzen zeigt. Wir können etwas nicht
+                  verändern, solange wir es nicht akzeptieren.
                 </p>
                 <p>
-                  Eine "psychische bzw. energetische" Umkehrung hindert uns
-                  daran, Lösungen zu erkennen. Selbst wenn wir das Wissen dazu
-                  haben, verhindert sie, daß wir eine Lösung umsetzen.
+                  Eine &ldquo;psychische bzw. energetische&ldquo; Umkehrung
+                  hindert uns daran, Lösungen zu erkennen. Selbst wenn wir das
+                  Wissen dazu haben, verhindert sie, daß wir eine Lösung
+                  umsetzen.
                 </p>
                 <p>
                   Typische unterbewußte Programme lauten:
@@ -160,14 +161,14 @@ const Stressreduktion_EFT = () => {
                 <p>
                   Einer der interessantesten Aspekte bei EFT ist, dass Sie, um
                   ein Problem lösen zu können, nicht zu verstehen brauchen,
-                  warum oder woher Sie es haben. Mit "energetischer Psychologie"
-                  können ganz grundsätzlich Harmonisierungen des
-                  Körperenergieflusses hergestellt werden. Energieblockaden
+                  warum oder woher Sie es haben. Mit &ldquo;energetischer
+                  Psychologie&ldquo; können ganz grundsätzlich Harmonisierungen
+                  des Körperenergieflusses hergestellt werden. Energieblockaden
                   lösen sich, die mit diesen Beschwerden einhergehen.
                 </p>
                 <p>
                   {" "}
-                  Die Methoden der "energetischen Psychologie" haben
+                  Die Methoden der &ldquo;energetischen Psychologie&ldquo; haben
                   nachweislich geholfen bei:
                   <ul>
                     <li>Ängsten</li>
@@ -195,7 +196,8 @@ const Stressreduktion_EFT = () => {
                       Leistungs- und Erfolgsblockaden (Schule, Beruf, Sport,
                       Hobby)
                     </li>
-                    <li>Lese-Schreibschwäche; Dyslexie, Dyskalkulie etc.</li><br/>
+                    <li>Lese-Schreibschwäche; Dyslexie, Dyskalkulie etc.</li>
+                    <br />
                     Emotionalen Konflikten wie:
                     <li>Ärger</li>
                     <li>Wut</li>

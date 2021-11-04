@@ -60,7 +60,7 @@ const Entspannungs_Methoden = () => {
                 <br />
                 <p>
                   Seit 1978 sind Entspannungstechniken, Entspannungsmethoden
-                  immer ein „Forschungsschwerpunkt" von mir gewesen.
+                  immer ein &#8222;Forschungsschwerpunkt&#8220; von mir gewesen.
                 </p>
                 <p>
                   <b>
@@ -72,11 +72,12 @@ const Entspannungs_Methoden = () => {
                 </p>
                 <p>
                   Sie haben im Alltag meist keine 20 Minuten Zeit zur
-                  Entspannung. Schnelle Wege zur Ruhe sind auch "Notfallhilfen".
-                  Daher bekommen Sie bewährte, überprüfte Techniken an die Hand.
-                  Sie erzeugen in wenigen Minuten körperliche und seelische
-                  Beruhigung. Sie wählen aus, was zu Ihnen passt. Was bringt
-                  spürbar den größten Nutzen für Sie.
+                  Entspannung. Schnelle Wege zur Ruhe sind auch
+                  &ldquo;Notfallhilfen&ldquo;. Daher bekommen Sie bewährte,
+                  überprüfte Techniken an die Hand. Sie erzeugen in wenigen
+                  Minuten körperliche und seelische Beruhigung. Sie wählen aus,
+                  was zu Ihnen passt. Was bringt spürbar den größten Nutzen für
+                  Sie.
                 </p>
                 <p>
                   <b>

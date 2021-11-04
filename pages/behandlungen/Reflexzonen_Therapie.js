@@ -48,13 +48,13 @@ const Reflexzonen_Therapie = () => {
 
                 <br />
                 <p>
-                  Die Behandlung am „Mikroystem" Fuß ist die älteste und
-                  bekannteste Methode erfolgreicher Reflexzonen-Therapie. Die
-                  peripheren Nervenenden befinden sich hauptsächlich im Fuß-,
-                  Hand-, Ohr- und Kopfbereich. In diesen Bereichen ist der ganze
-                  Körper mit all seinen Organen und Körperteilen abgebildet.
-                  Diese Abbildung finden wir ferner in einem Teil der Großhi
-                  rnrinde wieder.
+                  Die Behandlung am &#8222;Mikroystem&#8220; Fuß ist die älteste
+                  und bekannteste Methode erfolgreicher Reflexzonen-Therapie.
+                  Die peripheren Nervenenden befinden sich hauptsächlich im
+                  Fuß-, Hand-, Ohr- und Kopfbereich. In diesen Bereichen ist der
+                  ganze Körper mit all seinen Organen und Körperteilen
+                  abgebildet. Diese Abbildung finden wir ferner in einem Teil
+                  der Großhi rnrinde wieder.
                 </p>
                 <p>
                   Die Stimulierung dieser Zonen bewirkt eine vegetative Reaktion
