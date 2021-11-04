@@ -46,9 +46,8 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
               {/* Main Content */}
               <Col
                 md={1}
-                className={vl}
-                style={{ color: "black" }}
-                className="d-none d-sm-block"
+                className={`d-none d-sm-block ${vl}`}
+                style={{ color: "black" }}                
               ></Col>
               <Col md={7}>
                 <div style={{ paddingLeft: "3rem", color: "#707070" }}>
