@@ -1,10 +1,9 @@
 import React from 'react'
-import { useState } from 'react'
 import Link from 'next/link'
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
 
-const SideMenue = (props) => {
+const SideMenue = () => {
   // const [openAccordion, setOpenAccordion] = useState ('')
 
   // OnEventClick() {
