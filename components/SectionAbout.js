@@ -19,9 +19,8 @@ const SectionAbout = () => {
               <div className="col-md-2">
                 <h3>Stationen:</h3>
               </div>
-              <div
-                className="col-md-2"
-                className={`d-none d-sm-block ${vl}`}
+              <div                
+                className={`col-md-2 d-none d-sm-block ${vl}`}
               ></div>
               <div
                 className="col-md-8"
