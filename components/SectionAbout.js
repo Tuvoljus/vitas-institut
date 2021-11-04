@@ -1,3 +1,5 @@
+import React from 'react'
+
 import { useAmp } from 'next/amp'
 
 import { ColorFont, vl } from '../scss/styles.module.scss'
@@ -48,8 +50,8 @@ const SectionAbout = () => {
                   Für Menschen mit ganzem Herzen da sein dürfen.
                 </p>
                 <p>
-                  Verheiratet mit einer genau so begeisterten "Forscher- und
-                  Entdeckerin".
+                  Verheiratet mit einer genau so begeisterten &ldquo;Forscher-
+                  und Entdeckerin&ldquo;.
                 </p>
               </div>
             </div>
