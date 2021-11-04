@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 
 import { Container } from "react-bootstrap";
 
-import { vl } from "../../scss/styles.module.scss";
+import { vl, heading } from "../../scss/styles.module.scss";
 import SideMenue from "../../components/SideMenue";
 import MobileSideMenue from "../../components/MobileSideMenue";
 
@@ -15,24 +15,28 @@ const Bindegewebsmassage = () => {
 
   return (
     <>
-      <div>
+      <section>
         <Container>
-          <Row
-            style={{ position: "absolute", zIndex: "2" }}
-            className="align-self-center"
-          >
-            <h1>Bindegewebsmassage</h1>
+          <Row>
+            <Col className="d-flex align-items-center justify-content-center">
+              <h1
+                style={{ position: "absolute", zIndex: "2" }}
+                className={`d-flex align-items-center ${heading}`}
+              >
+                Bindegewebsmassage
+              </h1>
+            </Col>
           </Row>
         </Container>
         <Image
           src="/img/Header_Bild_Rot.jpg"
-          layout="responsive"
+          layout="fill"
           objectFit="cover"
           width={1920}
-          height={420}
+          height={720}
           quality="10"
         />
-      </div>
+      </section>
       <section className="d-none d-sm-block">
         <Container>
           <Row>

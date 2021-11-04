@@ -18,18 +18,21 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
       <>
         <section>
           <Container>
-            <Row
-              style={{ position: "absolute", zIndex: "2" }}
-              className="align-self-center"
-            >
-              <h1>Einführung Behandlungen</h1>
+            <Row>
+              <Col className="d-flex align-items-center justify-content-center">
+                <h1
+                  style={{ position: "absolute", zIndex: "2" }}
+                  className="d-flex align-items-center"
+                >
+                  Schmerztherapie nach Liebscher & Bracht
+                </h1>
+              </Col>
             </Row>
           </Container>
           <Image
             src="/img/Header_Bild_Rot.jpg"
             layout="fill"
             objectFit="cover"
-           
             quality="10"
           />
         </section>

@@ -7,7 +7,7 @@ const IndexPage = () => {
     return (
         <>
         <Head>
-          <title>Web Metropolis</title>
+          <title>Vitas Institut</title>
           
           <link rel="icon" href="/favicon.ico" />
         </Head>

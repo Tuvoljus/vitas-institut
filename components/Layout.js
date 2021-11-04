@@ -6,7 +6,6 @@ const StripeContact = dynamic(() => import('./StripeContact'))
 
  
 
-
 const layout = ( {children} ) => {
     return (
         <>  
