@@ -20,7 +20,7 @@ export const config = { amp: 'hybrid' }
 
 const MainPage = () => {
   const isAmp = useAmp();
-  const ImagePath = "/img/Header_Bild_Gruen.JPG";
+  const ImagePath = "/img/Header_Bild_Gruen.jpg";
   const ImagePathWebP = "/img_webp/Header_Bild_Gruen.webp";
   
     // const iconStyle = {
