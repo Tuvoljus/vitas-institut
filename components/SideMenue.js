@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Link from 'next/link'
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
 
 const SideMenue = () => {
   // const [openAccordion, setOpenAccordion] = useState ('')
+  const [activeKey, setActiveKey] = useState("0");
 
   // OnEventClick() {
     
@@ -35,7 +36,10 @@ const SideMenue = () => {
               </Link>
             </Card.Header>
           </Card>
-          <Accordion.Item eventKey="0">
+          <Accordion.Item
+            eventKey="0"
+            
+          >
             <Accordion.Header>
               Klassische Krankengymnastik/ <br /> Manuelle Therapien
             </Accordion.Header>
@@ -140,7 +144,7 @@ const SideMenue = () => {
               </Link>
             </Card.Header>
           </Card>
-          <Accordion.Item eventKey="1">
+          <Accordion.Item eventKey="1" onSelect={(e) => setActiveKey(e)}>
             <Accordion.Header>Klassische Massage</Accordion.Header>
             <Accordion.Body>
               <div

@@ -12,7 +12,7 @@ import MobileSideMenue from '../../components/MobileSideMenue';
 
 // export const config = { amp: 'hybrid' }
 
-const Schmerztherapie_nach_Liebscher_und_Bracht = () => {   
+const Schmerztherapie_nach_Liebscher_und_Bracht = (props) => {   
     return (
       <>
         <section>
@@ -41,7 +41,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
               {/* Sitemenue */}
               <div className="d-none d-sm-block"></div>
               <Col md={4} className="d-none d-sm-block">
-                <SideMenue />
+                <SideMenue activeKey="0"/>
               </Col>
               {/* Main Content */}
               <Col
