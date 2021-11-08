@@ -30,7 +30,7 @@ const Atemtherapie_der_befreite_Atem = () => {
           objectFit="cover"
           width={1920}
           height={420}
-          quality="10"
+          quality="100"
         />
       </div>
       <section className="d-none d-sm-block">

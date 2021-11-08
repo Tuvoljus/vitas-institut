@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Container from 'react-bootstrap/Container'
 
 import Row from 'react-bootstrap/Row'
@@ -22,7 +21,7 @@ const MainPage = () => {
   const isAmp = useAmp();
   const ImagePath = "/img/Header_Bild_Gruen.jpg";
   const ImagePathWebP = "/img_webp/Header_Bild_Gruen.webp";
-  
+
     // const iconStyle = {
     //     color: "#1663b1",
     //     fontSize: "1.4rem"
@@ -206,11 +205,12 @@ const MainPage = () => {
           src={ImagePath}
           layout="responsive"
           width={1920} 
-          height={720}
+          height={620}
           objectFit="cover"
           quality="100"
           alt="HeaderImage Bernhard Käser"
           className={image}
+          priority
         />
       </div>
     )}
