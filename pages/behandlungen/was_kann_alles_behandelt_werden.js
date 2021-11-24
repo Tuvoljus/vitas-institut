@@ -1,14 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from "next/link"
+
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Container  from 'react-bootstrap/Container'
+import Accordion from 'react-bootstrap/Accordion'
+import Card from 'react-bootstrap/Card'
 
 
 import { BsPlus } from "@react-icons/all-files/bs/BsPlus"
 import { iconStyle } from '../../scss/Icons.module.scss'
-import { Container } from 'react-bootstrap';
 
-import { vl } from '../../scss/styles.module.scss'
+import { vl, heading, inhaltBehandlung } from '../../scss/styles.module.scss'
 import SideMenue from '../../components/SideMenue';
 import MobileSideMenue from '../../components/MobileSideMenue';
 
@@ -25,10 +29,10 @@ const was_kann_behandelt_werden = () => {
             <Row>
               <Col className="d-flex align-items-center justify-content-center">
                 <h1
-                  style={{ position: "absolute", zIndex: "2" }}
-                  className="d-flex align-items-center"
+                  style={{ position: "absolute", zIndex: "2", textShadow: '-.5px 1px 4px #9e9e9e'}}
+                  className={`d-flex align-items-center ${heading}`}
                 >
-                  Was kann behandelt werden? Indikationen
+                  Was kann behandelt werden?
                 </h1>
               </Col>
             </Row>
@@ -36,23 +40,25 @@ const was_kann_behandelt_werden = () => {
           <Image
             src="/img/Header_Bild_Rot.jpg"
             layout="fill"
-            objectFit="cover"
-            width={1920}
-            height={720}
-            quality="10"
+            objectFit="cover"            
+            quality="100"
           />
         </section>
-        <section className="d-none d-sm-block">
+        <section >
           <Container>
             <Row>
               {/* Sitemenue */}
-              <Col md={4}>
+              <Col md={4} className="d-none d-sm-block">
                 <SideMenue />
               </Col>
               {/* Main Content */}
-              <Col md={1} className={vl} style={{ color: "black" }}></Col>
+              <Col
+              md={1}
+              className={`d-none d-sm-block ${vl}`}
+              style={{ color: "black" }}
+            ></Col>
               <Col md={7}>
-                <div style={{ paddingLeft: "3rem", color: "#707070" }}>
+                <div className={inhaltBehandlung}>
                   <h2 className="mx-auto">
                     Was kann behandelt werden?
                     <br />

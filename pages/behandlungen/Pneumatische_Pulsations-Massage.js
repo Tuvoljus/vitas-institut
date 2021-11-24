@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
+import Link from "next/link"
+
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Container  from 'react-bootstrap/Container'
+import Accordion from 'react-bootstrap/Accordion'
+import Card from 'react-bootstrap/Card'
 
-import { Container } from 'react-bootstrap';
-
-import { vl } from '../../scss/styles.module.scss'
+import { vl, heading, inhaltBehandlung } from '../../scss/styles.module.scss'
 import SideMenue from '../../components/SideMenue';
 import MobileSideMenue from '../../components/MobileSideMenue';
 
@@ -20,35 +23,42 @@ const Pneumatische_Pulsations_Massage = () => {
 
     return (
       <>
-        <div>
+        <section>
           <Container>
-            <Row
-              style={{ position: "absolute", zIndex: "2" }}
-              className="align-self-center"
-            >
-              <h1>Einführung Behandlungen</h1>
+          <Row>
+              <Col className="d-flex align-items-center justify-content-center">
+                <h1
+                  style={{ position: "absolute", zIndex: "2" }}
+                  className={`d-flex align-items-center ${heading}`}
+                  >                
+                  Pneumatische Pulsations-Massage
+                </h1>
+              </Col>
             </Row>
           </Container>
           <Image
             src="/img/Header_Bild_Rot.jpg"
-            layout="responsive"
-            objectFit="cover"
-            width={1920}
-            height={420}
-            quality="10"
+            layout="fill"
+            objectFit="cover"           
+            quality="50"
           />
-        </div>
-        <section className="d-none d-sm-block">
+        </section>
+        <section>
           <Container>
             <Row>
               {/* Sitemenue */}
-              <Col md={4}>
-                <SideMenue />
-              </Col>
-              {/* Main Content */}
-              <Col md={1} className={vl} style={{ color: "black" }}></Col>
+              <Col md={4} className="d-none d-sm-block">                            
+                            <SideMenue />                            
+                        </Col>
+                        {/* Main Content */}
+                        <Col
+                            md={1}
+                            className={`d-none d-sm-block ${vl}`}
+                            style={{ color: "black" }}                
+                        >
+                        </Col>
               <Col md={7}>
-                <div style={{ paddingLeft: "3rem", color: "#707070" }}>
+                <div className={inhaltBehandlung}>
                   <h2 className="mx-auto">Pneumatische Pulsations-Massage</h2>
                   <div className="lead">
                     (Pneumatron 200) / (HeVa Tech PRV 2 Gerät)

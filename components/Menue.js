@@ -125,7 +125,7 @@ const divStyle = {
                       <li className="nav-item">
                         <Link href="/">
                           <a className="nav-link " href="#about" style={divStyle}>
-                            Bernhard Köser
+                            Bernhard Käser
                           </a>
                         </Link>
                       </li>

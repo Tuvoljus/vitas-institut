@@ -1,15 +1,27 @@
-import React, {useState} from 'react'
+import React, {useContext} from 'react'
 import Link from 'next/link'
 import Accordion from 'react-bootstrap/Accordion'
+import AccordionContext from 'react-bootstrap/AccordionContext'
+import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import Card from 'react-bootstrap/Card'
 
-const SideMenue = () => {
-  // const [openAccordion, setOpenAccordion] = useState ('')
-  const [activeKey, setActiveKey] = useState("0");
 
-  // OnEventClick() {
-    
-  //   }
+
+
+const SideMenue = ({children, eventKey, onClick, activeClass}) => {
+  const activeEventKey = useContext(AccordionContext);
+
+//  const decoratedOnClick = useAccordionButton(
+//    eventKey,
+//    () => callback && callback(eventKey)
+//  );
+
+  const decoratedOnClick = useAccordionButton(eventKey, onClick);
+
+  // console.log(decoratedOnClick);
+
+  const isCurrentEventKey = activeEventKey === eventKey;
+
 
     return (
       <>
@@ -36,10 +48,7 @@ const SideMenue = () => {
               </Link>
             </Card.Header>
           </Card>
-          <Accordion.Item
-            eventKey="0"
-            
-          >
+          <Accordion.Item eventKey="0">
             <Accordion.Header>
               Klassische Krankengymnastik/ <br /> Manuelle Therapien
             </Accordion.Header>
@@ -69,7 +78,7 @@ const SideMenue = () => {
                     scroll={false}
                   >
                     <a style={{ textDecoration: "none" }}>
-                      Golgi Punkt Schmerztherapie{" "}
+                      Golgi Punkt Schmerztherapie
                     </a>
                   </Link>
                 </li>
@@ -81,7 +90,7 @@ const SideMenue = () => {
                     scroll={false}
                   >
                     <a style={{ textDecoration: "none" }}>
-                      Manuelle Therapie / Marnitz / Cyriax{" "}
+                      Manuelle Therapie / Marnitz / Cyriax
                     </a>
                   </Link>
                 </li>
@@ -123,7 +132,8 @@ const SideMenue = () => {
                 </li>
               </div>
             </Accordion.Body>
-          </Accordion.Item>
+            {children}
+            </Accordion.Item>
           <Card>
             <Card.Header>
               <Link href="/behandlungen/Massage" replace scroll={false}>
@@ -144,8 +154,10 @@ const SideMenue = () => {
               </Link>
             </Card.Header>
           </Card>
-          <Accordion.Item eventKey="1" onSelect={(e) => setActiveKey(e)}>
-            <Accordion.Header>Klassische Massage</Accordion.Header>
+          <Accordion.Item eventKey={isCurrentEventKey} onClick={decoratedOnClick}
+          >
+            <Accordion.Header>
+            Klassische Massage</Accordion.Header>
             <Accordion.Body>
               <div
                 style={{
@@ -200,7 +212,7 @@ const SideMenue = () => {
                 </li>
               </div>
             </Accordion.Body>
-          </Accordion.Item>
+            </Accordion.Item>
           <Card>
             <Card.Header>
               <Link

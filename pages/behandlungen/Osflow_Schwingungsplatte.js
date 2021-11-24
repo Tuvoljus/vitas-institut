@@ -1,13 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import Link from "next/link"
 
-import { BsPlus } from "@react-icons/all-files/bs/BsPlus";
-import { iconStyle } from "../../scss/Icons.module.scss";
-import { Container } from "react-bootstrap";
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Container  from 'react-bootstrap/Container'
+import Accordion from 'react-bootstrap/Accordion'
+import Card from 'react-bootstrap/Card'
 
-import { vl } from "../../scss/styles.module.scss";
+import { vl, heading, inhaltBehandlung } from "../../scss/styles.module.scss";
 import SideMenue from "../../components/SideMenue";
 import MobileSideMenue from "../../components/MobileSideMenue";
 
@@ -17,35 +18,41 @@ const Osflow_Schwingungsplatte = () => {
 
   return (
     <>
-      <div>
+      <section>
         <Container>
-          <Row
-            style={{ position: "absolute", zIndex: "2" }}
-            className="align-self-center"
-          >
-            <h1>Einführung Behandlungen</h1>
-          </Row>
+        <Row>
+              <Col className="d-flex align-items-center justify-content-center">
+                <h1
+                  style={{ position: "absolute", zIndex: "2" }}
+                  className={`d-flex align-items-center ${heading}`}>                
+                   Osflow Schwingungsplatte
+                </h1>
+              </Col>
+            </Row>
         </Container>
         <Image
           src="/img/Header_Bild_Rot.jpg"
-          layout="responsive"
-          objectFit="cover"
-          width={1920}
-          height={420}
-          quality="10"
+          layout="fill"
+          objectFit="cover"          
+          quality="100"
         />
-      </div>
-      <section className="d-none d-sm-block">
+      </section>
+      <section>
         <Container>
           <Row>
             {/* Sitemenue */}
-            <Col md={4}>
-              <SideMenue />
-            </Col>
-            {/* Main Content */}
-            <Col md={1} className={vl} style={{ color: "black" }}></Col>
+            <Col md={4} className="d-none d-sm-block">                            
+                            <SideMenue />                            
+                        </Col>
+                        {/* Main Content */}
+                        <Col
+                            md={1}
+                            className={`d-none d-sm-block ${vl}`}
+                            style={{ color: "black" }}                
+                        >
+                        </Col>
             <Col md={7}>
-              <div style={{ paddingLeft: "3rem", color: "#707070" }}>
+              <div className={inhaltBehandlung}>
                 <h2 className="mx-auto">Osflow Schwingungsplatte</h2>
 
                 <br />

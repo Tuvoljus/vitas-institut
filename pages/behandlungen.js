@@ -3,24 +3,19 @@ import Image from 'next/image'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import { vl, heading } from "../scss/styles.module.scss";
+import { vl, heading, ColorFont } from "../scss/styles.module.scss";
 
-import { ColorFont } from '../scss/styles.module.scss'
-
-import { Navbar } from 'react-bootstrap'
 // import AccordionItem from 'react-bootstrap/esm/AccordionItem'
 // import AccordionBody from 'react-bootstrap/esm/AccordionBody'
 
-// import {M2} from '../components/submenue/M2'
-
-// import SubMenue from '../components/SubMenue'
 // import MainBehandlung from '../components/MainBehandlung'
 
 import dynamic from 'next/dynamic'
 // import { useAmp } from 'next/amp'
 // const MobileSideMenue = dynamic(() => import('../components/MobileSideMenue'))
 import SideMenue from '../components/SideMenue'
-import MobileSideMenue from '../components/MobileSideMenue' 
+import MobileSideMenue from '../components/MobileSideMenue'
+import CustomAccordionToggle from '../context/CustomAccordionToggle'
 
 
 // export const config = { amp: 'hybrid' }
@@ -31,7 +26,7 @@ const SectionBehandlungen = () => {
   
   return (
     <>
-      <section style={{ backgroundColor: "rgba(121,203,255,.4)" }}>
+      <section>
         <Container>
           <Row>
             <Col className="d-flex align-items-center justify-content-center">
@@ -44,13 +39,21 @@ const SectionBehandlungen = () => {
             </Col>
           </Row>
         </Container>
+        <Image
+          src="/img/Header_Bild_Rot.jpg"
+          layout="fill"
+          objectFit="cover"
+          quality="100"
+        />
       </section>
       <section>
         <Container>
           <Row>
             {/* Sitemenue */}
             <Col md={4} className="d-none d-sm-block">
-              <SideMenue />
+           
+                <SideMenue />
+              
             </Col>
             <Col
               md={1}

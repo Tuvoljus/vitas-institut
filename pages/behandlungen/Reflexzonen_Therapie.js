@@ -1,11 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import Link from "next/link"
 
-import { Container } from "react-bootstrap";
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Container  from 'react-bootstrap/Container'
+import Accordion from 'react-bootstrap/Accordion'
+import Card from 'react-bootstrap/Card'
 
-import { vl } from "../../scss/styles.module.scss";
+import { vl, heading, inhaltBehandlung } from "../../scss/styles.module.scss";
 import SideMenue from "../../components/SideMenue";
 import MobileSideMenue from "../../components/MobileSideMenue";
 
@@ -15,35 +18,43 @@ const Reflexzonen_Therapie = () => {
 
   return (
     <>
-      <div>
+      <section>
         <Container>
-          <Row
-            style={{ position: "absolute", zIndex: "2" }}
-            className="align-self-center"
-          >
-            <h1>Reflexzonen-Therapie</h1>
-          </Row>
+        <Row>
+              <Col className="d-flex align-items-center justify-content-center">
+                <h1
+                  style={{ position: "absolute", zIndex: "2" }}
+                  className={`d-flex align-items-center ${heading}`}>                
+                    Reflexzonen-Therapie
+                </h1>
+              </Col>
+            </Row>
         </Container>
         <Image
           src="/img/Header_Bild_Rot.jpg"
-          layout="responsive"
+          layout="fill"
           objectFit="cover"
-          width={1920}
-          height={420}
-          quality="10"
+          // width={1920}
+          // height={420}
+          quality="100"
         />
-      </div>
-      <section className="d-none d-sm-block">
+      </section>
+      <section>
         <Container>
           <Row>
             {/* Sitemenue */}
-            <Col md={4}>
-              <SideMenue />
+            <Col md={4} className="d-none d-sm-block">                            
+              <SideMenue />                            
             </Col>
             {/* Main Content */}
-            <Col md={1} className={vl} style={{ color: "black" }}></Col>
+            <Col
+              md={1}
+              className={`d-none d-sm-block ${vl}`}
+              style={{ color: "black" }}                
+            >
+            </Col>
             <Col md={7}>
-              <div style={{ paddingLeft: "3rem", color: "#707070" }}>
+              <div className={inhaltBehandlung}>
                 <h2 className="mx-auto">Reflexzonen-Therapie</h2>
 
                 <br />

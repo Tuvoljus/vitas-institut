@@ -1,11 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import Link from "next/link";
 
-import { Container } from 'react-bootstrap';
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Container  from 'react-bootstrap/Container';
+import Accordion from 'react-bootstrap/Accordion'
+import Card from 'react-bootstrap/Card'
 
-import { vl } from '../../scss/styles.module.scss'
+import { vl, inhaltBehandlung } from '../../scss/styles.module.scss'
 import SideMenue from '../../components/SideMenue';
 import MobileSideMenue from '../../components/MobileSideMenue';
 
@@ -38,7 +41,7 @@ const Klassische_Massage = () => {
                             
                         </Col>
                         <Col md={7}>
-                            <div style={{ paddingLeft: '3rem',  color: '#707070' }}>
+                            <div className={inhaltBehandlung}>
                                 <h2 className="mx-auto">                                    
                                     Einführung Klassische Massage
                                 </h2>                              
