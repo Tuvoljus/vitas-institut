@@ -352,7 +352,7 @@ const Atemtherapie_der_befreite_Atem = () => {
                   <b>
                     Unser Atem reagiert auf ALLES, was uns innerlich und
                     äußerlich bewegt.
-                  </b>{" "}
+                  </b>
                   <br />
                   Dies drücken wir auch in der Sprache aus: Atemlos,
                   atemberaubend, langer Atem, Verschnaufpause, dicke Luft,
