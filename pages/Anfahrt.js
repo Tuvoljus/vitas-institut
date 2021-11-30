@@ -7,7 +7,6 @@ import Col from 'react-bootstrap/Col'
 
 import { ColorFont, vlKontakt, heading } from '../scss/styles.module.scss'
 
-export const config = { amp: 'hybrid' }
 
 const Anfahrt = () => {    
     return (
