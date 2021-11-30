@@ -14,7 +14,6 @@ import { useAmp } from 'next/amp'
 import { BsPlus } from "@react-icons/all-files/bs/BsPlus"
 
 const SectionAbout = dynamic(() => import('./SectionAbout'))
-const SectionContact = dynamic(() => import('./SectionContact'))
 
 export const config = { amp: 'hybrid' }
 
