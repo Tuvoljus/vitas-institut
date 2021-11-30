@@ -21,13 +21,16 @@ const Saugwellen_Therapie = () => {
       <>
         <section>
           <Container>
-          <Col className="d-flex align-items-center justify-content-center">
-                <h1
-                  style={{ position: "absolute", zIndex: "2" }}
-                  className={`d-flex align-items-center ${heading}`}>                
+            <Row>
+              <Col className="d-flex align-items-center justify-content-center">
+              <h1
+                style={{ position: "absolute", zIndex: "2" }}
+                className={`d-flex align-items-center ${heading}`}
+              >               
                     Saugwellen-Therapie
                 </h1>
               </Col>
+            </Row>
           </Container>
           <Image
             src="/img/Header_Bild_Rot.jpg"

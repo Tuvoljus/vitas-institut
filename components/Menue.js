@@ -144,7 +144,7 @@ const divStyle = {
                         </Link> 
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#contact" style={divStyle}>
+                        <a className="nav-link" href="/aktuelles_und_links" style={divStyle}>
                           Aktuelles / Links
                         </a>
                       </li>

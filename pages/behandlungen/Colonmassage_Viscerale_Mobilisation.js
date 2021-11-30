@@ -21,12 +21,14 @@ const Colonmassage_Viscerale_Mobilisation = () => {
       <>
         <section>
           <Container>
-            <Row
-              className="d-flex align-items-center justify-content-center"
-            >
+            <Row>
+              <Col className="d-flex align-items-center justify-content-center">
               <h1
-              style={{ position: "absolute", zIndex: "2" }}
-              className={`d-flex align-items-center ${heading}`}>Colonmassage / Viscerale Mobilisation</h1>
+                style={{ position: "absolute", zIndex: "2" }}
+                className={`d-flex align-items-center ${heading}`}
+              >
+                Colonmassage / Viscerale Mobilisation</h1>
+              </Col>
             </Row>
           </Container>
           <Image

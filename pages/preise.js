@@ -1,26 +1,54 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
+import { vl, heading, ColorFont } from "../scss/styles.module.scss";
+
 import { useAmp } from 'next/amp'
 
 const Preise = () => {
   return (
       <>
-      <div className="jumbotron" style={{padding: '3rem', backgroundColor: '#d7d7d7'}}>
-        <div className="container">
-          <div className="row">
-            <div className="col">
-              <h1 >Preise</h1>                 
-                
-            </div>
-          </div>            
-        </div>
-      </div>
-      <div className="jumbotron" style={{paddingTop: '3rem'}}>
-        <div className="container">
-          <div className="row">
-            <div className="col col-md-4">
-              <p>
+      <section>
+        <Container>
+          <Row>
+            <Col className="d-flex align-items-center justify-content-center">
+              <h1
+                style={{ position: "absolute", zIndex: "2" }}
+                className={`d-flex align-items-center ${heading}`}
+              >
+                Preise
+              </h1>
+            </Col>
+          </Row>
+        </Container>
+        <Image
+          src="/img/Header_Bild_blau.jpg"
+          layout="fill"
+          objectFit="cover"
+          quality="100"
+        />
+      </section>
+      <section>
+      <Container>
+        <Row>
+        <Col md={4} className="d-none d-sm-block">
+           
+           
+         
+       </Col>
+       <Col
+         md={1}
+         className={`d-none d-sm-block ${vl}`}
+         style={{ color: "black" }}
+       >
+       </Col>
+       <Col md={7} className={ColorFont}>
+       <h2>Preise</h2>
+       <p>
                 REZEPTE von PRIVAT-VERSICHERTEN  mit z.B.<br />
                 Massage,<br />
                 Manuelle Therapie, <br />
@@ -29,14 +57,14 @@ const Preise = () => {
                 Naturmoor, <br />
                 Krankengymnastik Gerätegestützt etc., <br />
                 werden vollständig von den PRIVATKASSEN rückerstattet.
-              </p>
+              </p><br />
               <p style={{fontWeight: 900}}>
                 SELBSTZAHLER    80 EUR  ( 50 Minuten )
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
+       </Col>
+        </Row>
+      </Container>
+      </section>
       </>
     )
 }

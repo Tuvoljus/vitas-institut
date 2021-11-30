@@ -15,20 +15,19 @@ import MobileSideMenue from '../../components/MobileSideMenue';
 
 // export const config = { amp: 'hybrid' }
 
-const Triggerpunktbehandlung = () => {   
-    
+const Triggerpunktbehandlung = () => {
     return (
       <>
         <section>
           <Container>
-            <Row
-              className="d-flex align-items-center justify-content-center"
-            >
-              <h1 style={{ position: "absolute", zIndex: "2" }}
+            <Row>
+              <Col className="d-flex align-items-center justify-content-center">
+                <h1 style={{ position: "absolute", zIndex: "2" }}
                 className={`d-flex align-items-center ${heading}`}
-              >
-                Triggerpunktbehandlung
-              </h1>
+                >
+                  Triggerpunktbehandlung
+                </h1>
+              </Col>
             </Row>
           </Container>
           <Image

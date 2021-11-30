@@ -8,7 +8,7 @@ import Container  from 'react-bootstrap/Container'
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
 
-import { vl, heading, inhaltBehandlung } from "../../scss/styles.module.scss";
+import { vl, heading, inhaltBehandlung, imageDropShadow } from "../../scss/styles.module.scss";
 import SideMenue from "../../components/SideMenue";
 import MobileSideMenue from "../../components/MobileSideMenue";
 
@@ -20,11 +20,13 @@ const Stressreduktion_EFT = () => {
     <>
       <section>
         <Container>
-          <Row
-            style={{ position: "absolute", zIndex: "2" }}
-            className={`d-flex align-items-center ${heading}`}
-          >
-            <h1>Stressreduktion mit EFT</h1>
+          <Row>
+            <Col className="d-flex align-items-center justify-content-center">
+              <h1 style={{ position: "absolute", zIndex: "2" }}
+                className={`d-flex align-items-center ${heading}`}>
+                  Stressreduktion mit EFT
+              </h1>
+            </Col>
           </Row>
         </Container>
         <Image
@@ -32,6 +34,7 @@ const Stressreduktion_EFT = () => {
           layout="fill"
           objectFit="cover"          
           quality="100"
+          style={imageDropShadow}          
         />
       </section>
       <section>
