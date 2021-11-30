@@ -149,8 +149,8 @@ const divStyle = {
                         </a>
                       </li>
                        <li className="nav-item">
-                        <a className="nav-link" href="#contact" style={divStyle}>
-                          Gästebuch
+                        <a className="nav-link" href="/Anfahrt" style={divStyle}>
+                          Anfahrt
                         </a>
                       </li>
                     </ul>
