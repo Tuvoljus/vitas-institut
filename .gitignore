@@ -6,3 +6,4 @@ node_modules
 components/bg.js
 out
 .vscode
+getServerSideProps.tsx

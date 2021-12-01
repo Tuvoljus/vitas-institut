@@ -33,8 +33,7 @@ const Stressreduktion_EFT = () => {
           src="/img/Header_Bild_Rot.jpg"
           layout="fill"
           objectFit="cover"          
-          quality="100"
-          style={imageDropShadow}          
+          quality="100"                   
         />
       </section>
       <section>
