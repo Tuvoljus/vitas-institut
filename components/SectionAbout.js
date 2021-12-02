@@ -13,7 +13,7 @@ const SectionAbout = () => {
         <div className={ColorFont}>          
           <div className="container" style={{ marginTop: "3rem" }}>
             <div className="row">
-              <div className="col-md-2" style={{width: '19.5%'}}>
+              <div className="col-md-2" style={{width: '19.4%'}}>
                 <h3>Stationen:</h3>
               </div>
               <div                
