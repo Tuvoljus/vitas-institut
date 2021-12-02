@@ -10,13 +10,10 @@ export const config = { amp: 'hybrid' }
 const SectionAbout = () => {    
     return (
       <>
-        <div className={ColorFont}>
-          <div className="container text-center">
-            <h1 className="small-heading">Über mich</h1>
-          </div>
+        <div className={ColorFont}>          
           <div className="container" style={{ marginTop: "3rem" }}>
             <div className="row">
-              <div className="col-md-2">
+              <div className="col-md-2" style={{width: '19.5%'}}>
                 <h3>Stationen:</h3>
               </div>
               <div                
@@ -24,7 +21,7 @@ const SectionAbout = () => {
               ></div>
               <div
                 className="col-md-8"
-                style={{ paddingLeft: "5rem", fontSize: "1.2em" }}
+                style={{ paddingLeft: "6rem", fontSize: "1.2em" }}
               >
                 <p>
                   Sport-Klinik Damp, <br />

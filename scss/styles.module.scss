@@ -32,6 +32,23 @@
   margin-left:    3rem;
 }
 
+.vlQualification {
+  border:         none;
+  border-left:    1px  solid rgba($color: #707070, $alpha: 1.0);
+  height:         40vh;
+  width:          1px;
+  margin-left:    3rem;
+}
+
+.ColorListStyle li {
+  
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
 @media only screen and  (orientation: landscape ) {
   .vl {
     margin-left:    1rem;
