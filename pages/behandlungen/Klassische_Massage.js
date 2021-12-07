@@ -27,7 +27,7 @@ const Klassische_Massage = () => {
                         </h1>
                     </Row>
                 </Container>
-                <Image src="/img/Header_Bild_Rot.jpg" layout='responsive'  objectFit="cover" width={1920} height={420} quality="10"/>
+               
             </div>
             <section className="d-none d-sm-block">
                 <Container>

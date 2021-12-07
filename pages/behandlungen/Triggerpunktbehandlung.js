@@ -12,31 +12,13 @@ import { vl, heading, inhaltBehandlung} from '../../scss/styles.module.scss'
 import SideMenue from '../../components/SideMenue';
 import MobileSideMenue from '../../components/MobileSideMenue';
 
-
-// export const config = { amp: 'hybrid' }
+import dynamic from 'next/dynamic'
+const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
 const Triggerpunktbehandlung = () => {
     return (
       <>
-        <section>
-          <Container>
-            <Row>
-              <Col className="d-flex align-items-center justify-content-center">
-                <h1 style={{ position: "absolute", zIndex: "2" }}
-                className={`d-flex align-items-center ${heading}`}
-                >
-                  Triggerpunktbehandlung
-                </h1>
-              </Col>
-            </Row>
-          </Container>
-          <Image
-            src="/img/Header_Bild_Rot.jpg"
-            layout="fill"
-            objectFit="cover"            
-            quality="100"
-          />
-        </section>
+        <HeaderPicture text="Triggerpunktbehandlung" />
         <section>
           <Container>
             <Row>

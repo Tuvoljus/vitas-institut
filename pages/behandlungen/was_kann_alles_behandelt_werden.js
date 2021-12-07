@@ -16,34 +16,15 @@ import { vl, heading, inhaltBehandlung } from '../../scss/styles.module.scss'
 import SideMenue from '../../components/SideMenue';
 import MobileSideMenue from '../../components/MobileSideMenue';
 
-
-// export const config = { amp: 'hybrid' }
+import dynamic from 'next/dynamic'
+const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
 const was_kann_behandelt_werden = () => {   
 
 
     return (
       <>
-        <section>
-          <Container>
-            <Row>
-              <Col className="d-flex align-items-center justify-content-center">
-                <h1
-                  style={{ position: "absolute", zIndex: "2", textShadow: '-.5px 1px 4px #9e9e9e'}}
-                  className={`d-flex align-items-center ${heading}`}
-                >
-                  Was kann behandelt werden?
-                </h1>
-              </Col>
-            </Row>
-          </Container>
-          <Image
-            src="/img/Header_Bild_Rot.jpg"
-            layout="fill"
-            objectFit="cover"            
-            quality="100"
-          />
-        </section>
+        <HeaderPicture text="Was kann behandelt werden?" />
         <section >
           <Container>
             <Row>

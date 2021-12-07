@@ -8,9 +8,16 @@ import Container  from 'react-bootstrap/Container';
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
 
+import dynamic from 'next/dynamic'
+const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
+
 import { vl, heading, inhaltBehandlung } from "../../scss/styles.module.scss";
 // import SideMenue from "../../components/SideMenue";
 import MobileSideMenue from "../../components/MobileSideMenue";
+
+
+
+
 
 // export const config = { amp: 'hybrid' }
 
@@ -18,25 +25,7 @@ const Atemtherapie_der_befreite_Atem = () => {
 
   return (
     <>
-      <section>
-        <Container>
-        <Col className="d-flex align-items-center justify-content-center">
-                <h1
-                  style={{ position: "absolute", zIndex: "2" }}
-                  className={`d-flex align-items-center ${heading}`}>                
-                    Atemtherapie 
-                </h1>
-              </Col>
-        </Container>
-        <Image
-          src="/img/Header_Bild_Rot.jpg"
-          layout="fill"
-          objectFit="cover"
-          // width={1920}
-          // height={420}
-          quality="100"
-        />
-      </section>
+      <HeaderPicture text="Atemtherapie"/>
       <section>
         <Container>
           <Row>

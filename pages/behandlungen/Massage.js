@@ -12,27 +12,17 @@ import { vl, heading, inhaltBehandlung } from '../../scss/styles.module.scss'
 import SideMenue from '../../components/SideMenue';
 import MobileSideMenue from '../../components/MobileSideMenue';
 
+import dynamic from 'next/dynamic'
+const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
-// export const config = { amp: 'hybrid' }
+
+
 
 const Massage = () => {   
 
     return (
-        <>
-            <section>
-                <Container>
-                    <Row>
-                        <Col className="d-flex align-items-center justify-content-center">
-                        <h1 style={{ position: "absolute", zIndex: "2" }}
-                            className={`d-flex align-items-center ${heading}`}>                                
-                            Massage  
-                        </h1>
-                    </Col> 
-                        
-                    </Row>
-                </Container>
-                <Image src="/img/Header_Bild_Rot.jpg" layout='fill' objectFit="cover" width={1920} height={420} quality="100"/>
-            </section>
+        <>           
+            <HeaderPicture text="Massage" />
             <section>
                 <Container >
                     <Row>

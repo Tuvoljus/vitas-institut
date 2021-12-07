@@ -12,29 +12,14 @@ import { vl, heading, inhaltBehandlung } from "../../scss/styles.module.scss";
 import SideMenue from "../../components/SideMenue";
 import MobileSideMenue from "../../components/MobileSideMenue";
 
-// export const config = { amp: 'hybrid' }
+import dynamic from 'next/dynamic'
+const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
 const Entspannungs_Methoden = () => {
 
   return (
     <>
-      <section>
-        <Container>
-          <Row
-            style={{ position: "absolute", zIndex: "2" }}
-            className={`d-flex align-items-center ${heading}`}> 
-            <h1>
-              Ruhe finden
-            </h1>
-          </Row>
-        </Container>
-        <Image
-          src="/img/Header_Bild_Rot.jpg"
-          layout="fill"
-          objectFit="cover"
-          quality="80"
-        />
-      </section>
+      <HeaderPicture text="Ruhe finden"/>
       <section>
         <Container>
           <Row>

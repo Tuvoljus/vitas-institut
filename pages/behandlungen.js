@@ -16,6 +16,7 @@ import dynamic from 'next/dynamic'
 import SideMenue from '../components/SideMenue'
 import MobileSideMenue from '../components/MobileSideMenue'
 import CustomAccordionToggle from '../context/CustomAccordionToggle'
+import HeaderPicture from '../components/HeaderPicture'
 
 
 // export const config = { amp: 'hybrid' }
@@ -26,26 +27,7 @@ const SectionBehandlungen = () => {
   
   return (
     <>
-      <section>
-        <Container>
-          <Row>
-            <Col className="d-flex align-items-center justify-content-center">
-              <h1
-                style={{ position: "absolute", zIndex: "2" }}
-                className={`d-flex align-items-center ${heading}`}
-              >
-                Einführung Behandlungen
-              </h1>
-            </Col>
-          </Row>
-        </Container>
-        <Image
-          src="/img/Header_Bild_Rot.jpg"
-          layout="fill"
-          objectFit="cover"
-          quality="100"
-        />
-      </section>
+      <HeaderPicture text="Einführung Behandlungen"/>      
       <section>
         <Container>
           <Row>
