@@ -209,8 +209,7 @@ const MainPage = () => {
           height={620}
           objectFit="cover"
           quality="100"
-          alt="HeaderImage Bernhard Käser"
-          className={image}
+          alt="HeaderImage Bernhard Käser"          
           priority
         />
       </div>
@@ -218,7 +217,7 @@ const MainPage = () => {
   </div>
         </div>
         <main>
-          <section style={{paddingBottom: '0px !important'}}>
+          <section>
             <SectionQualification />
           </section>
           <section style={{paddingTop: '0px !important'}}>
