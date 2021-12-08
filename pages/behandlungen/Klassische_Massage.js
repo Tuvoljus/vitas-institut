@@ -1,6 +1,6 @@
 import React from 'react'
-import Image from 'next/image'
-import Link from "next/link";
+import Head from 'next/head'
+import Script from "next/script";
 
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -16,7 +16,42 @@ import MobileSideMenue from '../../components/MobileSideMenue';
 // export const config = { amp: 'hybrid' }
 
 const Klassische_Massage = () => {   
-
+    <Head>
+        <title>Vitas Institut Bernhard Käser Physiotherapeut</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Bernhard Käser Physiotherapeut in München Altstadt Lehel nähe Sendlinger Tor" />
+        <meta name="keywords" content="Physiothereput Altstadt Lehel nähe Sendlinger Tor" />
+        <Script  strategy="afterInteractive" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify
+        (
+          {
+            "@context" : "http://schema.org",
+            "@type" : "LocalBusiness",
+            "name" : "Vitas-Institut Klassische Massage",
+            "description": "Klassische Massage",           
+            "image" : "https://www.vitas-institut.de/img/Bernhard.jpg",
+            "telephone" : "+49 89 23 23 06 70",
+            "email" : "bk@vitas-institut.de",
+            "address" : {
+                "@type" : "PostalAddress",
+                "streetAddress" : "Oberanger 42",
+                "addressLocality" : "München",
+                "addressRegion" : "Bayern",
+                "addressCountry" : "Deutschland",
+                "postalCode" : "80331"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 48.13413978555193, 
+                "longitude": 11.569055768148749
+              },
+            "priceRange": "€",
+            "openingHours":["Mo - Do 10:00-18:00"],
+            "url" : "https://www.vitas-institut.de"
+          }) 
+        }} 
+        />
+        
+      </Head>
     return (
         <>
             <div>

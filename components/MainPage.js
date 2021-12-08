@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image'
+import Script from 'next/script'
 import Container from 'react-bootstrap/Container'
 
 import Row from 'react-bootstrap/Row'
@@ -8,7 +10,7 @@ import { iconStyle } from '../scss/Icons.module.scss'
 import { ColorFont } from '../scss/styles.module.scss'
 import {image} from '../scss/ImageContainer.module.scss'
 
-import Image from 'next/image'
+
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import { useAmp } from 'next/amp'
@@ -35,7 +37,7 @@ const MainPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Bernhard Käser Physiotherapeut in München Altstadt Lehel nähe Sendlinger Tor" />
         <meta name="keywords" content="Physiothereput Altstadt Lehel nähe Sendlinger Tor" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify
+        <Script  strategy="afterInteractive" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify
         (
           {
             "@context" : "http://schema.org",
