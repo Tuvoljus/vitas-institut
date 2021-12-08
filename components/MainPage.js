@@ -9,6 +9,7 @@ import { ColorFont } from '../scss/styles.module.scss'
 import {image} from '../scss/ImageContainer.module.scss'
 
 import Image from 'next/image'
+import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import { useAmp } from 'next/amp'
 import { BsPlus } from "@react-icons/all-files/bs/BsPlus"
@@ -29,7 +30,40 @@ const MainPage = () => {
     // }
     return (
       <>
-      <div >      
+      <Head>
+        <title>Vitas Institut Bernhard Käser Physiotherapeut</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Bernhard Käser Physiotherapeut in München Altstadt Lehel nähe Sendlinger Tor">
+        <meta name="keywords" content="Physiothereput Altstadt Lehel nähe Sendlinger Tor">
+        <script type="application/ld+json">
+        {
+            "@context" : "http://schema.org",
+            "@type" : "LocalBusiness",
+            "name" : "Vitas-Institut Bernhard Käser",
+            "description": "Bernhard Käser - Physiotherapeut Altstadt / Lehel",           
+            "image" : "https://www.vitas-institut.de/img/Bernhard.jpg",
+            "telephone" : "+49 89 23 23 06 70",
+            "email" : "bk@vitas-institut.de",
+            "address" : {
+                "@type" : "PostalAddress",
+                "streetAddress" : "Oberanger 42",
+                "addressLocality" : "München",
+                "addressRegion" : "Bayern",
+                "addressCountry" : "Deutschland",
+                "postalCode" : "80331"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 48.13413978555193, 
+                "longitude": 11.569055768148749
+              },
+            "priceRange": "€",
+            "openingHours":["Mo - Do 10:00-18:00"],
+            "url" : "https://www.vitas-institut.de"
+        }
+        </script>
+      </Head>
+      <div>      
   {/*Mobile*/}
   <Container className="d-block d-sm-none">
     <Row

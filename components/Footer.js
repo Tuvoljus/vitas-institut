@@ -14,11 +14,11 @@ const Footer = () => {
         <footer id="contact" className={[styles.mainFooter]}>
             <div className="container">
                     <div className="row ">                        
-                        <div className="col-sm-2 col-md-2 col-xl-2 ">
+                        <div className="col-xs-1 col-sm-1 col-md-4 col-xl-2" style={{marginTop: '-2rem'}}>
                             <Image src="/img/Logo_Vitas_Institut_weiß.svg" layout='responsive' width={50} height={50} quality="10" />
                         </div>
                 
-                        <div className="col-sm-5 col-md-4 col-xl-5  align-self-center">
+                        <div className="col-sm-4 col-sm-4 col-md-4 col-xl-4 align-self-center">
                             <ul className={[styles.siteLinks]} style={{listStyle: 'none'}}>
                                 <h3 style={{color: '#f2f2f2'}}>Kontakt</h3>
                                 <p style={{color: '#969696'}}>Bernhard Käser</p>
@@ -30,7 +30,7 @@ const Footer = () => {
                             <li>
                                 <Link href="">
                                     <a>
-                                            
+                                          
                                     </a>
                                 </Link>
                             </li>
@@ -46,7 +46,7 @@ const Footer = () => {
                             </li>
                        </ul>     
                     </div>
-                    <div className="col-sm-5 col-md-5 col-xl-5">
+                    <div className="col-xs-5 col-sm-5 col-md-2 col-xl-2">
                         <ul className={[styles.siteLinks]} style={{listStyle: 'none'}}>
                             <li>
                                 <Link href="">
