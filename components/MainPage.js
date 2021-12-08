@@ -32,11 +32,12 @@ const MainPage = () => {
       <>
       <Head>
         <title>Vitas Institut Bernhard Käser Physiotherapeut</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Bernhard Käser Physiotherapeut in München Altstadt Lehel nähe Sendlinger Tor">
-        <meta name="keywords" content="Physiothereput Altstadt Lehel nähe Sendlinger Tor">
-        <script type="application/ld+json">
-        {
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Bernhard Käser Physiotherapeut in München Altstadt Lehel nähe Sendlinger Tor" />
+        <meta name="keywords" content="Physiothereput Altstadt Lehel nähe Sendlinger Tor" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify
+        (
+          {
             "@context" : "http://schema.org",
             "@type" : "LocalBusiness",
             "name" : "Vitas-Institut Bernhard Käser",
@@ -60,8 +61,10 @@ const MainPage = () => {
             "priceRange": "€",
             "openingHours":["Mo - Do 10:00-18:00"],
             "url" : "https://www.vitas-institut.de"
-        }
-        </script>
+          }) 
+        }} 
+        />
+        
       </Head>
       <div>      
   {/*Mobile*/}
