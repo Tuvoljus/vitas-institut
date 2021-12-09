@@ -17,6 +17,7 @@ import { useAmp } from 'next/amp'
 import { BsPlus } from "@react-icons/all-files/bs/BsPlus"
 
 const SectionAbout = dynamic(() => import('./SectionAbout'))
+const SectionWegpunkte = dynamic(() => import('./SectionWegpunkte'))
 const SectionQualification = dynamic(() => import('./SectionQualification'))
 
 export const config = { amp: 'hybrid' }
@@ -256,12 +257,16 @@ const MainPage = () => {
   </div>
         </div>
         <main>
-          <section>
+          <section style={{paddingTop: '0px !important', paddingBottom: '0px'}}>
             <SectionQualification />
+          </section>
+          <section style={{paddingTop: '0px !important', paddingBottom: '0px'}}>
+            <SectionWegpunkte />  
           </section>
           <section style={{paddingTop: '0px !important'}}>
             <SectionAbout />
-          </section>        
+          </section>
+                
         {/* <NextScript /> */}
         </main>
         
