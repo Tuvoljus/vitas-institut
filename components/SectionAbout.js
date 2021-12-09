@@ -16,7 +16,7 @@ const SectionAbout = () => {
           <div className="container" style={{ marginTop: "3rem" }}>
             <div className="row">
               <div className="col-md-2" style={{width: '19.4%'}}>
-                <h3>Stationen:</h3>
+                <h3>Stationen</h3>
               </div>
               <div                
                 className={`col-md-1 d-none d-sm-block ${vl}`}

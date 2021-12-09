@@ -19,7 +19,7 @@ const SectionQualification = () => {
           <div className="container" style={{ marginTop: "3rem" }}>
             <div className="row">
               <div className="col-md-2">
-                <h3>Qualifikation:</h3>
+                <h3>Qualifikation</h3>
               </div>
               <div                
                 className={`col-md-1 d-none d-sm-block ${vlQualification}`}
