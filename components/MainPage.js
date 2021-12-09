@@ -257,7 +257,7 @@ const MainPage = () => {
   </div>
         </div>
         <main>
-          <section style={{paddingTop: '0px !important', paddingBottom: '0px'}}>
+          <section style={{paddingBottom: '0px'}}>
             <SectionQualification />
           </section>
           <section style={{paddingTop: '0px !important', paddingBottom: '0px'}}>
