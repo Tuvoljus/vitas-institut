@@ -102,6 +102,7 @@ const divStyle = {
               <div className="row">
                 <div className="col-2 col-md-2 col-xl-2">
               <Logo />
+                
                 </div>
                 <div className="col-md-2 col-xl-2 align-self-center">
                   <GiSmartphone /> 089 - 23 23 06 70
@@ -118,6 +119,7 @@ const divStyle = {
           <nav className={`navbar navbar-expand-lg navbar-light ${fixedTop} c-bg`}>
             <div className="container">              
               <a className="navbar-brand" href="#page-top" style={divStyle}>
+            <p>Privatpraxis für Physiotherapie</p>
                 Vitas Institut
               </a>
               <button className={`navbar-toggler navbar-toggler-right ${customToggler}`} style={divStyleBorderColor} type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
