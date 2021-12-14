@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import { useAmp } from 'next/amp'
 
-import { ColorFont, vlQualification, ColorListStyle } from '../scss/styles.module.scss'
+import { ColorFont, vlQualification } from '../scss/styles.module.scss'
 
 
 export const config = { amp: 'hybrid' }

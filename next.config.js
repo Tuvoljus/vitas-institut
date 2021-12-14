@@ -9,7 +9,7 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "plugin:@next/next/recommended",    
   ],
-  webpack(config, {isServer}) {
+  webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
       use: ["@svgr/webpack"],

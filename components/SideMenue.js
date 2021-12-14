@@ -8,7 +8,7 @@ import Card from 'react-bootstrap/Card'
 
 
 
-const SideMenue = ({children, eventKey, onClick, activeClass}) => {
+const SideMenue = ({children, eventKey, onClick}) => {
   const activeEventKey = useContext(AccordionContext);
 
 //  const decoratedOnClick = useAccordionButton(

@@ -1,18 +1,13 @@
 import React from 'react'
-import Image from 'next/image'
-import Link from "next/link"
 
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container  from 'react-bootstrap/Container'
-import Accordion from 'react-bootstrap/Accordion'
-import Card from 'react-bootstrap/Card'
-
 
 import { BsPlus } from "@react-icons/all-files/bs/BsPlus"
 import { iconStyle } from '../../scss/Icons.module.scss'
 
-import { vl, heading, inhaltBehandlung } from '../../scss/styles.module.scss'
+import { vl, inhaltBehandlung } from '../../scss/styles.module.scss'
 import SideMenue from '../../components/SideMenue';
 import MobileSideMenue from '../../components/MobileSideMenue';
 

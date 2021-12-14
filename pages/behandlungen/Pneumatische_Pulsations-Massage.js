@@ -1,12 +1,9 @@
 import React, { useState } from 'react'
-import Image from 'next/image'
-import Link from "next/link"
+
 
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container  from 'react-bootstrap/Container'
-import Accordion from 'react-bootstrap/Accordion'
-import Card from 'react-bootstrap/Card'
 
 import { vl, heading, inhaltBehandlung } from '../../scss/styles.module.scss'
 import SideMenue from '../../components/SideMenue';
@@ -18,11 +15,6 @@ const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
 
 const Pneumatische_Pulsations_Massage = () => {   
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
     return (
       <>        
         <HeaderPicture text="Pneumatische Pulsations-Massage" />

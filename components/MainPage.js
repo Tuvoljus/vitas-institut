@@ -8,7 +8,6 @@ import Col from 'react-bootstrap/Col'
 
 import { iconStyle } from '../scss/Icons.module.scss'
 import { ColorFont } from '../scss/styles.module.scss'
-import {image} from '../scss/ImageContainer.module.scss'
 
 
 import Head from 'next/head'

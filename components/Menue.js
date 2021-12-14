@@ -3,7 +3,6 @@ import Logo from "../public/img/Logo_Vitas_Institut.svg"
 import { GiSmartphone } from "@react-icons/all-files/gi/GiSmartphone"
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail"
 // import { GiSmartphone } from 'react-icons/gi'
-import Image from 'next/image'
 import Link from 'next/link'
 
 

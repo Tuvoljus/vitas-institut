@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/dist/client/link";
 
 import Row from "react-bootstrap/Row";
@@ -11,7 +10,7 @@ import Card from 'react-bootstrap/Card'
 import dynamic from 'next/dynamic'
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
-import { vl, heading, inhaltBehandlung } from "../../scss/styles.module.scss";
+import { vl, inhaltBehandlung } from "../../scss/styles.module.scss";
 // import SideMenue from "../../components/SideMenue";
 import MobileSideMenue from "../../components/MobileSideMenue";
 

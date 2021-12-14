@@ -1,21 +1,19 @@
 import React from 'react'
-import Image from 'next/image'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import { vl, heading, ColorFont } from "../scss/styles.module.scss";
+import { vl, ColorFont } from "../scss/styles.module.scss";
 
 // import AccordionItem from 'react-bootstrap/esm/AccordionItem'
 // import AccordionBody from 'react-bootstrap/esm/AccordionBody'
 
 // import MainBehandlung from '../components/MainBehandlung'
 
-import dynamic from 'next/dynamic'
+
 // import { useAmp } from 'next/amp'
 // const MobileSideMenue = dynamic(() => import('../components/MobileSideMenue'))
 import SideMenue from '../components/SideMenue'
 import MobileSideMenue from '../components/MobileSideMenue'
-import CustomAccordionToggle from '../context/CustomAccordionToggle'
 import HeaderPicture from '../components/HeaderPicture'
 
 
