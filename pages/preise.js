@@ -35,10 +35,8 @@ const Preise = () => {
       <section>
       <Container>
         <Row>
-        <Col md={4} className="d-none d-sm-block">
-           
-           
-         
+        <Col md={4} className={ColorFont}>
+        <h3>Preise</h3>
        </Col>
        <Col
          md={1}
@@ -47,7 +45,7 @@ const Preise = () => {
        >
        </Col>
        <Col md={7} className={ColorFont}>
-       <h2>Preise</h2>
+       
        <p>
                 REZEPTE von PRIVAT-VERSICHERTEN  mit z.B.<br />
                 Massage,<br />
