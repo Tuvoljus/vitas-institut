@@ -22,8 +22,8 @@ const Footer = () => {
                             <ul className={[styles.siteLinks]} style={{listStyle: 'none'}}>
                                 <h3 style={{color: '#f2f2f2'}}>Kontakt</h3>
                                 <p style={{color: '#969696'}}>Bernhard Käser</p>
-                                <li><GiSmartphone color="#969696" size="1.3rem"/> 089 - 23 23 06 70</li>
-                                <li><AiOutlineMail color="#969696" size="1.3rem"/>   bk@vitas-institut.de</li>
+                                <li ><GiSmartphone color="#969696" size="1.3rem"/> <a href="tel:089 - 23 23 06 70">089 - 23 23 06 70</a></li>
+                                <li><AiOutlineMail color="#969696" size="1.3rem"/> <a href="mailTo:bk@vitas-institut.de"> bk@vitas-institut.de</a></li>
                             </ul>
                             
                         <ul className={[styles.siteLinks]} style={{listStyle: 'none'}}>
