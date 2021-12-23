@@ -96,15 +96,17 @@ const Menue = () => {
             <Logo />
           </div>
           <div className="col-md-2 col-xl-2 align-self-center">
-            <GiSmartphone /> 089 - 23 23 06 70 <br />
+            <GiSmartphone /> <a itemProp="telephone" href="089 - 23 23 06 70" style={{textDecoration: 'none'}}>089 - 23 23 06 70</a> <br />
             <AiOutlineMail /> bk@vitas-institut.de
           </div>
-          <div className="col-md-2 col-xl-2 align-self-center">
-            Oberanger 42 <br />
+          <div className="col-md-1 col-xl-1 align-self-center">
+           
+          </div>
+          <div className="col-md-3 col-xl-3 align-self-center">
+          Oberanger 42 <br />
             80331 München <br />
             Nähe Sendlinger Tor
           </div>
-          <div className="col-md-2 col-xl-2 align-self-center"></div>
         </div>
       </div>
 
@@ -133,36 +135,41 @@ const Menue = () => {
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link href="/">
-                  <a className="nav-link " href="#about" style={divStyle}>
+                   {/*add for Menue Color style={divStyle} */}
+                  <a className="nav-link " href="#about" >
                     Bernhard Käser
                   </a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/behandlungen">
-                  <a className="nav-link " style={divStyle}>
+                  {/*add for Menue Color style={divStyle} */}
+                  <a className="nav-link " >
                     Behandlungen
                   </a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/preise">
-                  <a className="nav-link" style={divStyle}>
+                   {/*add for Menue Color style={divStyle} */}
+                  <a className="nav-link" >
                     Preise
                   </a>
                 </Link>
               </li>
               <li className="nav-item">
+                 {/*add for Menue Color style={divStyle} */}
                 <a
                   className="nav-link"
                   href="/aktuelles_und_links"
-                  style={divStyle}
+                  
                 >
                   Aktuelles / Links
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/Anfahrt" style={divStyle}>
+                 {/*add for Menue Color style={divStyle} */}
+                <a className="nav-link" href="/Anfahrt">
                   Anfahrt
                 </a>
               </li>
