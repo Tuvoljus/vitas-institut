@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Logo from "../public/img/Logo_Vitas_Institut.svg";
+import CopyMailTo from "react-copy-mailto";
 import { GiSmartphone } from "@react-icons/all-files/gi/GiSmartphone";
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
 // import { GiSmartphone } from 'react-icons/gi'
@@ -96,14 +97,29 @@ const Menue = () => {
             <Logo />
           </div>
           <div className="col-md-2 col-xl-2 align-self-center">
-            <GiSmartphone /> <a itemProp="telephone" href="089 - 23 23 06 70" style={{textDecoration: 'none'}}>089 - 23 23 06 70</a> <br />
-            <AiOutlineMail /> bk@vitas-institut.de
+            <GiSmartphone />{" "}
+            <a
+              rel={"nofollow"}
+              itemProp={"telephone"}
+              href="tel:089 - 23 23 06 70"
+              style={{ textDecoration: "none" }}
+            >
+              089 - 23 23 06 70
+            </a>{" "}
+            <br />
+            <AiOutlineMail />{" "}
+            <CopyMailTo
+              email="bk@vitas-institut.de"
+              defaultTooltip="klicken zum Kopieren der Email"
+              copiedTooltip="Email ist kopiert in den Zwischenspeicher!"
+              style={{ textDecoration: "none" }}
+            >
+              bk@vitas-institut.de
+            </CopyMailTo>
           </div>
-          <div className="col-md-1 col-xl-1 align-self-center">
-           
-          </div>
+          <div className="col-md-1 col-xl-1 align-self-center"></div>
           <div className="col-md-3 col-xl-3 align-self-center">
-          Oberanger 42 <br />
+            Oberanger 42 <br />
             80331 München <br />
             Nähe Sendlinger Tor
           </div>
@@ -135,8 +151,8 @@ const Menue = () => {
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link href="/">
-                   {/*add for Menue Color style={divStyle} */}
-                  <a className="nav-link " href="#about" >
+                  {/*add for Menue Color style={divStyle} */}
+                  <a className="nav-link " href="#about">
                     Bernhard Käser
                   </a>
                 </Link>
@@ -144,31 +160,23 @@ const Menue = () => {
               <li className="nav-item">
                 <Link href="/behandlungen">
                   {/*add for Menue Color style={divStyle} */}
-                  <a className="nav-link " >
-                    Behandlungen
-                  </a>
+                  <a className="nav-link ">Behandlungen</a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/preise">
-                   {/*add for Menue Color style={divStyle} */}
-                  <a className="nav-link" >
-                    Preise
-                  </a>
+                  {/*add for Menue Color style={divStyle} */}
+                  <a className="nav-link">Preise</a>
                 </Link>
               </li>
               <li className="nav-item">
-                 {/*add for Menue Color style={divStyle} */}
-                <a
-                  className="nav-link"
-                  href="/aktuelles_und_links"
-                  
-                >
+                {/*add for Menue Color style={divStyle} */}
+                <a className="nav-link" href="/aktuelles_und_links">
                   Aktuelles / Links
                 </a>
               </li>
               <li className="nav-item">
-                 {/*add for Menue Color style={divStyle} */}
+                {/*add for Menue Color style={divStyle} */}
                 <a className="nav-link" href="/Anfahrt">
                   Anfahrt
                 </a>
