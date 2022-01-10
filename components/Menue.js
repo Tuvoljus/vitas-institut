@@ -102,7 +102,7 @@ const Menue = () => {
               rel={"nofollow"}
               itemProp={"telephone"}
               href="tel:089 - 23 23 06 70"
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: 'none' }}
             >
               089 - 23 23 06 70
             </a>{" "}
@@ -112,7 +112,7 @@ const Menue = () => {
               email="bk@vitas-institut.de"
               defaultTooltip="klicken zum Kopieren der Email"
               copiedTooltip="Email ist kopiert in den Zwischenspeicher!"
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: 'none !important' }}
             >
               bk@vitas-institut.de
             </CopyMailTo>
