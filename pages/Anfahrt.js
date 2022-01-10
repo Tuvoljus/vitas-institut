@@ -17,43 +17,53 @@ const Anfahrt = () => {
     <>
       <HeaderPicture text="Meine Praxis in München" />
       <Container className={ColorFont}>
-        <Row>
-          <Col md={2}>
-            <section style={{ paddingBottom: "1rem" }}>
-              <h4>Praxis</h4>
-            </section>
-            <section>
-              <h4>Anreise</h4>
-            </section>
-          </Col>
-          <Col md={1}>
-            <section>
-              <div className={`col-md-1 d-none d-sm-block ${vlAnfahrt}`}></div>
-            </section>
-          </Col>
-          <Col md={4}>
-            <section style={{ paddingBottom: "0px" }}>
-              <div className="text-center" style={{ fontSize: "1.2em" }}>
-                <p>
-                  VITAS - Institut für Entspannungstechniken <br />
-                  Oberanger 42 | Nähe Sendlinger Tor <br />
-                  80331 München
-                </p>
-              </div>
-            </section>
-            <section style={{ paddingTop: "3rem" }}>
-              <div
-                className="text-center"
-                style={{ fontSize: "1.2em" }}
-              >
-                <p>Haltestelle Sendlinger<br/> Tor U1 / U2 / U3 / U6 / U7 / U8</p>
-                <p>Straßenbahn <br/>16 / 17 / 18 / 27 / 28</p>
-                <p>Bus 52 / 62</p>
-              </div>
-            </section>
-          </Col>
-          <Col md={5}>
-            <section>
+        <section>
+          <Row>
+            <Col md={6}>
+              <Row>
+                <Col md={2}>
+                  <h4>Praxis</h4>
+                </Col>
+                <Col md={1}>
+                  <div
+                    className={`col-md-1 d-none d-sm-block ${vlAnfahrt}`}
+                  ></div>
+                </Col>
+                <Col>
+                  <div className="text-center" style={{ fontSize: "1.2em" }}>
+                    <p>
+                      VITAS - Institut für Entspannungstechniken <br />
+                      Oberanger 42 | Nähe Sendlinger Tor <br />
+                      80331 München
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+              <Row>
+                <Col md={2}>
+                  <h4>Anreise</h4>
+                </Col>
+                <Col md={1}>
+                  <div
+                    className={`col-md-1 d-none d-sm-block ${vlAnfahrt}`}
+                  ></div>
+                </Col>
+                <Col>
+                  <div className="text-center" style={{ fontSize: "1.2em" }}>
+                    <p>
+                      Haltestelle Sendlinger
+                      <br /> Tor U1 / U2 / U3 / U6 / U7 / U8
+                    </p>
+                    <p>
+                      Straßenbahn <br />
+                      16 / 17 / 18 / 27 / 28
+                    </p>
+                    <p>Bus 52 / 62</p>
+                  </div>
+                </Col>
+              </Row>
+            </Col>
+            <Col md={6}>
               {isAmp ? (
                 <amp-img
                   layout="responsive"
@@ -65,16 +75,16 @@ const Anfahrt = () => {
               ) : (
                 <Image
                   src="/img_avif/Anfahrt_Bernhard_Käser.avif"
-                  layout="responsive"                  
+                  layout="responsive"
                   quality="100"
                   alt="Anfahrt Bernhard Käser Physiopraxis"
                   width={1129}
                   height={768}
                 />
               )}
-            </section>
-          </Col>
-        </Row>
+            </Col>
+          </Row>
+        </section>
       </Container>
       {/* <section style={{ paddingBottom: "0px" }}>
         <div className={ColorFont}>
