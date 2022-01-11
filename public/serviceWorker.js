@@ -1,7 +1,6 @@
 const CACHE_NAME = 'vitas_institut';
 const urlsToCache = [
-    '/',
-    '/comleted'
+    '/'
 ];
 
 // Install a service worker
