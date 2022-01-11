@@ -88,7 +88,7 @@ const MainPage = () => {
               width="1936"
               height="2335"
               src="/img_webp/Bernhard.webp"
-              alt="Bernhard Käser"
+              alt="Bernhard Käser Physiotherapeut - Physiopraxis"
             />
           ) : (
             <Image
@@ -98,6 +98,7 @@ const MainPage = () => {
               width={1936}
               height={2335}
               quality="10"
+              alt="Bernhard Käser Physiotherapeut - Physiopraxis"
             />
           )}
         </div>
@@ -172,7 +173,7 @@ const MainPage = () => {
               width="1936"
               height="2335"
               src="/img_webp/Bernhard.webp"
-              alt="Bernhard Käser"
+              alt="Bernhard Käser Physiotherapeut - Physiopraxis"
             />
           ) : (
             <Image
@@ -182,6 +183,7 @@ const MainPage = () => {
               width={1936}
               height={2335}
               quality="10"
+              alt="Bernhard Käser Physiotherapeut - Physiopraxis"
             />
           )}
         </div>
@@ -237,7 +239,7 @@ const MainPage = () => {
         width="1920"
         height="720"
         src={ImagePathWebP}
-        alt="HeaderImage Bernhard Käser"
+        alt="Bernhard Käser Physiotherapeut - Physiopraxis"
       />
     ) : (
       <div>
@@ -248,7 +250,7 @@ const MainPage = () => {
           height={620}
           objectFit="cover"
           quality="100"
-          alt="HeaderImage Bernhard Käser"          
+          alt="Bernhard Käser Physiotherapeut - Physiopraxis"          
           priority
         />
       </div>
