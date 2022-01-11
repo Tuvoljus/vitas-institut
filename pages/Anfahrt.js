@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Head from 'next/head'
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
