@@ -5,6 +5,10 @@ module.exports = {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
   },
+  i18n: {
+    locales: ["de"],
+    defaultLocale: "de",
+  },
   extends: [
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",

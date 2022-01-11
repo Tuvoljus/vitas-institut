@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="container">
                     <div className="row ">                        
                         <div className="col-xs-1 col-sm-1 col-md-4 col-xl-2" style={{marginTop: '-2rem'}}>
-                            <Image src="/img/Logo_Vitas_Institut_weiß.svg" layout='responsive' width={50} height={50} quality="10" />
+                            <Image src="/img/Logo_Vitas_Institut_weiß.svg" layout='responsive' width={50} height={50} quality="10" alt="Logo Vitas Institut"/>
                         </div>
                 
                         <div className="col-sm-4 col-sm-4 col-md-4 col-xl-4 align-self-center">

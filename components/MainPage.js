@@ -36,7 +36,7 @@ const MainPage = () => {
         <title>Vitas Institut Bernhard Käser Physiotherapeut</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Bernhard Käser Physiotherapeut in München Altstadt Lehel nähe Sendlinger Tor" />
-        <meta name="keywords" content="Physiothereput Altstadt Lehel nähe Sendlinger Tor" />
+        <meta name="keywords" content="Physiotherapeut Altstadt Lehel Sendlinger Tor" />
         <Script  strategy="afterInteractive" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify
         (
           {
