@@ -1,4 +1,4 @@
-const CACHE_NAME = 'q-solutions';
+const CACHE_NAME = 'vitas_institut';
 const urlsToCache = [
     '/',
     '/comleted'
@@ -33,7 +33,7 @@ self.addEventListener('fetch', event => {
 
 //Update a service worker
 self.addEventListener('activate', event => {
-    const cacheWhiteList = ['q-solutions'];
+    const cacheWhiteList = ['vitas_institut'];
     event.waitUntil(
         caches.keys().then(cacheNames => {
             return Promise.all(
