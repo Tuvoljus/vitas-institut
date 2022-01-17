@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import Script from 'next/script'
 import Container from 'react-bootstrap/Container'
 
@@ -227,6 +228,11 @@ const MainPage = () => {
         </span>
         <span style={{ fontWeight: "600" }}>
           Seit 35 Jahren ist Ihre neue Lebensqualität mein Ansporn.
+        </span>
+        <br/>
+        <br/>
+        <span style={{ fontWeight: "600" }}>
+            Mehr zum <b>Stressmanagment</b> unter <Link href="https://www.vitas-stressmanagement.de/" passHref={true}><a style={{textDecoration: 'none'}} target="_blank">www.vitas-stressmanagement.de</a></Link>
         </span>
       </Col>
     </Row>
