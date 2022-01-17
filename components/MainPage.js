@@ -150,6 +150,11 @@ const MainPage = () => {
         <span style={{ fontWeight: "600" }}>
           Seit 35 Jahren ist Ihre neue Lebensqualität mein Ansporn.
         </span>
+        <br/>
+        <br/>
+        <span style={{ fontWeight: "600" }}>
+            Mehr zum <b>Stressmanagment</b> unter <Link href="https://www.vitas-stressmanagement.de/" passHref={true}><a style={{textDecoration: 'none'}} target="_blank">www.vitas-stressmanagement.de</a></Link>
+        </span>
       </Col>
     </Row>
   </Container>
