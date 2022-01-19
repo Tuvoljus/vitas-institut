@@ -39,7 +39,7 @@ Oberanger 42<br/>
               </h5>
               <p>
               Webdesign: Alexander Keil<br />
-              Webentwicklung &amp; Hosting: Web-Metroplis | Alexander Keil
+              Webentwicklung &amp; Hosting: Web-Metropolis | Alexander Keil
               </p>
               <h5>
               Haftung für Inhalte
