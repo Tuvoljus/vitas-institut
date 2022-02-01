@@ -23,8 +23,8 @@ const Impressum = () => {
                 </h5>
               <p>
               Bernhard Käser<br/>
-Oberanger 42<br/>
-80331 München
+              Oberanger 42<br/>
+              80331 München
               </p>
               <h5>
                 Kontakt
