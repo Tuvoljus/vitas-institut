@@ -11,6 +11,13 @@ import { ColorFont, vlQualification } from '../scss/styles.module.scss'
 export const config = { amp: 'hybrid' }
 
 const SectionWegpunkte = () => {
+  function MouseOver(event) {
+    event.target.style.background = 'rgba(160,213,225,.3)';
+  }
+  function MouseOut(event){
+    event.target.style.background="";
+  }
+
     return (
       <>
         <div className={ColorFont}>
@@ -39,10 +46,10 @@ const SectionWegpunkte = () => {
                   <Col>
                   </Col>
                 </Row>
-                <Accordion defaultActiveKey="0" flush>
-                  <Accordion.Item style={{marginLeft:'-18px'}}>
+                <Accordion defaultActiveKey="0" flush onMouseOver={MouseOver} onMouseOut={MouseOut}>
+                  <Accordion.Item style={{marginLeft:'-18px'}} >
                     <Accordion.Header>
-                      <h4 >
+                      <h4 style={{pointerEvents: 'none'}}>
                         Seminare
                       </h4>
                     </Accordion.Header>

@@ -86,18 +86,18 @@ const MainPage = () => {
           {isAmp ? (
             <amp-img
               layout="responsive"
-              width="1936"
-              height="2335"
-              src="/img_webp/Bernhard.webp"
+              width="800"
+              height="1067"
+              src="/img_webp/Bernhard_Käser_800x1067.webp"
               alt="Bernhard Käser Physiotherapeut - Physiopraxis"
             />
           ) : (
             <Image
               className="rounded-3"
-              src="/img/Bernhard_Kaeser.JPG"
+              src="/img_avif/Bernhard_Käser_800x1067.avif"
               layout="responsive"
-              width={1936}
-              height={2335}
+              width={800}
+              height={1067}
               quality="10"
               alt="Bernhard Käser Physiotherapeut - Physiopraxis"
             />
