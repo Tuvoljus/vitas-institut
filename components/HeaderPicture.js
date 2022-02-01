@@ -34,7 +34,7 @@ const HeaderPicture = (props) => {
             alt="Background Image"/>
         ) : (
             <Image
-          src="/img/Hintergrund_Header_roetlich_1920.jpg"
+          src="/img_avif/Hintergrund_Header_roetlich_1920.avif"
           layout="fill"
           objectFit="cover"
           quality="100"
