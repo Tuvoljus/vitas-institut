@@ -46,14 +46,14 @@ const SectionWegpunkte = () => {
                   <Col>
                   </Col>
                 </Row>
-                <Accordion defaultActiveKey="0" flush onMouseOver={MouseOver} onMouseOut={MouseOut}>
+                <Accordion defaultActiveKey="0" flush>
                   <Accordion.Item style={{marginLeft:'-18px'}} >
-                    <Accordion.Header>
+                    <Accordion.Header onMouseOver={MouseOver} onMouseOut={MouseOut}>
                       <h4 style={{pointerEvents: 'none'}}>
                         Seminare
                       </h4>
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body style={{pointerEvents: 'none'}}>
                     <ul className={`list-group list-group-flush ${ColorFont}`}>                    
                     <li className="list-group-item">Bayerische Landesanstalt für Aufbaufinanzierung</li>
                     <li className="list-group-item">Bertiebskrankenkassen-Gesundheitsforum</li>
