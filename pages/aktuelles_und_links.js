@@ -45,7 +45,7 @@ const AktuellesUndLinks = () => {
                         {/* <Aktuelles /> */}
                         <span style={{fontWeight: '700'}}>Liebe Seitenbesucher,</span>
                         <br /><br />
-                        seit Januar 2022 freue mich auf nach einem Re-Design meiner 10 Jahre alten Internetseite auf meine neue Interneseite Vitas Institut.
+                        seit Januar 2022 freue ich mich, nach einem Re-Design meiner 10 Jahre alten Internetseite, auf meine neue Interneseite Vitas Institut.
                         <br />
                         <br />
                         Herzlichst,<br />
