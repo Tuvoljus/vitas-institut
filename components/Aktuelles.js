@@ -1,4 +1,4 @@
-import SbEditable from 'storyblok-react'
+import SbEditable from 'storyblok-react';
 
 const Aktuelles = ({blok}) => {
     return (

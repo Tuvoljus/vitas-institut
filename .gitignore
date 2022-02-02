@@ -4,6 +4,8 @@ node-modules
 node_modules
 node_modules
 components/bg.js
+components/Aktuelles.js
+lib
 out
 .vscode
 getServerSideProps.tsx
