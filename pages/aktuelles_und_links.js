@@ -5,8 +5,8 @@ import Row  from "react-bootstrap/Row"
 import Col  from "react-bootstrap/Col"
 
 import { vl, heading, ColorFont, inhaltBehandlung} from '../scss/styles.module.scss'
-import { Accordion } from 'react-bootstrap'
-import Aktuelles from '../components/Aktuelles'
+//import { Accordion } from 'react-bootstrap'
+//import Aktuelles from '../components/Aktuelles'
 
 
 const AktuellesUndLinks = () => {
