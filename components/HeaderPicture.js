@@ -12,6 +12,10 @@ export const config = { amp: 'hybrid' }
 const HeaderPicture = (props) => {
     const isAmp = useAmp();
 
+    const hue = {
+      backgroundColor: 'hsl(0,100%,50%)',
+      filter: 'saturate(0)'       
+    }
     return(
         <section>
         <Container>
@@ -31,8 +35,10 @@ const HeaderPicture = (props) => {
             width="5245"
             height="2866"
             src="/img_webp/Hintergrund_Header_roetlich_1920.webp"
-            alt="Background Image"/>
+            alt="Background Image"
+            />
         ) : (
+          <div className={hue}>
             <Image
           src="/img_avif/Hintergrund_Header_roetlich_1920.avif"
           layout="fill"
@@ -40,6 +46,8 @@ const HeaderPicture = (props) => {
           quality="100"
           alt="Background Image"
         />
+          </div>
+            
         )}
         
       </section>

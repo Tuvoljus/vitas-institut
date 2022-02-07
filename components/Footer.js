@@ -48,7 +48,7 @@ const Footer = () => {
                     </div>
                     <div className="col-xs-5 col-sm-5 col-md-2 col-xl-2">
                         <ul className={[styles.siteLinks]} style={{listStyle: 'none'}}>
-                            <li>
+                            {/* <li>
                                 <Link href="">
                                     <a>
                                         Glossar                                             
@@ -59,7 +59,7 @@ const Footer = () => {
                                 <Link href="/">
                                     <a>Buchempfehlungen</a>
                                 </Link>
-                            </li>
+                            </li> */}
                             <li>
                                 <Link href="/datenschutz">
                                     <a>Datenschutz</a>

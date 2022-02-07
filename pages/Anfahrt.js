@@ -13,6 +13,10 @@ import { useAmp } from "next/amp";
 export const config = { amp: "hybrid" };
 
 const Anfahrt = () => {
+  const headlines = {
+    fontWeight: "600",
+  }
+
   const isAmp = useAmp();
   return (
     <>
@@ -38,7 +42,7 @@ const Anfahrt = () => {
                 <Col>
                   <div className="text-center" style={{ fontSize: "1.2em" }}>
                     <p>
-                      VITAS - Institut für Entspannungstechniken <br />
+                      <span style={headlines}>VITAS - Institut für Entspannungstechniken</span> <br />
                       Oberanger 42 | Nähe Sendlinger Tor <br />
                       80331 München
                     </p>
@@ -57,14 +61,14 @@ const Anfahrt = () => {
                 <Col>
                   <div className="text-center" style={{ fontSize: "1.2em" }}>
                     <p>
-                      Haltestelle Sendlinger
-                      <br /> Tor U1 / U2 / U3 / U6 / U7 / U8
+                    <span style={headlines}>Haltestelle Sendlinger Tor </span>
+                      <br /> U1 / U2 / U3 / U6 / U7 / U8
                     </p>
                     <p>
-                      Straßenbahn <br />
+                    <span style={headlines}>Straßenbahn</span> <br />
                       16 / 17 / 18 / 27 / 28
                     </p>
-                    <p>Bus 52 / 62</p>
+                    <p><span style={headlines}>Bus</span> <br /> 52 / 62</p>
                   </div>
                 </Col>
               </Row>

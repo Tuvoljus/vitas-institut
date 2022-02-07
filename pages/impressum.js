@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import HeaderPicture from "../components/HeaderPicture";
+//import HeaderPicture from "../components/HeaderPicture";
 
 const Impressum = () => {
   return (
@@ -34,6 +34,8 @@ const Impressum = () => {
                   Telefon: 089 - 23 23 06 70<br />
                   Internet: http://www.vitas-institut.de
               </p>
+              <h5>Steuernummer</h5>
+              <p>StNr 145/108/70566</p>
               <h5>
               Webdesign/Konzeption/Umsetzung:
               </h5>

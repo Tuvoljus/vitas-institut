@@ -5,6 +5,11 @@ node_modules
 node_modules
 components/bg.js
 components/Aktuelles.js
+components/Feature.js
+components/Grid.js
+components/Page.js
+components/Teaser.js
+context
 lib
 out
 .vscode
