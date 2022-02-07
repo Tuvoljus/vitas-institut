@@ -9,6 +9,7 @@ components/Feature.js
 components/Grid.js
 components/Page.js
 components/Teaser.js
+components/DynamicComponent.j
 context
 lib
 out
