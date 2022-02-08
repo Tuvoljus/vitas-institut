@@ -16,14 +16,16 @@ import HeaderPicture from '../components/HeaderPicture';
 //import Aktuelles from '../components/Aktuelles'
 
 // The Storyblok Client
-// import Storyblok, { useStoryblok } from '../lib/storyblok';
-// import DynamicComponent from '../components/DynamicComponent';
+import Storyblok, { useStoryblok } from '../lib/storyblok';
+import DynamicComponent from '../components/DynamicComponent';
 
-export default function AktuellesUndLinks({ story, preview }) {
+export default function AktuellesUndLinks({story, preview}) {
     //   const enableBridge = true; // load the storyblok bridge everywhere
     //  //const enableBridge = preview; // enable bridge only in prevew mode
+    // const enableBridge = true;
 
-    // story = useStoryblok(story, enableBridge);
+    //const story = props.story
+    story = useStoryblok(story, preview);
   return (
     <>
       <HeaderPicture text="Aktuelles und Links" />
@@ -60,13 +62,13 @@ export default function AktuellesUndLinks({ story, preview }) {
           <Row>
             <Col></Col>
             <Col>
-              {/* <h1>{story ? story.name : 'My Site'}</h1> */}
+              <h1>{story ? story.name : 'My Site'}</h1>
             </Col>
-            {/* <DynamicComponent blok={story.content} /> */}
+            <DynamicComponent blok={story.content} />
           </Row>
         </Container>
       </section>
-      {/* <Script src="//app.storyblok.com/f/storyblok-v2-latest.js" type="text/javascript" id="storyblokBridge"/> */}
+      <Script src="//app.storyblok.com/f/storyblok-v2-latest.js" type="text/javascript" id="storyblokBridge"/>
     </>
   );
 }
@@ -97,3 +99,30 @@ export default function AktuellesUndLinks({ story, preview }) {
 //   }
 
 // export default AktuellesUndLinks
+
+
+//NEW
+export async function getStaticProps(context) {
+  // home is the default slug for the homepage in Storyblok
+  let slug = "home";
+  // load the published content outside of the preview mode
+  let params = {
+    version: "published", // or 'draft'
+  };
+ 
+  if (context.preview) {
+    // load the draft version inside of the preview mode
+    params.version = "draft";
+    params.cv = Date.now();
+  }
+ 
+  let { data } = await Storyblok.get(`cdn/stories/${slug}`, params);
+ 
+  return {
+    props: {
+      story: data ? data.story : false,
+      preview: context.preview || false
+    },
+    revalidate: 3600, // revalidate every hour
+  };
+}
