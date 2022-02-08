@@ -3,7 +3,7 @@ import Teaser from "./Teaser";
 import Grid from "./Grid";
 import Feature from "./Feature";
 import Page from "./Page";
-import Aktuelles from './Aktuelles';
+//import Aktuelles from './Aktuelles';
  
 // resolve Storyblok components to Next.js components
 const Components = {
