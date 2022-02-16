@@ -102,27 +102,28 @@ export default function AktuellesUndLinks({story, preview}) {
 
 
 //NEW
-export async function getStaticProps(context) {
-  // home is the default slug for the homepage in Storyblok
-  let slug = "home";
-  // load the published content outside of the preview mode
-  let params = {
-    version: "published", // or 'draft'
-  };
+
+// export async function getStaticProps(context) {
+//   // home is the default slug for the homepage in Storyblok
+//   let slug = "home";
+//   // load the published content outside of the preview mode
+//   let params = {
+//     version: "published", // or 'draft'
+//   };
  
-  if (context.preview) {
-    // load the draft version inside of the preview mode
-    params.version = "draft";
-    params.cv = Date.now();
-  }
+//   if (context.preview) {
+//     // load the draft version inside of the preview mode
+//     params.version = "draft";
+//     params.cv = Date.now();
+//   }
  
-  let { data } = await Storyblok.get(`cdn/stories/${slug}`, params);
+//   let { data } = await Storyblok.get(`cdn/stories/${slug}`, params);
  
-  return {
-    props: {
-      story: data ? data.story : false,
-      preview: context.preview || false
-    },
-    revalidate: 3600, // revalidate every hour
-  };
-}
+//   return {
+//     props: {
+//       story: data ? data.story : false,
+//       preview: context.preview || false
+//     },
+//     revalidate: 3600, // revalidate every hour
+//   };
+// }
