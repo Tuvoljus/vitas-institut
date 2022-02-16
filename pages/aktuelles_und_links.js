@@ -57,7 +57,7 @@ export default function AktuellesUndLinks({story, preview}) {
           </Row>
         </Container>
       </section>
-      <section>
+      {/* <section>
         <Container>
           <Row>
             <Col></Col>
@@ -67,8 +67,8 @@ export default function AktuellesUndLinks({story, preview}) {
             <DynamicComponent blok={story.content} />
           </Row>
         </Container>
-      </section>
-      <Script src="//app.storyblok.com/f/storyblok-v2-latest.js" type="text/javascript" id="storyblokBridge"/>
+      </section> */}
+      {/* <Script src="//app.storyblok.com/f/storyblok-v2-latest.js" type="text/javascript" id="storyblokBridge"/> */}
     </>
   );
 }
