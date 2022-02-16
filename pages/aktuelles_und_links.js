@@ -19,13 +19,19 @@ import HeaderPicture from '../components/HeaderPicture';
 // import Storyblok, { useStoryblok } from '../lib/storyblok';
 // import DynamicComponent from '../components/DynamicComponent';
 
-export default function AktuellesUndLinks({story, preview}) {
+export default function AktuellesUndLinks() {
     //   const enableBridge = true; // load the storyblok bridge everywhere
     //  //const enableBridge = preview; // enable bridge only in prevew mode
     // const enableBridge = true;
 
     //const story = props.story
-    story = useStoryblok(story, preview);
+
+
+  // versteckt vorübergehend
+    // story = useStoryblok(story, preview);
+
+
+
   return (
     <>
       <HeaderPicture text="Aktuelles und Links" />
