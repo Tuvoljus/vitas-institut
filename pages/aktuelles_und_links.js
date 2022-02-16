@@ -16,8 +16,8 @@ import HeaderPicture from '../components/HeaderPicture';
 //import Aktuelles from '../components/Aktuelles'
 
 // The Storyblok Client
-import Storyblok, { useStoryblok } from '../lib/storyblok';
-import DynamicComponent from '../components/DynamicComponent';
+// import Storyblok, { useStoryblok } from '../lib/storyblok';
+// import DynamicComponent from '../components/DynamicComponent';
 
 export default function AktuellesUndLinks({story, preview}) {
     //   const enableBridge = true; // load the storyblok bridge everywhere
