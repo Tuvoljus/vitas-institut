@@ -4,6 +4,13 @@ import Script from 'next/script';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import EventList from '../components/EventList'
+
+
+import { EVENT_CARD_FIELDS } from "../components/EventCard";
+
+import { gql } from "@apollo/client";
+import { client } from "../lib/apolloClient";
 
 import {
   vl,
@@ -19,7 +26,20 @@ import HeaderPicture from '../components/HeaderPicture';
 // import Storyblok, { useStoryblok } from '../lib/storyblok';
 // import DynamicComponent from '../components/DynamicComponent';
 
-export default function AktuellesUndLinks() {
+
+const GET_EVENTS = gql`
+  query getEvents {
+    events(first: 10) {
+      nodes {
+        ...EventFields
+      }
+    }
+  }
+  ${EVENT_CARD_FIELDS}
+`;
+
+
+export default function AktuellesUndLinks({story, preview, events}) {
     //   const enableBridge = true; // load the storyblok bridge everywhere
     //  //const enableBridge = preview; // enable bridge only in prevew mode
     // const enableBridge = true;
@@ -28,13 +48,16 @@ export default function AktuellesUndLinks() {
 
 
   // versteckt vorübergehend
-    // story = useStoryblok(story, preview);
+
+  // für Storyblok einschalten
+  // story = useStoryblok(story, preview);
 
 
 
   return (
     <>
       <HeaderPicture text="Aktuelles und Links" />
+{/* 
       <section>
         <Container>
           <Row>
@@ -47,7 +70,7 @@ export default function AktuellesUndLinks() {
               style={{ color: 'black' }}
             ></Col>
             <Col md={7} className={ColorFont}>
-              {/* <Aktuelles /> */}
+             
               <span style={{ fontWeight: '700' }}>Liebe Seitenbesucher,</span>
               <br />
               <br />
@@ -63,18 +86,15 @@ export default function AktuellesUndLinks() {
           </Row>
         </Container>
       </section>
-      {/* <section>
+       */}
+      <section>
         <Container>
-          <Row>
-            <Col></Col>
-            <Col>
-              <h1>{story ? story.name : 'My Site'}</h1>
-            </Col>
-            <DynamicComponent blok={story.content} />
-          </Row>
+          <EventList events={events} />
         </Container>
-      </section> */}
-      {/* <Script src="//app.storyblok.com/f/storyblok-v2-latest.js" type="text/javascript" id="storyblokBridge"/> */}
+         {/* <DynamicComponent blok={story.content} /> */}
+        
+      </section> 
+       {/* <Script src="//app.storyblok.com/f/storyblok-v2-latest.js" type="text/javascript" id="storyblokBridge"/> */}
     </>
   );
 }
@@ -133,3 +153,16 @@ export default function AktuellesUndLinks() {
 //     revalidate: 3600, // revalidate every hour
 //   };
 // }
+
+// For Wordpress fetch
+export async function getStaticProps() {
+  const response = await client.query({
+    query: GET_EVENTS,
+  });
+
+  return {
+    props: {
+      events: response?.data?.events?.nodes ?? [],
+    },
+  };
+}

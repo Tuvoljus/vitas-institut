@@ -11,7 +11,7 @@ components/Grid.js
 components/Page.js
 components/Teaser.js
 components/DynamicComponent.js
-lib
+lib/storyblok.js
 
 context
 out
