@@ -15,7 +15,7 @@ lib/storyblok.js
 pages/api/exit-preview.js
 pages/api/preview.js
 pages/events/[slug].js
-public/serviceWorker.js
+# public/serviceWorker.js
 
 context
 out
