@@ -62,7 +62,7 @@ registerRoute(
 );
 // disable image cache, so we could observe the placeholder image when offline
 registerRoute(
-  /\.(?:jpg|jpeg|gif|png|svg|ico|webp)$/i,
+  /\.(?:jpg|jpeg|gif|png|svg|ico|webp|avif)$/i,
   new NetworkOnly({
     cacheName: 'static-image-assets',
     plugins: [
