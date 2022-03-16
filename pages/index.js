@@ -14,10 +14,10 @@ const IndexPage = () => {
           <title>Vitas Institut</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Script
+        {/* <Script
         src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserverEntry%2CIntersectionObserver"
         strategy="beforeInteractive"
-      />      
+      />       */}
         <MainPage />
         </>
       );
