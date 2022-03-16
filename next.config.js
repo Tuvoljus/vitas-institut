@@ -1,6 +1,11 @@
 // const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
+const withPWA = require('next-pwa');
 
-module.exports = {
+module.exports = withPWA({
+  pwa: {
+    dest: 'public',
+    swSrc: 'service-worker.js',
+  },
   swcMinify: true,
   images: {
     formats: ['image/avif', 'image/webp'],
@@ -38,5 +43,5 @@ module.exports = {
   //     })
   //   return config
   // }
-};
+});
   
