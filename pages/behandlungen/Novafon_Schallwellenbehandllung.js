@@ -13,13 +13,17 @@ import SideMenue from '../../components/SideMenue';
 import MobileSideMenue from '../../components/MobileSideMenue';
 
 import dynamic from 'next/dynamic'
+import Head from 'next/head'
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
 
 const NovafonSchallwellenbehandllung = () => {   
     
     return (
-        <>            
+        <>   
+        <Head>
+        <title>Physiopraxis - Novafon Schallwellenbehandlung</title>
+          </Head>         
             <HeaderPicture text="Novafon Schallwellenbehandlung" />
             <section>
                 <Container >

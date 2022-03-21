@@ -21,7 +21,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
     return (
         <>     
         <Head>
-        <title>Vitas Institut Bernhard Käser Physiotherapeut</title>
+        <title>Physiopraxis Manuelle Therapie Marnitz Cyriax</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Manuelle Therapie - Bernhard Käser" />
         <meta name="keywords" content="Manuelle Therapie" />

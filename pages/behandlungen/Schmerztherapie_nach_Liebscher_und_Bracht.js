@@ -21,7 +21,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
     return (      
       <>
       <Head>
-        <title>Vitas Institut Bernhard Käser Physiotherapeut</title>
+      <title>Physiopraxis - Schmerrztherapie nach Liebscher und Bracht</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Liebscher und Bracht Anwendung" />
         <meta name="keywords" content="Liebscher und Bracht" />

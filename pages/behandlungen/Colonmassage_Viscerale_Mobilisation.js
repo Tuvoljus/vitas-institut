@@ -12,6 +12,7 @@ import { vl, heading, inhaltBehandlung } from '../../scss/styles.module.scss'
 import SideMenue from '../../components/SideMenue';
 import MobileSideMenue from '../../components/MobileSideMenue'
 import dynamic from 'next/dynamic'
+import Head from 'next/head';
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
 // export const config = { amp: 'hybrid' }
@@ -19,7 +20,10 @@ const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 const Colonmassage_Viscerale_Mobilisation = () => {   
 
     return (
-      <>        
+      <>    
+      <Head>
+      <title>Colonmassage Viscerale Mobilisation</title>
+        </Head>    
         <HeaderPicture text=" Colonmassage / Viscerale Mobilisation"/>
         <section>
           <Container>

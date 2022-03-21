@@ -13,12 +13,16 @@ import SideMenue from "../../components/SideMenue";
 import MobileSideMenue from "../../components/MobileSideMenue";
 
 import dynamic from 'next/dynamic'
+import Head from "next/head";
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
 const Entspannungs_Methoden = () => {
 
   return (
     <>
+    <Head>
+    <title>Entspannungsmethoden</title>
+    </Head>
       <HeaderPicture text="Ruhe finden"/>
       <section>
         <Container>

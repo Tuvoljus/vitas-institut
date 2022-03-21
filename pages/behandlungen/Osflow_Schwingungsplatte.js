@@ -13,6 +13,7 @@ import SideMenue from "../../components/SideMenue";
 import MobileSideMenue from "../../components/MobileSideMenue";
 
 import dynamic from 'next/dynamic'
+import Head from "next/head";
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
 // export const config = { amp: 'hybrid' }
@@ -21,6 +22,9 @@ const Osflow_Schwingungsplatte = () => {
 
   return (
     <>      
+    <Head>
+    <title>Physiopraxis - Osflow Schwingungsplatte</title>
+    </Head>
       <HeaderPicture text="Osflow Schwingungsplatte" />
       <section>
         <Container>

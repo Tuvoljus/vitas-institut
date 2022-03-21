@@ -13,12 +13,16 @@ import SideMenue from "../../components/SideMenue";
 import MobileSideMenue from "../../components/MobileSideMenue";
 
 import dynamic from 'next/dynamic'
+import Head from "next/head";
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
 
 const Reflexzonen_Therapie = () => {
   return (
     <>      
+    <Head>
+    <title>Physiopraxis - Reflexzonen Therapie</title>
+    </Head>
       <HeaderPicture text="Reflexzonen-Therapie" />
       <section>
         <Container>

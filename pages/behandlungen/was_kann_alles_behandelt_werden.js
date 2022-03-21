@@ -12,6 +12,7 @@ import SideMenue from '../../components/SideMenue';
 import MobileSideMenue from '../../components/MobileSideMenue';
 
 import dynamic from 'next/dynamic'
+import Head from 'next/head'
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
 const was_kann_behandelt_werden = () => {   
@@ -19,6 +20,9 @@ const was_kann_behandelt_werden = () => {
 
     return (
       <>
+      <Head>
+      <title>Physiopraxis - was kann alles behandelt werden</title>
+      </Head>
         <HeaderPicture text="Was kann behandelt werden?" />
         <section >
           <Container>

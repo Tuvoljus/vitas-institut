@@ -19,6 +19,7 @@ import {
   inhaltBehandlung,
 } from '../scss/styles.module.scss';
 import HeaderPicture from '../components/HeaderPicture';
+import Head from 'next/head';
 //import { Accordion } from 'react-bootstrap'
 //import Aktuelles from '../components/Aktuelles'
 
@@ -56,6 +57,9 @@ export default function AktuellesUndLinks({story, preview, events}) {
 
   return (
     <>
+    <Head>
+    <title>Aktuelles und Links</title>
+    </Head>
       <HeaderPicture text="Aktuelles und Links" />
 {/* 
       <section>

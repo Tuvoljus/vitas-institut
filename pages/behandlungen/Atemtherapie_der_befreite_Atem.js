@@ -13,6 +13,7 @@ const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 import { vl, inhaltBehandlung } from "../../scss/styles.module.scss";
 // import SideMenue from "../../components/SideMenue";
 import MobileSideMenue from "../../components/MobileSideMenue";
+import Head from "next/head";
 
 
 
@@ -24,6 +25,9 @@ const Atemtherapie_der_befreite_Atem = () => {
 
   return (
     <>
+    <Head>
+    <title>Atemtherapie der befreite Atem</title>
+    </Head>
       <HeaderPicture text="Atemtherapie"/>
       <section>
         <Container>

@@ -3,10 +3,14 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import HeaderPicture from "../components/HeaderPicture";
+import Head from "next/head";
 
 const Datenschutz = () => {
   return (
     <>
+    <Head>
+    <title>Vitas-Institut Datenschutzerklärung</title>
+    </Head>
       {/* <HeaderPicture text="Datenschutzerklärung" /> */}
       <section>
         <Container>

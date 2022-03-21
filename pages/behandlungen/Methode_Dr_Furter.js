@@ -13,6 +13,7 @@ import SideMenue from '../../components/SideMenue';
 import MobileSideMenue from '../../components/MobileSideMenue';
 
 import dynamic from 'next/dynamic'
+import Head from 'next/head'
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
 
@@ -21,7 +22,10 @@ const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 const Methode_Dr_Furter = () => {   
     
     return (
-      <>        
+      <>
+      <Head>
+      <title>Physiopraxis - Methode Dr. Furter</title>
+        </Head>        
         <HeaderPicture text="Methode nach Dr. Furter" />
         <section>
           <Container>

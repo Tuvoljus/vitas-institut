@@ -17,7 +17,7 @@ import MobileSideMenue from '../../components/MobileSideMenue';
 
 const Klassische_Massage = () => {   
     <Head>
-        <title>Vitas Institut Bernhard Käser Physiotherapeut</title>
+        <title>Klassische Massage</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Bernhard Käser Physiotherapeut in München Altstadt Lehel nähe Sendlinger Tor" />
         <meta name="keywords" content="Physiothereput Altstadt Lehel nähe Sendlinger Tor" />

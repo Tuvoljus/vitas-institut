@@ -10,13 +10,17 @@ import SideMenue from '../../components/SideMenue';
 import MobileSideMenue from '../../components/MobileSideMenue';
 
 import dynamic from 'next/dynamic'
+import Head from 'next/head'
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
 
 
 const Pneumatische_Pulsations_Massage = () => {   
     return (
-      <>        
+      <>  
+      <Head>
+      <title>Physiopraxis - Pneumatische Pulsations Massage</title>
+        </Head>      
         <HeaderPicture text="Pneumatische Pulsations-Massage" />
         <section>
           <Container>

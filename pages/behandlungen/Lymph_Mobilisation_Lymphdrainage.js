@@ -13,13 +13,17 @@ import SideMenue from "../../components/SideMenue"
 import MobileSideMenue from "../../components/MobileSideMenue"
 
 import dynamic from 'next/dynamic'
+import Head from "next/head";
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
 
 const Lymph_Mobilisation_Lymphdrainage = () => {
 
   return (
-    <>      
+    <>
+    <Head>
+    <title>Lymph Mobilisation Lymphdrainage</title>
+      </Head>      
       <HeaderPicture text="Lymph-Mobilisation/ Lymphdrainage" />
       <section>
         <Container>

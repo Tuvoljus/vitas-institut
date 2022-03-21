@@ -13,11 +13,15 @@ import SideMenue from "../../components/SideMenue";
 import MobileSideMenue from "../../components/MobileSideMenue";
 
 import dynamic from 'next/dynamic'
+import Head from "next/head";
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
 const Stressreduktion_EFT = () => {  
   return (
     <>
+    <Head>
+    <title>Physiopraxis - Stressreduktion EFT</title>
+    </Head>
       <HeaderPicture text="Stressreduktion mit EFT" />
       <section>
         <Container>

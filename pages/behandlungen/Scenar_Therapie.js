@@ -13,11 +13,15 @@ import SideMenue from "../../components/SideMenue";
 import MobileSideMenue from "../../components/MobileSideMenue";
 
 import dynamic from 'next/dynamic'
+import Head from "next/head";
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
 const Scenar_Therapie = () => {
   return (
-    <>      
+    <>   
+    <Head>
+    <title>Physiopraxis - Scenar Therapie</title>
+      </Head>   
       <HeaderPicture text="Scenar Therapie" />
       <section>
         <Container>
