@@ -115,7 +115,7 @@ const Methode_Dr_Furter = () => {
                   </Link>
                 </li>
 
-                <li>
+                {/* <li>
                   <Link
                     href="/behandlungen/Matrix-Rhythmus-Therapie-MaRhyThe"
                     replace
@@ -125,7 +125,7 @@ const Methode_Dr_Furter = () => {
                       Matrix-Rhythmus-Therapie MaRhyThe
                     </a>
                   </Link>
-                </li>
+                </li> */}
 
                 <li>
                   <Link
@@ -255,7 +255,7 @@ const Methode_Dr_Furter = () => {
               </Link>
             </Card.Header>
           </Card>
-          <Accordion.Item eventKey="2">
+          {/* <Accordion.Item eventKey="2">
             <Accordion.Header>Scenar-Therapie</Accordion.Header>
             <Accordion.Body>
               <div
@@ -276,7 +276,7 @@ const Methode_Dr_Furter = () => {
                 </li>
               </div>
             </Accordion.Body>
-          </Accordion.Item>
+          </Accordion.Item> */}
           <Card>
             <Card.Header>
               <Link

@@ -114,7 +114,7 @@ const Saugwellen_Therapie = () => {
                   </Link>
                 </li>
 
-                <li>
+                {/* <li>
                   <Link
                     href="/behandlungen/Matrix-Rhythmus-Therapie-MaRhyThe"
                     replace
@@ -124,7 +124,7 @@ const Saugwellen_Therapie = () => {
                       Matrix-Rhythmus-Therapie MaRhyThe
                     </a>
                   </Link>
-                </li>
+                </li> */}
 
                 <li>
                   <Link
@@ -254,7 +254,7 @@ const Saugwellen_Therapie = () => {
               </Link>
             </Card.Header>
           </Card>
-          <Accordion.Item eventKey="2">
+          {/* <Accordion.Item eventKey="2">
             <Accordion.Header>Scenar-Therapie</Accordion.Header>
             <Accordion.Body>
               <div
@@ -275,7 +275,7 @@ const Saugwellen_Therapie = () => {
                 </li>
               </div>
             </Accordion.Body>
-          </Accordion.Item>
+          </Accordion.Item> */}
           <Card>
             <Card.Header>
               <Link

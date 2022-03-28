@@ -145,7 +145,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
                   </Link>
                 </li>
 
-                <li>
+                {/* <li>
                   <Link
                     href="/behandlungen/Matrix-Rhythmus-Therapie-MaRhyThe"
                     replace
@@ -155,7 +155,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
                       Matrix-Rhythmus-Therapie MaRhyThe
                     </a>
                   </Link>
-                </li>
+                </li> */}
 
                 <li>
                   <Link
@@ -285,7 +285,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
               </Link>
             </Card.Header>
           </Card>
-          <Accordion.Item eventKey="2">
+          {/* <Accordion.Item eventKey="2">
             <Accordion.Header>Scenar-Therapie</Accordion.Header>
             <Accordion.Body>
               <div
@@ -306,7 +306,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
                 </li>
               </div>
             </Accordion.Body>
-          </Accordion.Item>
+          </Accordion.Item> */}
           <Card>
             <Card.Header>
               <Link

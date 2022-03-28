@@ -117,7 +117,8 @@ const Atemtherapie_der_befreite_Atem = () => {
                   </Link>
                 </li>
 
-                <li>
+                {/* Matrix Rhythmus */}
+                {/* <li>
                   <Link
                     href="/behandlungen/Matrix-Rhythmus-Therapie-MaRhyThe"
                     replace
@@ -127,7 +128,7 @@ const Atemtherapie_der_befreite_Atem = () => {
                       Matrix-Rhythmus-Therapie MaRhyThe
                     </a>
                   </Link>
-                </li>
+                </li> */}
 
                 <li>
                   <Link
@@ -258,7 +259,9 @@ const Atemtherapie_der_befreite_Atem = () => {
               </Link>
             </Card.Header>
           </Card>
-          <Accordion.Item eventKey="2">
+          {/* Scenar */}
+          
+          {/* <Accordion.Item eventKey="2">
             <Accordion.Header>Scenar-Therapie</Accordion.Header>
             <Accordion.Body>
               <div
@@ -279,7 +282,7 @@ const Atemtherapie_der_befreite_Atem = () => {
                 </li>
               </div>
             </Accordion.Body>
-          </Accordion.Item>
+          </Accordion.Item> */}
           <Card>
             <Card.Header>
               <Link

@@ -11,7 +11,7 @@ const IndexPage = () => {
     return (
         <>
         <Head>
-          <title>Vitas Institut Physiotherapie</title>
+          <title>Vitas Institut Physiotherapie am Sendlinger Tor</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Script

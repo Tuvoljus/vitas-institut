@@ -106,8 +106,8 @@ const SideMenue = ({children, eventKey, onClick}) => {
                     </a>
                   </Link>
                 </li>
-
-                <li>
+                {/* Matrix */}
+                {/* <li>
                   <Link
                     href="/behandlungen/Matrix-Rhythmus-Therapie-MaRhyThe"
                     replace
@@ -117,7 +117,7 @@ const SideMenue = ({children, eventKey, onClick}) => {
                       Matrix-Rhythmus-Therapie MaRhyThe
                     </a>
                   </Link>
-                </li>
+                </li> */}
 
                 <li>
                   <Link
@@ -248,7 +248,8 @@ const SideMenue = ({children, eventKey, onClick}) => {
               </Link>
             </Card.Header>
           </Card>
-          <Accordion.Item eventKey="2">
+          {/* Scenar */}
+          {/* <Accordion.Item eventKey="2">
             <Accordion.Header>Scenar-Therapie</Accordion.Header>
             <Accordion.Body>
               <div
@@ -269,7 +270,7 @@ const SideMenue = ({children, eventKey, onClick}) => {
                 </li>
               </div>
             </Accordion.Body>
-          </Accordion.Item>
+          </Accordion.Item> */}
           <Card>
             <Card.Header>
               <Link

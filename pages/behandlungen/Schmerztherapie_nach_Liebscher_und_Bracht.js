@@ -147,7 +147,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
                   </Link>
                 </li>
 
-                <li>
+                {/* <li>
                   <Link
                     href="/behandlungen/Matrix-Rhythmus-Therapie-MaRhyThe"
                     replace
@@ -157,7 +157,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
                       Matrix-Rhythmus-Therapie MaRhyThe
                     </a>
                   </Link>
-                </li>
+                </li> */}
 
                 <li>
                   <Link
@@ -287,7 +287,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
               </Link>
             </Card.Header>
           </Card>
-          <Accordion.Item eventKey="2">
+          {/* <Accordion.Item eventKey="2">
             <Accordion.Header>Scenar-Therapie</Accordion.Header>
             <Accordion.Body>
               <div
@@ -308,7 +308,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
                 </li>
               </div>
             </Accordion.Body>
-          </Accordion.Item>
+          </Accordion.Item> */}
           <Card>
             <Card.Header>
               <Link
