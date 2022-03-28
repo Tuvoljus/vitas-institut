@@ -1,5 +1,5 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react'
+import Image from 'next/image'
 import Link from "next/link"
 
 import Row from 'react-bootstrap/Row'
@@ -8,28 +8,32 @@ import Container  from 'react-bootstrap/Container'
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
 
-import { vl, heading, inhaltBehandlung } from "../../scss/styles.module.scss";
-import SideMenue from "../../components/SideMenue";
-import MobileSideMenue from "../../components/MobileSideMenue";
+import { vl, heading, inhaltBehandlung } from '../../scss/styles.module.scss'
+import SideMenue from '../../components/SideMenue';
+import MobileSideMenue from '../../components/MobileSideMenue';
 
 import dynamic from 'next/dynamic'
-import Head from "next/head";
+import Head from 'next/head'
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
-const Scenar_Therapie = () => {
-  return (
-    <>   
-    <Head>
-    <title>Physiopraxis - Scenar Therapie</title>
-      </Head>   
-      <HeaderPicture text="Scenar Therapie" />
-      <section>
-        <Container>
-          <Row>
-            {/* Sitemenue */}
-            <Col md={4} className="d-none d-sm-block">                            
-              {/* <SideMenue /> */}
-              <Accordion flush defaultActiveKey="2">
+
+// export const config = { amp: 'hybrid' }
+
+const Methode_Dr_Furter = () => {   
+    
+    return (
+      <>
+      <Head>
+      <title>Physiopraxis - Methode Dr. Furter</title>
+        </Head>        
+        <HeaderPicture text="Methode nach Dr. Furter" />
+        <section>
+          <Container>
+            <Row>
+              {/* Sitemenue */}
+              <Col md={4} className="d-none d-sm-block">                            
+                {/* <SideMenue /> */}
+                <Accordion flush>
           <Card>
             <Card.Header>
               <Link href="/behandlungen" replace scroll={false}>
@@ -42,7 +46,7 @@ const Scenar_Therapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/was_kann_alles_behandelt_werden"
+                href="/behandlungen/was-kann-alles-behandelt-werden"
                 replace
                 scroll={false}
               >
@@ -66,18 +70,18 @@ const Scenar_Therapie = () => {
               >
                 <li>
                   <Link
-                    href="/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht"
+                    href="/behandlungen/Schmerztherapie-nach-Liebscher-und-Bracht"
                     replace
                     scroll={false}
                   >
                     <a style={{ textDecoration: "none" }}>
-                      Schmerztherapie nach Liebscher & Bracht
+                      Schmerztherapie nach Liebscher %26 Bracht
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/behandlungen/Golgi_Punkt_Schmerztherapie"
+                    href="/behandlungen/Golgi-Punkt-Schmerztherapie"
                     replace
                     scroll={false}
                   >
@@ -89,7 +93,7 @@ const Scenar_Therapie = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Manuelle_Therapie_Marnitz_Cyriax"
+                    href="/behandlungen/Manuelle-Therapie-Marnitz-Cyriax"
                     replace
                     scroll={false}
                   >
@@ -101,17 +105,17 @@ const Scenar_Therapie = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Methode_Dr_Furter"
+                    href="/behandlungen/Methode-Dr-Furter"
                     replace
                     scroll={false}
                   >
-                    <a style={{ textDecoration: "none" }}>
+                    <a style={{ textDecoration: "none", color: 'rgb(48, 134, 215)' }}>
                       Methode nach Dr. Furter{" "}
                     </a>
                   </Link>
                 </li>
 
-                <li>
+                {/* <li>
                   <Link
                     href="/behandlungen/Matrix-Rhythmus-Therapie-MaRhyThe"
                     replace
@@ -121,11 +125,11 @@ const Scenar_Therapie = () => {
                       Matrix-Rhythmus-Therapie MaRhyThe
                     </a>
                   </Link>
-                </li>
+                </li> */}
 
                 <li>
                   <Link
-                    href="/behandlungen/Novafon_Schallwellenbehandllung"
+                    href="/behandlungen/Novafon-Schallwellenbehandllung"
                     replace
                     scroll={false}
                   >
@@ -147,7 +151,7 @@ const Scenar_Therapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Pneumatische_Pulsations-Massage"
+                href="/behandlungen/Pneumatische-Pulsations-Massage"
                 replace
                 scroll={false}
               >
@@ -180,7 +184,7 @@ const Scenar_Therapie = () => {
                 </li>
                 <li>
                   <Link
-                    href="/behandlungen/Colonmassage_Viscerale_Mobilisation"
+                    href="/behandlungen/Colonmassage-Viscerale-Mobilisation"
                     replace
                     scroll={false}
                   >
@@ -204,7 +208,7 @@ const Scenar_Therapie = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Saugwellen_Therapie"
+                    href="/behandlungen/Saugwellen-Therapie"
                     replace
                     scroll={false}
                   >
@@ -219,7 +223,7 @@ const Scenar_Therapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Atemtherapie_der_befreite_Atem"
+                href="/behandlungen/Atemtherapie-der-befreite-Atem"
                 replace
                 scroll={false}
               >
@@ -232,7 +236,7 @@ const Scenar_Therapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Lymph_Mobilisation_Lymphdrainage"
+                href="/behandlungen/Lymph_Mobilisation-Lymphdrainage"
                 replace
                 scroll={false}
               >
@@ -243,7 +247,7 @@ const Scenar_Therapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Reflexzonen_Therapie"
+                href="/behandlungen/Reflexzonen-Therapie"
                 replace
                 scroll={false}
               >
@@ -251,7 +255,7 @@ const Scenar_Therapie = () => {
               </Link>
             </Card.Header>
           </Card>
-          <Accordion.Item eventKey="2">
+          {/* <Accordion.Item eventKey="2">
             <Accordion.Header>Scenar-Therapie</Accordion.Header>
             <Accordion.Body>
               <div
@@ -263,7 +267,7 @@ const Scenar_Therapie = () => {
               >
                 <li>
                   <Link
-                    href="/behandlungen/Scenar_Therapie"
+                    href="/behandlungen/Scenar-Therapie"
                     replace
                     scroll={false}
                   >
@@ -272,11 +276,11 @@ const Scenar_Therapie = () => {
                 </li>
               </div>
             </Accordion.Body>
-          </Accordion.Item>
+          </Accordion.Item> */}
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Osflow_Schwingungsplatte"
+                href="/behandlungen/Osflow-Schwingungsplatte"
                 replace
                 scroll={false}
               >
@@ -302,7 +306,7 @@ const Scenar_Therapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Stressreduktion_EFT"
+                href="/behandlungen/Stressreduktion-EFT"
                 replace
                 scroll={false}
               >
@@ -320,7 +324,7 @@ const Scenar_Therapie = () => {
             </Card.Header>
           </Card>
         </Accordion>
-            </Col>
+              </Col>
                         {/* Main Content */}
                         <Col
                             md={1}
@@ -328,56 +332,44 @@ const Scenar_Therapie = () => {
                             style={{ color: "black" }}                
                         >
                         </Col>
-            <Col md={7}>
-              <div className={inhaltBehandlung}>
-                <h2 className="mx-auto">S.c.e.n.a.r-Therapie DENAS Therapie</h2>
+              <Col md={7}>
+                <div className={inhaltBehandlung}>
+                  <h2 className="mx-auto">
+                    IUC ( Interactiv unity concept) <br /> Methode nach Dr.
+                    Furter
+                  </h2>
 
-                <br />
-                <p>
-                  Das S.c.e.n.a.r ist ein für das russische Weltraumprogramm
-                  entwickeltes Elektrotherapiegerät. Die gesundheitliche
-                  Verfassung der Kosmonauten während ihres Weltraumaufenthalts
-                  wurde damit unterstützt.
-                </p>
-                <p>
-                  <b>Bei mir in der Praxis verwende ich das Denas-Gerät.</b>
-                </p>
-                <p>
-                  Denas-Therapie (DENS-Gerät)
-                  dynamische-elektro-neuro-stimmulation beruht auf dem gleichen
-                  Prinzip mit einem Vegetativ-Programm.
-                </p>
-                <p>
-                  Seit über 20 Jahren wird es von Ärzten in Kliniken und in
-                  Praxen angewandt. Es ist u.a. für die Behandlung von akuten
-                  und chronischen Schmerzen geeignet. Durch die elektrischen
-                  Impulse werden spezifische Schmerzleitungsfasern des
-                  Nevensystems stimmuliert (C-Fasern). Hierbei werden im
-                  zentralen Nevensystem körpereigene opioide Proteine
-                  freigesetzt, die den Schmerz dämpfen.
-                </p>
-                <p>
-                  Während der Behandlung wird von dem Gerät der Hautwiderstand
-                  gemessen. Anhand dessen Veränderung werden Impulsstärke,
-                  Impulsdauer und Impulsfrequenz moduliert. Auf diese Weise ist
-                  gewährleistet, dass die spezifischen Schmerzleitungsfasern
-                  durch unterschiedliche, individuell dosierte Impulse
-                  stimuliert werden. Diese Besonderheit gab dem
-                  Therapieverfahren auch seinen Namen:
-                </p>
-                <p><b>S</b>elf-<b>c</b>ontrolled <b>e</b>nergo-<b>n</b>euro-<b>a</b>daptive <b>r</b>egulation</p>
-                <p>
-                  Über 50 000 dokumentierte Fälle. Große Zentren sind in Kanada,
-                  Holland und England.
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-      <MobileSideMenue />
-    </>
-  );
-};
+                  <br />
+                  <p>
+                    Diese rein manuelle Therapie wirkt ein auf Muskel,
+                    Bindegewebe oder Nerv. Ich behandle exakt die Stellen, die
+                    Sie als Sitz Ihrer Beschwerden angeben (nicht nur die
+                    Schmerzstellen). Auch Bereiche, die sich nach Ihren Angaben
+                    z.B. &#8222;voll&#8220;, &#8222;leer&#8220;,
+                    &#8222;müde&#8220; anfühlen. Auch wenn kein klinischer
+                    Hinweis auf eine Organveränderung vorliegt, wird behandelt.
+                  </p>
+                  <p>
+                    Die Methode verursacht einen gewissen Schmerz, den jedoch
+                    alle Patienten als &#8222;heilsam&#8220; beurteilen. Achtzig
+                    Prozent aller Krankheitsbilder des Bewegungsapparates können
+                    mit IUC behandelt werden, darüber hinaus auch viele
+                    internistische und psychische Beschwerden (siehe
+                    Indikationsliste).
+                  </p>
+                  <p style={{ fontWeight: "600" }}>
+                    <a href="https://www.drfurter.ch/de/methode-de.html">
+                      www.drfurter.ch/de/
+                    </a>
+                  </p>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        <MobileSideMenue />
+      </>
+    );
+}
 
-export default Scenar_Therapie
+export default Methode_Dr_Furter

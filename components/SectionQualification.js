@@ -14,7 +14,7 @@ const SectionQualification = () => {
       <>
         <div className={ColorFont}>
           <div className="container text-center">
-            <h1 className="small-heading">Über mich</h1>
+            <h1 className="small-heading">Physiotherapie am Sendlinger Tor</h1>
           </div>
           <div className="container" style={{ marginTop: "3rem" }}>
             <div className="row">

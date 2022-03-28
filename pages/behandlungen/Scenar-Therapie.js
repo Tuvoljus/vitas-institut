@@ -1,41 +1,35 @@
 import React from "react";
-import Link from "next/dist/client/link";
+import Image from "next/image";
+import Link from "next/link"
 
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Container  from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Container  from 'react-bootstrap/Container'
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
 
+import { vl, heading, inhaltBehandlung } from "../../scss/styles.module.scss";
+import SideMenue from "../../components/SideMenue";
+import MobileSideMenue from "../../components/MobileSideMenue";
+
 import dynamic from 'next/dynamic'
+import Head from "next/head";
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
-import { vl, inhaltBehandlung } from "../../scss/styles.module.scss";
-// import SideMenue from "../../components/SideMenue";
-import MobileSideMenue from "../../components/MobileSideMenue";
-import Head from "next/head";
-
-
-
-
-
-// export const config = { amp: 'hybrid' }
-
-const Atemtherapie_der_befreite_Atem = () => {
-
+const Scenar_Therapie = () => {
   return (
-    <>
+    <>   
     <Head>
-    <title>Atemtherapie der befreite Atem</title>
-    </Head>
-      <HeaderPicture text="Atemtherapie"/>
+    <title>Physiopraxis - Scenar Therapie</title>
+      </Head>   
+      <HeaderPicture text="Scenar Therapie" />
       <section>
         <Container>
           <Row>
             {/* Sitemenue */}
             <Col md={4} className="d-none d-sm-block">                            
               {/* <SideMenue /> */}
-              <Accordion flush>
+              <Accordion flush defaultActiveKey="2">
           <Card>
             <Card.Header>
               <Link href="/behandlungen" replace scroll={false}>
@@ -48,7 +42,7 @@ const Atemtherapie_der_befreite_Atem = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/was_kann_alles_behandelt_werden"
+                href="/behandlungen/was-kann-alles-behandelt-werden"
                 replace
                 scroll={false}
               >
@@ -58,7 +52,7 @@ const Atemtherapie_der_befreite_Atem = () => {
               </Link>
             </Card.Header>
           </Card>
-          <Accordion.Item eventKey="0">
+          <Accordion.Item>
             <Accordion.Header>
               Klassische Krankengymnastik/ <br /> Manuelle Therapien
             </Accordion.Header>
@@ -72,18 +66,18 @@ const Atemtherapie_der_befreite_Atem = () => {
               >
                 <li>
                   <Link
-                    href="/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht"
+                    href="/behandlungen/Schmerztherapie-nach-Liebscher-und-Bracht"
                     replace
                     scroll={false}
                   >
                     <a style={{ textDecoration: "none" }}>
-                      Schmerztherapie nach Liebscher & Bracht
+                      Schmerztherapie nach Liebscher %26 Bracht
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/behandlungen/Golgi_Punkt_Schmerztherapie"
+                    href="/behandlungen/Golgi-Punkt-Schmerztherapie"
                     replace
                     scroll={false}
                   >
@@ -95,7 +89,7 @@ const Atemtherapie_der_befreite_Atem = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Manuelle_Therapie_Marnitz_Cyriax"
+                    href="/behandlungen/Manuelle-Therapie-Marnitz-Cyriax"
                     replace
                     scroll={false}
                   >
@@ -107,7 +101,7 @@ const Atemtherapie_der_befreite_Atem = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Methode_Dr_Furter"
+                    href="/behandlungen/Methode-Dr-Furter"
                     replace
                     scroll={false}
                   >
@@ -117,8 +111,7 @@ const Atemtherapie_der_befreite_Atem = () => {
                   </Link>
                 </li>
 
-                {/* Matrix Rhythmus */}
-                {/* <li>
+                <li>
                   <Link
                     href="/behandlungen/Matrix-Rhythmus-Therapie-MaRhyThe"
                     replace
@@ -128,11 +121,11 @@ const Atemtherapie_der_befreite_Atem = () => {
                       Matrix-Rhythmus-Therapie MaRhyThe
                     </a>
                   </Link>
-                </li> */}
+                </li>
 
                 <li>
                   <Link
-                    href="/behandlungen/Novafon_Schallwellenbehandllung"
+                    href="/behandlungen/Novafon-Schallwellenbehandllung"
                     replace
                     scroll={false}
                   >
@@ -142,7 +135,7 @@ const Atemtherapie_der_befreite_Atem = () => {
                   </Link>
                 </li>
               </div>
-            </Accordion.Body>
+            </Accordion.Body>            
             </Accordion.Item>
           <Card>
             <Card.Header>
@@ -154,7 +147,7 @@ const Atemtherapie_der_befreite_Atem = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Pneumatische_Pulsations-Massage"
+                href="/behandlungen/Pneumatische-Pulsations-Massage"
                 replace
                 scroll={false}
               >
@@ -167,8 +160,7 @@ const Atemtherapie_der_befreite_Atem = () => {
           <Accordion.Item eventKey="1"
           >
             <Accordion.Header>
-            Klassische Massage
-            </Accordion.Header>
+            Klassische Massage</Accordion.Header>
             <Accordion.Body>
               <div
                 style={{
@@ -188,7 +180,7 @@ const Atemtherapie_der_befreite_Atem = () => {
                 </li>
                 <li>
                   <Link
-                    href="/behandlungen/Colonmassage_Viscerale_Mobilisation"
+                    href="/behandlungen/Colonmassage-Viscerale-Mobilisation"
                     replace
                     scroll={false}
                   >
@@ -212,7 +204,7 @@ const Atemtherapie_der_befreite_Atem = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Saugwellen_Therapie"
+                    href="/behandlungen/Saugwellen-Therapie"
                     replace
                     scroll={false}
                   >
@@ -227,7 +219,7 @@ const Atemtherapie_der_befreite_Atem = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Atemtherapie_der_befreite_Atem"
+                href="/behandlungen/Atemtherapie-der-befreite-Atem"
                 replace
                 scroll={false}
               >
@@ -240,7 +232,7 @@ const Atemtherapie_der_befreite_Atem = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Lymph_Mobilisation_Lymphdrainage"
+                href="/behandlungen/Lymph-Mobilisation-Lymphdrainage"
                 replace
                 scroll={false}
               >
@@ -251,7 +243,7 @@ const Atemtherapie_der_befreite_Atem = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Reflexzonen_Therapie"
+                href="/behandlungen/Reflexzonen-Therapie"
                 replace
                 scroll={false}
               >
@@ -259,9 +251,7 @@ const Atemtherapie_der_befreite_Atem = () => {
               </Link>
             </Card.Header>
           </Card>
-          {/* Scenar */}
-          
-          {/* <Accordion.Item eventKey="2">
+          <Accordion.Item eventKey="2">
             <Accordion.Header>Scenar-Therapie</Accordion.Header>
             <Accordion.Body>
               <div
@@ -273,7 +263,7 @@ const Atemtherapie_der_befreite_Atem = () => {
               >
                 <li>
                   <Link
-                    href="/behandlungen/Scenar_Therapie"
+                    href="/behandlungen/Scenar-Therapie"
                     replace
                     scroll={false}
                   >
@@ -282,11 +272,11 @@ const Atemtherapie_der_befreite_Atem = () => {
                 </li>
               </div>
             </Accordion.Body>
-          </Accordion.Item> */}
+          </Accordion.Item>
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Osflow_Schwingungsplatte"
+                href="/behandlungen/Osflow-Schwingungsplatte"
                 replace
                 scroll={false}
               >
@@ -312,7 +302,7 @@ const Atemtherapie_der_befreite_Atem = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Stressreduktion_EFT"
+                href="/behandlungen/Stressreduktion-EFT"
                 replace
                 scroll={false}
               >
@@ -331,70 +321,54 @@ const Atemtherapie_der_befreite_Atem = () => {
           </Card>
         </Accordion>
             </Col>
-              {/* Main Content */}
-            <Col
-              md={1}
-              className={`d-none d-sm-block ${vl}`}
-              style={{ color: "black" }}                
-            >
-            </Col>
+                        {/* Main Content */}
+                        <Col
+                            md={1}
+                            className={`d-none d-sm-block ${vl}`}
+                            style={{ color: "black" }}                
+                        >
+                        </Col>
             <Col md={7}>
               <div className={inhaltBehandlung}>
-                <h2 className="mx-auto">Atemtherapie</h2>
-                <div className="lead">der befreite Atem</div>
+                <h2 className="mx-auto">S.c.e.n.a.r-Therapie DENAS Therapie</h2>
+
                 <br />
                 <p>
-                  <b>
-                    Unser Atem reagiert auf ALLES, was uns innerlich und
-                    äußerlich bewegt.
-                  </b>
-                  <br />
-                  Dies drücken wir auch in der Sprache aus: Atemlos,
-                  atemberaubend, langer Atem, Verschnaufpause, dicke Luft,
-                  runterpressen, mühsam rauspressen, tiefe Seufzer der
-                  Erleichterung.
+                  Das S.c.e.n.a.r ist ein für das russische Weltraumprogramm
+                  entwickeltes Elektrotherapiegerät. Die gesundheitliche
+                  Verfassung der Kosmonauten während ihres Weltraumaufenthalts
+                  wurde damit unterstützt.
                 </p>
                 <p>
-                  Dr. Buteyko und Prof. Frolov haben die Atemtechnik
-                  revolutioniert und damit für viele andere Erkrankungen neben
-                  Asthma einen Meilenstein in der Medizin gesetzt.
+                  <b>Bei mir in der Praxis verwende ich das Denas-Gerät.</b>
                 </p>
                 <p>
-                  Konsequente Nasenatmung und langsame und ganz geringe Atemzüge
-                  mit kaum wahrnehmbarer Bewegung im Bauch ist der ideale
-                  Ruheatem.
-                </p>
-                <p style={{ fontWeight: "600" }}>
-                  <a href="http://www.atmosana-schule.de/">
-                    www.atmosana-schule.de/
-                  </a>
+                  Denas-Therapie (DENS-Gerät)
+                  dynamische-elektro-neuro-stimmulation beruht auf dem gleichen
+                  Prinzip mit einem Vegetativ-Programm.
                 </p>
                 <p>
-                  Mit den Techniken der <b>klassischen Atemtherapie</b>{" "}
-                  (Dehnlagen, Drainagelagerung, Hustentechniken, Lippenbremse,
-                  atemerleichternde Stellungen, Atem-Massage) werden
-                  Atemerkrankungen wie z.B. Bronchitis, Asthma, behandelt.
+                  Seit über 20 Jahren wird es von Ärzten in Kliniken und in
+                  Praxen angewandt. Es ist u.a. für die Behandlung von akuten
+                  und chronischen Schmerzen geeignet. Durch die elektrischen
+                  Impulse werden spezifische Schmerzleitungsfasern des
+                  Nevensystems stimmuliert (C-Fasern). Hierbei werden im
+                  zentralen Nevensystem körpereigene opioide Proteine
+                  freigesetzt, die den Schmerz dämpfen.
                 </p>
                 <p>
-                  Beim <b> &quot;befreiten Atem&quot;</b> geht es um eine
-                  bessere Körperwahrnehmung, tiefe körperliche und psychische
-                  Entspannung. Meine Hände sind mit Ihrem Körper im
-                  &bdquo;Gespräch&rdquo;. Durch die Berührung können
-                  Muskel-verspannungen, Atem und Emotionen gelöst werden. Auf
-                  diese Weise ist ein tieferer Zugang zu sich selbst möglich.
+                  Während der Behandlung wird von dem Gerät der Hautwiderstand
+                  gemessen. Anhand dessen Veränderung werden Impulsstärke,
+                  Impulsdauer und Impulsfrequenz moduliert. Auf diese Weise ist
+                  gewährleistet, dass die spezifischen Schmerzleitungsfasern
+                  durch unterschiedliche, individuell dosierte Impulse
+                  stimuliert werden. Diese Besonderheit gab dem
+                  Therapieverfahren auch seinen Namen:
                 </p>
+                <p><b>S</b>elf-<b>c</b>ontrolled <b>e</b>nergo-<b>n</b>euro-<b>a</b>daptive <b>r</b>egulation</p>
                 <p>
-                  Viele Emotionen sind in unserem &bdquo;Muskelpanzer&rdquo;
-                  eingefroren. Gelegentliche tiefe Seufzer der Erleichterung
-                  oder auch ein paar unwillkürliche Tränen lockern diesen
-                  &bdquo;Panzer&rdquo;. Seelische Schmerzen, Ängste und Trauer,
-                  das große Thema der mangelnden Eigenliebe, drücken sich in
-                  Körperhaltung, Atem- und Bewegungsmustern aus.
-                </p>
-                <p>
-                  Durch die aufmerksame Beobachtung und die achtsame Berührung,
-                  die immer im engen Kontakt mit dem vielschichtigen
-                  Atemgeschehen einhergeht, dürfen Körper und Seele genesen.
+                  Über 50 000 dokumentierte Fälle. Große Zentren sind in Kanada,
+                  Holland und England.
                 </p>
               </div>
             </Col>
@@ -406,4 +380,4 @@ const Atemtherapie_der_befreite_Atem = () => {
   );
 };
 
-export default Atemtherapie_der_befreite_Atem
+export default Scenar_Therapie

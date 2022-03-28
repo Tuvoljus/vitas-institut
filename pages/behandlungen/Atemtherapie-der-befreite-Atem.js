@@ -1,7 +1,5 @@
-import React from 'react'
-import Script from 'next/script'
-import Link from "next/link"
-import Head from 'next/head'
+import React from "react";
+import Link from "next/dist/client/link";
 
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -9,61 +7,35 @@ import Container  from 'react-bootstrap/Container';
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
 
-import { vl, heading, inhaltBehandlung } from '../../scss/styles.module.scss'
-import SideMenue from '../../components/SideMenue';
-import MobileSideMenue from '../../components/MobileSideMenue';
-
 import dynamic from 'next/dynamic'
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
-const Manuelle_Therapie_Marnitz_Cyriax = () => {   
-    
-    return (
-        <>     
-        <Head>
-        <title>Physiopraxis Manuelle Therapie Marnitz Cyriax</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Manuelle Therapie - Bernhard Käser" />
-        <meta name="keywords" content="Manuelle Therapie" />
-        <Script  strategy="afterInteractive" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify
-        (
-          {
-            "@context" : "http://schema.org",
-            "@type" : "LocalBusiness",
-            "name" : "Vitas-Institut Manuelle Therapie",
-            "description": "Bernhard Käser - Manuelle Therapie",           
-            "image" : "https://www.vitas-institut.de/img/Bernhard.jpg",
-            "telephone" : "+49 89 23 23 06 70",
-            "email" : "bk@vitas-institut.de",
-            "address" : {
-                "@type" : "PostalAddress",
-                "streetAddress" : "Oberanger 42",
-                "addressLocality" : "München",
-                "addressRegion" : "Bayern",
-                "addressCountry" : "Deutschland",
-                "postalCode" : "80331"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 48.13413978555193, 
-                "longitude": 11.569055768148749
-              },
-            "priceRange": "€",
-            "openingHours":["Mo - Do 10:00-18:00"],
-            "url" : "https://www.vitas-institut.de"
-          }) 
-        }} 
-        />
-        
-      </Head>       
-            <HeaderPicture text="Manuelle Therapie" />
-            <section>
-                <Container >
-                    <Row>
-                    {/* Sitemenue */}
-                    <Col md={4} className="d-none d-sm-block">                            
-                            {/* <SideMenue />                             */}
-                            <Accordion flush>
+import { vl, inhaltBehandlung } from "../../scss/styles.module.scss";
+// import SideMenue from "../../components/SideMenue";
+import MobileSideMenue from "../../components/MobileSideMenue";
+import Head from "next/head";
+
+
+
+
+
+// export const config = { amp: 'hybrid' }
+
+const Atemtherapie_der_befreite_Atem = () => {
+
+  return (
+    <>
+    <Head>
+    <title>Atemtherapie der befreite Atem</title>
+    </Head>
+      <HeaderPicture text="Atemtherapie"/>
+      <section>
+        <Container>
+          <Row>
+            {/* Sitemenue */}
+            <Col md={4} className="d-none d-sm-block">                            
+              {/* <SideMenue /> */}
+              <Accordion flush>
           <Card>
             <Card.Header>
               <Link href="/behandlungen" replace scroll={false}>
@@ -76,7 +48,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/was_kann_alles_behandelt_werden"
+                href="/behandlungen/was-kann-alles-behandelt-werden"
                 replace
                 scroll={false}
               >
@@ -86,7 +58,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
               </Link>
             </Card.Header>
           </Card>
-          <Accordion.Item>
+          <Accordion.Item eventKey="0">
             <Accordion.Header>
               Klassische Krankengymnastik/ <br /> Manuelle Therapien
             </Accordion.Header>
@@ -100,7 +72,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
               >
                 <li>
                   <Link
-                    href="/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht"
+                    href="/behandlungen/Schmerztherapie-nach-Liebscher-und-Bracht"
                     replace
                     scroll={false}
                   >
@@ -111,7 +83,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
                 </li>
                 <li>
                   <Link
-                    href="/behandlungen/Golgi_Punkt_Schmerztherapie"
+                    href="/behandlungen/Golgi-Punkt-Schmerztherapie"
                     replace
                     scroll={false}
                   >
@@ -123,11 +95,11 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Manuelle_Therapie_Marnitz_Cyriax"
+                    href="/behandlungen/Manuelle-Therapie-Marnitz-Cyriax"
                     replace
                     scroll={false}
                   >
-                    <a style={{ textDecoration: "none", color: 'rgb(48, 134, 215)' }} >
+                    <a style={{ textDecoration: "none" }}>
                       Manuelle Therapie / Marnitz / Cyriax
                     </a>
                   </Link>
@@ -135,7 +107,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Methode_Dr_Furter"
+                    href="/behandlungen/Methode-Dr-Furter"
                     replace
                     scroll={false}
                   >
@@ -145,6 +117,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
                   </Link>
                 </li>
 
+                {/* Matrix Rhythmus */}
                 {/* <li>
                   <Link
                     href="/behandlungen/Matrix-Rhythmus-Therapie-MaRhyThe"
@@ -159,7 +132,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Novafon_Schallwellenbehandllung"
+                    href="/behandlungen/Novafon-Schallwellenbehandllung"
                     replace
                     scroll={false}
                   >
@@ -169,7 +142,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
                   </Link>
                 </li>
               </div>
-            </Accordion.Body>            
+            </Accordion.Body>
             </Accordion.Item>
           <Card>
             <Card.Header>
@@ -181,7 +154,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Pneumatische_Pulsations-Massage"
+                href="/behandlungen/Pneumatische-Pulsations-Massage"
                 replace
                 scroll={false}
               >
@@ -194,7 +167,8 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
           <Accordion.Item eventKey="1"
           >
             <Accordion.Header>
-            Klassische Massage</Accordion.Header>
+            Klassische Massage
+            </Accordion.Header>
             <Accordion.Body>
               <div
                 style={{
@@ -214,7 +188,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
                 </li>
                 <li>
                   <Link
-                    href="/behandlungen/Colonmassage_Viscerale_Mobilisation"
+                    href="/behandlungen/Colonmassage-Viscerale-Mobilisation"
                     replace
                     scroll={false}
                   >
@@ -238,7 +212,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Saugwellen_Therapie"
+                    href="/behandlungen/Saugwellen-Therapie"
                     replace
                     scroll={false}
                   >
@@ -253,7 +227,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Atemtherapie_der_befreite_Atem"
+                href="/behandlungen/Atemtherapie-der-befreite-Atem"
                 replace
                 scroll={false}
               >
@@ -266,7 +240,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Lymph_Mobilisation_Lymphdrainage"
+                href="/behandlungen/Lymph-Mobilisation-Lymphdrainage"
                 replace
                 scroll={false}
               >
@@ -277,7 +251,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Reflexzonen_Therapie"
+                href="/behandlungen/Reflexzonen-Therapie"
                 replace
                 scroll={false}
               >
@@ -285,6 +259,8 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
               </Link>
             </Card.Header>
           </Card>
+          {/* Scenar */}
+          
           {/* <Accordion.Item eventKey="2">
             <Accordion.Header>Scenar-Therapie</Accordion.Header>
             <Accordion.Body>
@@ -297,7 +273,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
               >
                 <li>
                   <Link
-                    href="/behandlungen/Scenar_Therapie"
+                    href="/behandlungen/Scenar-Therapie"
                     replace
                     scroll={false}
                   >
@@ -310,7 +286,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Osflow_Schwingungsplatte"
+                href="/behandlungen/Osflow-Schwingungsplatte"
                 replace
                 scroll={false}
               >
@@ -336,7 +312,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Stressreduktion_EFT"
+                href="/behandlungen/Stressreduktion-EFT"
                 replace
                 scroll={false}
               >
@@ -354,37 +330,80 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
             </Card.Header>
           </Card>
         </Accordion>
-                    </Col>
-                        {/* Main Content */}
-                        <Col
-                            md={1}
-                            className={`d-none d-sm-block ${vl}`}
-                            style={{ color: "black" }}                
-                        >
-                        </Col>
-                        <Col md={7}>
-                            <div className={inhaltBehandlung}>
-                                <h2 className="mx-auto">
-                                    Manuelle Therapie / Marnitz / Cyriax
-                                </h2>
-                                
-                                <br />
-                                <p>
-                                    Alle manuellen Therapien sind gezielte, gelenkschonende Behandlungen. Sie werden bei Funktionsstörungen aller Gelenke (auch Wirbelgelenke) angewendet. Die Auswahl der jeweiligen Mobilisationstechniken wird bestimmt durch den Befund. Eingeschränkte Bewegungsrichtungen, die Form des Gelenks, spielen eine Rolle. Welche Strukturen sind besonders betroffen? (Muskulatur, Faszie, Sehne, Kapsel, Periost, Knochen).
-                                </p>
+            </Col>
+              {/* Main Content */}
+            <Col
+              md={1}
+              className={`d-none d-sm-block ${vl}`}
+              style={{ color: "black" }}                
+            >
+            </Col>
+            <Col md={7}>
+              <div className={inhaltBehandlung}>
+                <h2 className="mx-auto">Atemtherapie</h2>
+                <div className="lead">der befreite Atem</div>
+                <br />
+                <p>
+                  <b>
+                    Unser Atem reagiert auf ALLES, was uns innerlich und
+                    äußerlich bewegt.
+                  </b>
+                  <br />
+                  Dies drücken wir auch in der Sprache aus: Atemlos,
+                  atemberaubend, langer Atem, Verschnaufpause, dicke Luft,
+                  runterpressen, mühsam rauspressen, tiefe Seufzer der
+                  Erleichterung.
+                </p>
+                <p>
+                  Dr. Buteyko und Prof. Frolov haben die Atemtechnik
+                  revolutioniert und damit für viele andere Erkrankungen neben
+                  Asthma einen Meilenstein in der Medizin gesetzt.
+                </p>
+                <p>
+                  Konsequente Nasenatmung und langsame und ganz geringe Atemzüge
+                  mit kaum wahrnehmbarer Bewegung im Bauch ist der ideale
+                  Ruheatem.
+                </p>
+                <p style={{ fontWeight: "600" }}>
+                  <a href="http://www.atmosana-schule.de/">
+                    www.atmosana-schule.de/
+                  </a>
+                </p>
+                <p>
+                  Mit den Techniken der <b>klassischen Atemtherapie</b>{" "}
+                  (Dehnlagen, Drainagelagerung, Hustentechniken, Lippenbremse,
+                  atemerleichternde Stellungen, Atem-Massage) werden
+                  Atemerkrankungen wie z.B. Bronchitis, Asthma, behandelt.
+                </p>
+                <p>
+                  Beim <b> &quot;befreiten Atem&quot;</b> geht es um eine
+                  bessere Körperwahrnehmung, tiefe körperliche und psychische
+                  Entspannung. Meine Hände sind mit Ihrem Körper im
+                  &bdquo;Gespräch&rdquo;. Durch die Berührung können
+                  Muskel-verspannungen, Atem und Emotionen gelöst werden. Auf
+                  diese Weise ist ein tieferer Zugang zu sich selbst möglich.
+                </p>
+                <p>
+                  Viele Emotionen sind in unserem &bdquo;Muskelpanzer&rdquo;
+                  eingefroren. Gelegentliche tiefe Seufzer der Erleichterung
+                  oder auch ein paar unwillkürliche Tränen lockern diesen
+                  &bdquo;Panzer&rdquo;. Seelische Schmerzen, Ängste und Trauer,
+                  das große Thema der mangelnden Eigenliebe, drücken sich in
+                  Körperhaltung, Atem- und Bewegungsmustern aus.
+                </p>
+                <p>
+                  Durch die aufmerksame Beobachtung und die achtsame Berührung,
+                  die immer im engen Kontakt mit dem vielschichtigen
+                  Atemgeschehen einhergeht, dürfen Körper und Seele genesen.
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <MobileSideMenue />
+    </>
+  );
+};
 
-                                <p style={{ fontWeight: '600' }} ><a href="https://www.somatics.de">www.somatics.de</a></p>
-                                <p style={{fontWeight: '600'}} ><a href="https://www.marnitz-therapie.de">www.marnitz-therapie.de</a></p>
-                            
-                            </div>
-                            
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <MobileSideMenue />     
-        </>
-    )
-}
-
-export default Manuelle_Therapie_Marnitz_Cyriax
+export default Atemtherapie_der_befreite_Atem

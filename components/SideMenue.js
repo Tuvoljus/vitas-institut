@@ -38,7 +38,7 @@ const SideMenue = ({children, eventKey, onClick}) => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/was_kann_alles_behandelt_werden"
+                href="/behandlungen/was-kann-alles-behandelt-werden"
                 replace
                 scroll={false}
               >
@@ -62,18 +62,18 @@ const SideMenue = ({children, eventKey, onClick}) => {
               >
                 <li>
                   <Link
-                    href="/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht"
+                    href="/behandlungen/Schmerztherapie-nach-Liebscher-und-Bracht"
                     replace
                     scroll={false}
                   >
                     <a style={{ textDecoration: "none" }}>
-                      Schmerztherapie nach Liebscher & Bracht
+                      Schmerztherapie nach Liebscher %26 Bracht
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/behandlungen/Golgi_Punkt_Schmerztherapie"
+                    href="/behandlungen/Golgi-Punkt-Schmerztherapie"
                     replace
                     scroll={false}
                   >
@@ -85,7 +85,7 @@ const SideMenue = ({children, eventKey, onClick}) => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Manuelle_Therapie_Marnitz_Cyriax"
+                    href="/behandlungen/Manuelle-Therapie-Marnitz-Cyriax"
                     replace
                     scroll={false}
                   >
@@ -97,7 +97,7 @@ const SideMenue = ({children, eventKey, onClick}) => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Methode_Dr_Furter"
+                    href="/behandlungen/Methode-Dr-Furter"
                     replace
                     scroll={false}
                   >
@@ -121,7 +121,7 @@ const SideMenue = ({children, eventKey, onClick}) => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Novafon_Schallwellenbehandllung"
+                    href="/behandlungen/Novafon-Schallwellenbehandllung"
                     replace
                     scroll={false}
                   >
@@ -144,7 +144,7 @@ const SideMenue = ({children, eventKey, onClick}) => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Pneumatische_Pulsations-Massage"
+                href="/behandlungen/Pneumatische-Pulsations-Massage"
                 replace
                 scroll={false}
               >
@@ -177,7 +177,7 @@ const SideMenue = ({children, eventKey, onClick}) => {
                 </li>
                 <li>
                   <Link
-                    href="/behandlungen/Colonmassage_Viscerale_Mobilisation"
+                    href="/behandlungen/Colonmassage-Viscerale-Mobilisation"
                     replace
                     scroll={false}
                   >
@@ -201,7 +201,7 @@ const SideMenue = ({children, eventKey, onClick}) => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Saugwellen_Therapie"
+                    href="/behandlungen/Saugwellen-Therapie"
                     replace
                     scroll={false}
                   >
@@ -216,7 +216,7 @@ const SideMenue = ({children, eventKey, onClick}) => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Atemtherapie_der_befreite_Atem"
+                href="/behandlungen/Atemtherapie-der-befreite-Atem"
                 replace
                 scroll={false}
               >
@@ -229,7 +229,7 @@ const SideMenue = ({children, eventKey, onClick}) => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Lymph_Mobilisation_Lymphdrainage"
+                href="/behandlungen/Lymph-Mobilisation-Lymphdrainage"
                 replace
                 scroll={false}
               >
@@ -240,7 +240,7 @@ const SideMenue = ({children, eventKey, onClick}) => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Reflexzonen_Therapie"
+                href="/behandlungen/Reflexzonen-Therapie"
                 replace
                 scroll={false}
               >
@@ -261,7 +261,7 @@ const SideMenue = ({children, eventKey, onClick}) => {
               >
                 <li>
                   <Link
-                    href="/behandlungen/Scenar_Therapie"
+                    href="/behandlungen/Scenar-Therapie"
                     replace
                     scroll={false}
                   >
@@ -274,7 +274,7 @@ const SideMenue = ({children, eventKey, onClick}) => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Osflow_Schwingungsplatte"
+                href="/behandlungen/Osflow-Schwingungsplatte"
                 replace
                 scroll={false}
               >
@@ -300,7 +300,7 @@ const SideMenue = ({children, eventKey, onClick}) => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Stressreduktion_EFT"
+                href="/behandlungen/Stressreduktion-EFT"
                 replace
                 scroll={false}
               >

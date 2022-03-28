@@ -1,36 +1,35 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from "next/link"
+import Link from "next/link";
 
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Container  from 'react-bootstrap/Container'
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Container  from 'react-bootstrap/Container';
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
 
-import { vl, heading, inhaltBehandlung } from '../../scss/styles.module.scss'
+import { vl, inhaltBehandlung } from '../../scss/styles.module.scss'
 import SideMenue from '../../components/SideMenue';
 import MobileSideMenue from '../../components/MobileSideMenue';
 
 import dynamic from 'next/dynamic'
-import Head from 'next/head'
+import Head from 'next/head';
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
+const Golgi_Punkt_Schmerztherapie = () => {   
 
-const NovafonSchallwellenbehandllung = () => {   
-    
     return (
-        <>   
+        <>
         <Head>
-        <title>Physiopraxis - Novafon Schallwellenbehandlung</title>
-          </Head>         
-            <HeaderPicture text="Novafon Schallwellenbehandlung" />
+        <title>Golgi Punkt Schmerztherapie</title>
+        </Head>
+        <HeaderPicture text="Golgi Punkt Schmerztherapie"/>
             <section>
                 <Container >
                     <Row>
-                        {/* Sitemenue */}
+                    {/* Sitemenue */}
                         <Col md={4} className="d-none d-sm-block">                            
-                            {/* <SideMenue />*/}
+                            {/* <SideMenue />                             */}
                             <Accordion flush>
           <Card>
             <Card.Header>
@@ -44,7 +43,7 @@ const NovafonSchallwellenbehandllung = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/was_kann_alles_behandelt_werden"
+                href="/behandlungen/was-kann-alles-behandelt-werden"
                 replace
                 scroll={false}
               >
@@ -68,22 +67,22 @@ const NovafonSchallwellenbehandllung = () => {
               >
                 <li>
                   <Link
-                    href="/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht"
+                    href="/behandlungen/Schmerztherapie-nach-Liebscher-und-Bracht"
                     replace
                     scroll={false}
                   >
                     <a style={{ textDecoration: "none" }}>
-                      Schmerztherapie nach Liebscher & Bracht
+                      Schmerztherapie nach Liebscher %26 Bracht
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/behandlungen/Golgi_Punkt_Schmerztherapie"
+                    href="/behandlungen/Golgi-Punkt-Schmerztherapie"
                     replace
                     scroll={false}
                   >
-                    <a style={{ textDecoration: "none" }}>
+                    <a style={{ textDecoration: "none", color: 'rgb(48, 134, 215)' }}>
                       Golgi Punkt Schmerztherapie
                     </a>
                   </Link>
@@ -91,7 +90,7 @@ const NovafonSchallwellenbehandllung = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Manuelle_Therapie_Marnitz_Cyriax"
+                    href="/behandlungen/Manuelle-Therapie-Marnitz-Cyriax"
                     replace
                     scroll={false}
                   >
@@ -103,7 +102,7 @@ const NovafonSchallwellenbehandllung = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Methode_Dr_Furter"
+                    href="/behandlungen/Methode-Dr-Furter"
                     replace
                     scroll={false}
                   >
@@ -127,11 +126,11 @@ const NovafonSchallwellenbehandllung = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Novafon_Schallwellenbehandllung"
+                    href="/behandlungen/Novafon-Schallwellenbehandllung"
                     replace
                     scroll={false}
                   >
-                    <a style={{ textDecoration: "none", color: 'rgb(48, 134, 215)' }}>
+                    <a style={{ textDecoration: "none" }}>
                       Novafon Schallwellenbehandllung
                     </a>
                   </Link>
@@ -149,7 +148,7 @@ const NovafonSchallwellenbehandllung = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Pneumatische_Pulsations-Massage"
+                href="/behandlungen/Pneumatische-Pulsations-Massage"
                 replace
                 scroll={false}
               >
@@ -182,7 +181,7 @@ const NovafonSchallwellenbehandllung = () => {
                 </li>
                 <li>
                   <Link
-                    href="/behandlungen/Colonmassage_Viscerale_Mobilisation"
+                    href="/behandlungen/Colonmassage-Viscerale-Mobilisation"
                     replace
                     scroll={false}
                   >
@@ -206,7 +205,7 @@ const NovafonSchallwellenbehandllung = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Saugwellen_Therapie"
+                    href="/behandlungen/Saugwellen-Therapie"
                     replace
                     scroll={false}
                   >
@@ -221,7 +220,7 @@ const NovafonSchallwellenbehandllung = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Atemtherapie_der_befreite_Atem"
+                href="/behandlungen/Atemtherapie-der-befreite-Atem"
                 replace
                 scroll={false}
               >
@@ -234,7 +233,7 @@ const NovafonSchallwellenbehandllung = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Lymph_Mobilisation_Lymphdrainage"
+                href="/behandlungen/Lymph-Mobilisation-Lymphdrainage"
                 replace
                 scroll={false}
               >
@@ -245,7 +244,7 @@ const NovafonSchallwellenbehandllung = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Reflexzonen_Therapie"
+                href="/behandlungen/Reflexzonen-Therapie"
                 replace
                 scroll={false}
               >
@@ -265,7 +264,7 @@ const NovafonSchallwellenbehandllung = () => {
               >
                 <li>
                   <Link
-                    href="/behandlungen/Scenar_Therapie"
+                    href="/behandlungen/Scenar-Therapie"
                     replace
                     scroll={false}
                   >
@@ -278,7 +277,7 @@ const NovafonSchallwellenbehandllung = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Osflow_Schwingungsplatte"
+                href="/behandlungen/Osflow-Schwingungsplatte"
                 replace
                 scroll={false}
               >
@@ -304,7 +303,7 @@ const NovafonSchallwellenbehandllung = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Stressreduktion_EFT"
+                href="/behandlungen/Stressreduktion-EFT"
                 replace
                 scroll={false}
               >
@@ -333,17 +332,19 @@ const NovafonSchallwellenbehandllung = () => {
                         <Col md={7}>
                             <div className={inhaltBehandlung}>
                                 <h2 className="mx-auto">
-                                    Novafon Schallwellenbehandlung
+                                    Golgi Punkt Schmerztherapie
                                 </h2>
                                 
+                            
+                                <div className="lead">
+                                    Diese Texte sind  www.liebscher-bracht.com  entnommen!                            
+                                </div>
                                 <br />
                                 <p>
-                                    Die Novafon Schallwellengeräte liegen mit ihrer Frequenz (50 und 100 hz) zwischen Ultraschall und MaRhyThe (Matrix-Rhythmus-Therapie). Damit kann ich dem Gewebe noch ein breiteres Spektrum an wirksamen Behandlungen anbieten. Die sehr angenehmen mechanischen Vibrationen werden bis zu sechs Zentimeter tief in das Gewebe geleitet.
+                                    Ursprünglich vom Arzt Walter Packi schon in den 30 iger Jahren entwickelt (Biokinematik)
+                                    Neben Liebscher %26 Bracht gibt es weitere Ausbildungsstätten, die in ähnlicher Weise diese sehr gute Methode verbreiten.
                                 </p>
-                                <p>
-                                    Das regt die Durchblutung und den Stoffwechsel an, reguliert die Muskelspannung und stimuliert tiefgreifend das Gewebe. Es werden Regenerations- und Reperaturmechanismen angeregt. Die Behandllung ist aktivierend und entspannend zugleich.
-                                </p>
-                                <p style={{ fontWeight: '600' }} ><a href="https://www.novafon.de/">www.novafon.de</a></p>                               
+                            
                             </div>
                             
                         </Col>
@@ -355,4 +356,4 @@ const NovafonSchallwellenbehandllung = () => {
     )
 }
 
-export default NovafonSchallwellenbehandllung
+export default Golgi_Punkt_Schmerztherapie

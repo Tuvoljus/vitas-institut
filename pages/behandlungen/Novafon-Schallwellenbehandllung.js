@@ -17,22 +17,21 @@ import Head from 'next/head'
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
 
-
-const Saugwellen_Therapie = () => {   
-
+const NovafonSchallwellenbehandllung = () => {   
+    
     return (
-      <>    
-      <Head>
-      <title>Physiopraxis - Saugwellen Therapie</title>
-        </Head>    
-        <HeaderPicture text="Reflexzonen-Therapie" />
-        <section>
-          <Container>
-            <Row>
-              {/* Sitemenue */}
-              <Col md={4} className="d-none d-sm-block">                            
-                {/* <SideMenue /> */}
-                <Accordion flush defaultActiveKey="1">
+        <>   
+        <Head>
+        <title>Physiopraxis - Novafon Schallwellenbehandlung</title>
+          </Head>         
+            <HeaderPicture text="Novafon Schallwellenbehandlung" />
+            <section>
+                <Container >
+                    <Row>
+                        {/* Sitemenue */}
+                        <Col md={4} className="d-none d-sm-block">                            
+                            {/* <SideMenue />*/}
+                            <Accordion flush>
           <Card>
             <Card.Header>
               <Link href="/behandlungen" replace scroll={false}>
@@ -45,7 +44,7 @@ const Saugwellen_Therapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/was_kann_alles_behandelt_werden"
+                href="/behandlungen/was-kann-alles-behandelt-werden"
                 replace
                 scroll={false}
               >
@@ -69,18 +68,18 @@ const Saugwellen_Therapie = () => {
               >
                 <li>
                   <Link
-                    href="/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht"
+                    href="/behandlungen/Schmerztherapie-nach-Liebscher-und-Bracht"
                     replace
                     scroll={false}
                   >
                     <a style={{ textDecoration: "none" }}>
-                      Schmerztherapie nach Liebscher & Bracht
+                      Schmerztherapie nach Liebscher %26 Bracht
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/behandlungen/Golgi_Punkt_Schmerztherapie"
+                    href="/behandlungen/Golgi-Punkt-Schmerztherapie"
                     replace
                     scroll={false}
                   >
@@ -92,7 +91,7 @@ const Saugwellen_Therapie = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Manuelle_Therapie_Marnitz_Cyriax"
+                    href="/behandlungen/Manuelle-Therapie-Marnitz-Cyriax"
                     replace
                     scroll={false}
                   >
@@ -104,7 +103,7 @@ const Saugwellen_Therapie = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Methode_Dr_Furter"
+                    href="/behandlungen/Methode-Dr-Furter"
                     replace
                     scroll={false}
                   >
@@ -128,11 +127,11 @@ const Saugwellen_Therapie = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Novafon_Schallwellenbehandllung"
+                    href="/behandlungen/Novafon-Schallwellenbehandllung"
                     replace
                     scroll={false}
                   >
-                    <a style={{ textDecoration: "none" }}>
+                    <a style={{ textDecoration: "none", color: 'rgb(48, 134, 215)' }}>
                       Novafon Schallwellenbehandllung
                     </a>
                   </Link>
@@ -150,7 +149,7 @@ const Saugwellen_Therapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Pneumatische_Pulsations-Massage"
+                href="/behandlungen/Pneumatische-Pulsations-Massage"
                 replace
                 scroll={false}
               >
@@ -183,7 +182,7 @@ const Saugwellen_Therapie = () => {
                 </li>
                 <li>
                   <Link
-                    href="/behandlungen/Colonmassage_Viscerale_Mobilisation"
+                    href="/behandlungen/Colonmassage-Viscerale-Mobilisation"
                     replace
                     scroll={false}
                   >
@@ -207,11 +206,11 @@ const Saugwellen_Therapie = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Saugwellen_Therapie"
+                    href="/behandlungen/Saugwellen-Therapie"
                     replace
                     scroll={false}
                   >
-                    <a style={{ textDecoration: "none", color: 'rgb(48, 134, 215)' }}>
+                    <a style={{ textDecoration: "none" }}>
                       Saugwellen-Therapie
                     </a>
                   </Link>
@@ -222,7 +221,7 @@ const Saugwellen_Therapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Atemtherapie_der_befreite_Atem"
+                href="/behandlungen/Atemtherapie-der-befreite-Atem"
                 replace
                 scroll={false}
               >
@@ -235,7 +234,7 @@ const Saugwellen_Therapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Lymph_Mobilisation_Lymphdrainage"
+                href="/behandlungen/Lymph-Mobilisation-Lymphdrainage"
                 replace
                 scroll={false}
               >
@@ -246,7 +245,7 @@ const Saugwellen_Therapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Reflexzonen_Therapie"
+                href="/behandlungen/Reflexzonen-Therapie"
                 replace
                 scroll={false}
               >
@@ -266,7 +265,7 @@ const Saugwellen_Therapie = () => {
               >
                 <li>
                   <Link
-                    href="/behandlungen/Scenar_Therapie"
+                    href="/behandlungen/Scenar-Therapie"
                     replace
                     scroll={false}
                   >
@@ -279,7 +278,7 @@ const Saugwellen_Therapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Osflow_Schwingungsplatte"
+                href="/behandlungen/Osflow-Schwingungsplatte"
                 replace
                 scroll={false}
               >
@@ -305,7 +304,7 @@ const Saugwellen_Therapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Stressreduktion_EFT"
+                href="/behandlungen/Stressreduktion-EFT"
                 replace
                 scroll={false}
               >
@@ -323,7 +322,7 @@ const Saugwellen_Therapie = () => {
             </Card.Header>
           </Card>
         </Accordion>
-              </Col>
+                        </Col>
                         {/* Main Content */}
                         <Col
                             md={1}
@@ -331,33 +330,29 @@ const Saugwellen_Therapie = () => {
                             style={{ color: "black" }}                
                         >
                         </Col>
-              <Col md={7}>
-                <div className={inhaltBehandlung}>
-                  <h2 className="mx-auto">Saugwellen-Therapie</h2>
-
-                  <br />
-                  <p>
-                    Die Saugwellen-Behandlung ist ein Verbindung von Schröpfen
-                    und Massage. Durch das Vakuumgerät wird eine dauerne
-                    Sogwirkung ausgeübt. Die Stärke kann genau dosiert werden.
-                    Das Schröpfglas kann so auf der Haut bewegt werden.
-                  </p>
-                  <p>
-                    In der Indikationsliste finden sie viele Möglichkeiten für
-                    die unterstützende Wirkung der Saugwellen-Behandlung.
-                  </p>
-                  <p>Hervorzuheben ist die Narbenmobilisation.</p>
-                  <p style={{ fontWeight: "600" }}>
-                    <a href="https://www.pneumatron.de/">www.pneumatron.de/</a>
-                  </p>
-                </div>
-              </Col>
-            </Row>
-          </Container>
-        </section>
-        <MobileSideMenue />
-      </>
-    );
+                        <Col md={7}>
+                            <div className={inhaltBehandlung}>
+                                <h2 className="mx-auto">
+                                    Novafon Schallwellenbehandlung
+                                </h2>
+                                
+                                <br />
+                                <p>
+                                    Die Novafon Schallwellengeräte liegen mit ihrer Frequenz (50 und 100 hz) zwischen Ultraschall und MaRhyThe (Matrix-Rhythmus-Therapie). Damit kann ich dem Gewebe noch ein breiteres Spektrum an wirksamen Behandlungen anbieten. Die sehr angenehmen mechanischen Vibrationen werden bis zu sechs Zentimeter tief in das Gewebe geleitet.
+                                </p>
+                                <p>
+                                    Das regt die Durchblutung und den Stoffwechsel an, reguliert die Muskelspannung und stimuliert tiefgreifend das Gewebe. Es werden Regenerations- und Reperaturmechanismen angeregt. Die Behandllung ist aktivierend und entspannend zugleich.
+                                </p>
+                                <p style={{ fontWeight: '600' }} ><a href="https://www.novafon.de/">www.novafon.de</a></p>                               
+                            </div>
+                            
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+            <MobileSideMenue />     
+        </>
+    )
 }
 
-export default Saugwellen_Therapie
+export default NovafonSchallwellenbehandllung

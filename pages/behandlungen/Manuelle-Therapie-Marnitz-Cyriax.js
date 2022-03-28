@@ -1,6 +1,7 @@
 import React from 'react'
-import Image from 'next/image'
-import Link from "next/link";
+import Script from 'next/script'
+import Link from "next/link"
+import Head from 'next/head'
 
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -8,27 +9,59 @@ import Container  from 'react-bootstrap/Container';
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
 
-import { vl, inhaltBehandlung } from '../../scss/styles.module.scss'
+import { vl, heading, inhaltBehandlung } from '../../scss/styles.module.scss'
 import SideMenue from '../../components/SideMenue';
 import MobileSideMenue from '../../components/MobileSideMenue';
 
 import dynamic from 'next/dynamic'
-import Head from 'next/head';
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
-const Golgi_Punkt_Schmerztherapie = () => {   
-
+const Manuelle_Therapie_Marnitz_Cyriax = () => {   
+    
     return (
-        <>
+        <>     
         <Head>
-        <title>Golgi Punkt Schmerztherapie</title>
-        </Head>
-        <HeaderPicture text="Golgi Punkt Schmerztherapie"/>
+        <title>Physiopraxis Manuelle Therapie Marnitz Cyriax</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Manuelle Therapie - Bernhard Käser" />
+        <meta name="keywords" content="Manuelle Therapie" />
+        <Script  strategy="afterInteractive" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify
+        (
+          {
+            "@context" : "http://schema.org",
+            "@type" : "LocalBusiness",
+            "name" : "Vitas-Institut Manuelle Therapie",
+            "description": "Bernhard Käser - Manuelle Therapie",           
+            "image" : "https://www.vitas-institut.de/img/Bernhard.jpg",
+            "telephone" : "+49 89 23 23 06 70",
+            "email" : "bk@vitas-institut.de",
+            "address" : {
+                "@type" : "PostalAddress",
+                "streetAddress" : "Oberanger 42",
+                "addressLocality" : "München",
+                "addressRegion" : "Bayern",
+                "addressCountry" : "Deutschland",
+                "postalCode" : "80331"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 48.13413978555193, 
+                "longitude": 11.569055768148749
+              },
+            "priceRange": "€",
+            "openingHours":["Mo - Do 10:00-18:00"],
+            "url" : "https://www.vitas-institut.de"
+          }) 
+        }} 
+        />
+        
+      </Head>       
+            <HeaderPicture text="Manuelle Therapie" />
             <section>
                 <Container >
                     <Row>
                     {/* Sitemenue */}
-                        <Col md={4} className="d-none d-sm-block">                            
+                    <Col md={4} className="d-none d-sm-block">                            
                             {/* <SideMenue />                             */}
                             <Accordion flush>
           <Card>
@@ -43,7 +76,7 @@ const Golgi_Punkt_Schmerztherapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/was_kann_alles_behandelt_werden"
+                href="/behandlungen/was-kann-alles-behandelt-werden"
                 replace
                 scroll={false}
               >
@@ -67,22 +100,22 @@ const Golgi_Punkt_Schmerztherapie = () => {
               >
                 <li>
                   <Link
-                    href="/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht"
+                    href="/behandlungen/Schmerztherapie-nach-Liebscher-und-Bracht"
                     replace
                     scroll={false}
                   >
                     <a style={{ textDecoration: "none" }}>
-                      Schmerztherapie nach Liebscher & Bracht
+                      Schmerztherapie nach Liebscher %26 Bracht
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/behandlungen/Golgi_Punkt_Schmerztherapie"
+                    href="/behandlungen/Golgi-Punkt-Schmerztherapie"
                     replace
                     scroll={false}
                   >
-                    <a style={{ textDecoration: "none", color: 'rgb(48, 134, 215)' }}>
+                    <a style={{ textDecoration: "none" }}>
                       Golgi Punkt Schmerztherapie
                     </a>
                   </Link>
@@ -90,11 +123,11 @@ const Golgi_Punkt_Schmerztherapie = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Manuelle_Therapie_Marnitz_Cyriax"
+                    href="/behandlungen/Manuelle-Therapie-Marnitz-Cyriax"
                     replace
                     scroll={false}
                   >
-                    <a style={{ textDecoration: "none" }}>
+                    <a style={{ textDecoration: "none", color: 'rgb(48, 134, 215)' }} >
                       Manuelle Therapie / Marnitz / Cyriax
                     </a>
                   </Link>
@@ -102,7 +135,7 @@ const Golgi_Punkt_Schmerztherapie = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Methode_Dr_Furter"
+                    href="/behandlungen/Methode-Dr-Furter"
                     replace
                     scroll={false}
                   >
@@ -126,7 +159,7 @@ const Golgi_Punkt_Schmerztherapie = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Novafon_Schallwellenbehandllung"
+                    href="/behandlungen/Novafon-Schallwellenbehandllung"
                     replace
                     scroll={false}
                   >
@@ -148,7 +181,7 @@ const Golgi_Punkt_Schmerztherapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Pneumatische_Pulsations-Massage"
+                href="/behandlungen/Pneumatische-Pulsations-Massage"
                 replace
                 scroll={false}
               >
@@ -181,7 +214,7 @@ const Golgi_Punkt_Schmerztherapie = () => {
                 </li>
                 <li>
                   <Link
-                    href="/behandlungen/Colonmassage_Viscerale_Mobilisation"
+                    href="/behandlungen/Colonmassage-Viscerale-Mobilisation"
                     replace
                     scroll={false}
                   >
@@ -205,7 +238,7 @@ const Golgi_Punkt_Schmerztherapie = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Saugwellen_Therapie"
+                    href="/behandlungen/Saugwellen-Therapie"
                     replace
                     scroll={false}
                   >
@@ -220,7 +253,7 @@ const Golgi_Punkt_Schmerztherapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Atemtherapie_der_befreite_Atem"
+                href="/behandlungen/Atemtherapie-der-befreite-Atem"
                 replace
                 scroll={false}
               >
@@ -233,7 +266,7 @@ const Golgi_Punkt_Schmerztherapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Lymph_Mobilisation_Lymphdrainage"
+                href="/behandlungen/Lymph-Mobilisation-Lymphdrainage"
                 replace
                 scroll={false}
               >
@@ -244,7 +277,7 @@ const Golgi_Punkt_Schmerztherapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Reflexzonen_Therapie"
+                href="/behandlungen/Reflexzonen-Therapie"
                 replace
                 scroll={false}
               >
@@ -264,7 +297,7 @@ const Golgi_Punkt_Schmerztherapie = () => {
               >
                 <li>
                   <Link
-                    href="/behandlungen/Scenar_Therapie"
+                    href="/behandlungen/Scenar-Therapie"
                     replace
                     scroll={false}
                   >
@@ -277,7 +310,7 @@ const Golgi_Punkt_Schmerztherapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Osflow_Schwingungsplatte"
+                href="/behandlungen/Osflow-Schwingungsplatte"
                 replace
                 scroll={false}
               >
@@ -303,7 +336,7 @@ const Golgi_Punkt_Schmerztherapie = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Stressreduktion_EFT"
+                href="/behandlungen/Stressreduktion-EFT"
                 replace
                 scroll={false}
               >
@@ -321,7 +354,7 @@ const Golgi_Punkt_Schmerztherapie = () => {
             </Card.Header>
           </Card>
         </Accordion>
-                        </Col>
+                    </Col>
                         {/* Main Content */}
                         <Col
                             md={1}
@@ -332,18 +365,16 @@ const Golgi_Punkt_Schmerztherapie = () => {
                         <Col md={7}>
                             <div className={inhaltBehandlung}>
                                 <h2 className="mx-auto">
-                                    Golgi Punkt Schmerztherapie
+                                    Manuelle Therapie / Marnitz / Cyriax
                                 </h2>
                                 
-                            
-                                <div className="lead">
-                                    Diese Texte sind  www.liebscher-bracht.com  entnommen!                            
-                                </div>
                                 <br />
                                 <p>
-                                    Ursprünglich vom Arzt Walter Packi schon in den 30 iger Jahren entwickelt (Biokinematik)
-                                    Neben Liebscher & Bracht gibt es weitere Ausbildungsstätten, die in ähnlicher Weise diese sehr gute Methode verbreiten.
+                                    Alle manuellen Therapien sind gezielte, gelenkschonende Behandlungen. Sie werden bei Funktionsstörungen aller Gelenke (auch Wirbelgelenke) angewendet. Die Auswahl der jeweiligen Mobilisationstechniken wird bestimmt durch den Befund. Eingeschränkte Bewegungsrichtungen, die Form des Gelenks, spielen eine Rolle. Welche Strukturen sind besonders betroffen? (Muskulatur, Faszie, Sehne, Kapsel, Periost, Knochen).
                                 </p>
+
+                                <p style={{ fontWeight: '600' }} ><a href="https://www.somatics.de">www.somatics.de</a></p>
+                                <p style={{fontWeight: '600'}} ><a href="https://www.marnitz-therapie.de">www.marnitz-therapie.de</a></p>
                             
                             </div>
                             
@@ -356,4 +387,4 @@ const Golgi_Punkt_Schmerztherapie = () => {
     )
 }
 
-export default Golgi_Punkt_Schmerztherapie
+export default Manuelle_Therapie_Marnitz_Cyriax

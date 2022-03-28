@@ -1,6 +1,5 @@
 import React from 'react'
-import Script from 'next/script'
-import Head from 'next/head'
+import Image from 'next/image'
 import Link from "next/link"
 
 import Row from 'react-bootstrap/Row'
@@ -14,58 +13,26 @@ import SideMenue from '../../components/SideMenue';
 import MobileSideMenue from '../../components/MobileSideMenue';
 
 import dynamic from 'next/dynamic'
+import Head from 'next/head'
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
 
-const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
-  const activeKey= "0"  
-    return (      
-      <>
+
+
+const Saugwellen_Therapie = () => {   
+
+    return (
+      <>    
       <Head>
-      <title>Physiopraxis - Schmerrztherapie nach Liebscher und Bracht</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Liebscher und Bracht Anwendung" />
-        <meta name="keywords" content="Liebscher und Bracht" />
-        <Script  strategy="afterInteractive" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify
-        (
-          {
-            "@context" : "http://schema.org",
-            "@type" : "LocalBusiness",
-            "name" : "Liebscher und Bracht",
-            "description": "Liebscher und Bracht",           
-            "image" : "https://www.vitas-institut.de/img/Bernhard.jpg",
-            "telephone" : "+49 89 23 23 06 70",
-            "email" : "bk@vitas-institut.de",
-            "address" : {
-                "@type" : "PostalAddress",
-                "streetAddress" : "Oberanger 42",
-                "addressLocality" : "München",
-                "addressRegion" : "Bayern",
-                "addressCountry" : "Deutschland",
-                "postalCode" : "80331"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 48.13413978555193, 
-                "longitude": 11.569055768148749
-              },
-            "priceRange": "€",
-            "openingHours":["Mo - Do 10:00-18:00"],
-            "url" : "https://www.vitas-institut.de"
-          }) 
-        }} 
-        />
-        
-      </Head>
-        <HeaderPicture text="Schmerztherapie nach Liebscher & Bracht" />
+      <title>Physiopraxis - Saugwellen Therapie</title>
+        </Head>    
+        <HeaderPicture text="Reflexzonen-Therapie" />
         <section>
           <Container>
             <Row>
               {/* Sitemenue */}
-              <div className="d-none d-sm-block"></div>
-              <Col md={4} className="d-none d-sm-block">
-        
-                  {/* <SideMenue /> */}
-                  <Accordion flush defaultActiveKey="0">
+              <Col md={4} className="d-none d-sm-block">                            
+                {/* <SideMenue /> */}
+                <Accordion flush defaultActiveKey="1">
           <Card>
             <Card.Header>
               <Link href="/behandlungen" replace scroll={false}>
@@ -78,7 +45,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/was_kann_alles_behandelt_werden"
+                href="/behandlungen/was-kann-alles-behandelt-werden"
                 replace
                 scroll={false}
               >
@@ -88,7 +55,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
               </Link>
             </Card.Header>
           </Card>
-          <Accordion.Item eventKey="0">
+          <Accordion.Item>
             <Accordion.Header>
               Klassische Krankengymnastik/ <br /> Manuelle Therapien
             </Accordion.Header>
@@ -102,18 +69,18 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
               >
                 <li>
                   <Link
-                    href="/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht"
+                    href="/behandlungen/Schmerztherapie-nach-Liebscher-und-Bracht"
                     replace
                     scroll={false}
                   >
-                    <a style={{ textDecoration: "none", color: 'rgb(48, 134, 215)' }}>
-                      Schmerztherapie nach Liebscher & Bracht
+                    <a style={{ textDecoration: "none" }}>
+                      Schmerztherapie nach Liebscher %26 Bracht
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/behandlungen/Golgi_Punkt_Schmerztherapie"
+                    href="/behandlungen/Golgi-Punkt-Schmerztherapie"
                     replace
                     scroll={false}
                   >
@@ -125,7 +92,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Manuelle_Therapie_Marnitz_Cyriax"
+                    href="/behandlungen/Manuelle-Therapie-Marnitz-Cyriax"
                     replace
                     scroll={false}
                   >
@@ -137,7 +104,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Methode_Dr_Furter"
+                    href="/behandlungen/Methode-Dr-Furter"
                     replace
                     scroll={false}
                   >
@@ -161,7 +128,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Novafon_Schallwellenbehandllung"
+                    href="/behandlungen/Novafon-Schallwellenbehandllung"
                     replace
                     scroll={false}
                   >
@@ -183,7 +150,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Pneumatische_Pulsations-Massage"
+                href="/behandlungen/Pneumatische-Pulsations-Massage"
                 replace
                 scroll={false}
               >
@@ -216,7 +183,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
                 </li>
                 <li>
                   <Link
-                    href="/behandlungen/Colonmassage_Viscerale_Mobilisation"
+                    href="/behandlungen/Colonmassage-Viscerale-Mobilisation"
                     replace
                     scroll={false}
                   >
@@ -240,11 +207,11 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
 
                 <li>
                   <Link
-                    href="/behandlungen/Saugwellen_Therapie"
+                    href="/behandlungen/Saugwellen-Therapie"
                     replace
                     scroll={false}
                   >
-                    <a style={{ textDecoration: "none" }}>
+                    <a style={{ textDecoration: "none", color: 'rgb(48, 134, 215)' }}>
                       Saugwellen-Therapie
                     </a>
                   </Link>
@@ -255,7 +222,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Atemtherapie_der_befreite_Atem"
+                href="/behandlungen/Atemtherapie-der-befreite-Atem"
                 replace
                 scroll={false}
               >
@@ -268,7 +235,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Lymph_Mobilisation_Lymphdrainage"
+                href="/behandlungen/Lymph_Mobilisation-Lymphdrainage"
                 replace
                 scroll={false}
               >
@@ -279,7 +246,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Reflexzonen_Therapie"
+                href="/behandlungen/Reflexzonen-Therapie"
                 replace
                 scroll={false}
               >
@@ -299,7 +266,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
               >
                 <li>
                   <Link
-                    href="/behandlungen/Scenar_Therapie"
+                    href="/behandlungen/Scenar-Therapie"
                     replace
                     scroll={false}
                   >
@@ -312,7 +279,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Osflow_Schwingungsplatte"
+                href="/behandlungen/Osflow-Schwingungsplatte"
                 replace
                 scroll={false}
               >
@@ -338,7 +305,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
           <Card>
             <Card.Header>
               <Link
-                href="/behandlungen/Stressreduktion_EFT"
+                href="/behandlungen/Stressreduktion-EFT"
                 replace
                 scroll={false}
               >
@@ -357,66 +324,31 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
           </Card>
         </Accordion>
               </Col>
-              {/* Main Content */}
-              <Col
-                md={1}
-                className={`d-none d-sm-block ${vl}`}
-                style={{ color: "black" }}                
-              ></Col>
+                        {/* Main Content */}
+                        <Col
+                            md={1}
+                            className={`d-none d-sm-block ${vl}`}
+                            style={{ color: "black" }}                
+                        >
+                        </Col>
               <Col md={7}>
                 <div className={inhaltBehandlung}>
-                  <h2 className="mx-auto">
-                    Schmerztherapie nach Liebscher & Bracht
-                  </h2>
+                  <h2 className="mx-auto">Saugwellen-Therapie</h2>
 
-                  <div className="lead">
-                    Diese Texte sind www.liebscher-bracht.com entnommen!
-                  </div>
                   <br />
                   <p>
-                    JAHRELANGE erhöhte Muskelspannung (Tonus) setzen Gelenke
-                    unter Kompression und führen zum Gelenkverschleiß. Die
-                    verspannten, zu kurzen, verhärteten Muskeln sind URSACHE und
-                    nicht die Folge von Gelenk- oder Bandscheibenverschleiß. Der
-                    Muskelschmerz ist ein WARNSCHMERZ, um unseren
-                    Bewegungsapparat zu schützen.
+                    Die Saugwellen-Behandlung ist ein Verbindung von Schröpfen
+                    und Massage. Durch das Vakuumgerät wird eine dauerne
+                    Sogwirkung ausgeübt. Die Stärke kann genau dosiert werden.
+                    Das Schröpfglas kann so auf der Haut bewegt werden.
                   </p>
                   <p>
-                    Wenn nur das Gelenk gespritzt wird oder Schmerzmedikamente
-                    in Einsatz kommen, werden die schmerzauslösenden Faktoren
-                    nicht ursächlich behandelt. Der Schmerz ist zu 90 Prozent
-                    ein Muskelschmerz und ist eine positive Warnung. Er schützt
-                    unseren Bewegungsapparat. Er bremst ihn vor schädigenden
-                    Verhaltensweisen (z.B. zu lange einseitige Haltungen und
-                    Bewegungen).
+                    In der Indikationsliste finden sie viele Möglichkeiten für
+                    die unterstützende Wirkung der Saugwellen-Behandlung.
                   </p>
-                  <p>
-                    Die Schmerztherapie nach Liebscher & Bracht ist in drei
-                    Stufen aufgebaut, die gleichzeitig drei Vorgehensweisen
-                    entsprechen.
-                  </p>
-                  <p>
-                    1. Schmerzpunktpressur an den Muskelurprüngen oder
-                    Muskelansätzen. Dort sind Tastkörperchen (Rezeptoren), die
-                    für die Grundspannung des Muskels verantwortlich sind. Es
-                    sind weder Akupressurpunkte noch Triggerpunkte, wobei sich
-                    viele überlagern. Damit kann der aktuelle Schmerz am
-                    schnellsten und deutlichsten reduziert werden.
-                  </p>
-                  <p>
-                    2. Engpassdehnungen die den gelösten Muskel umprogrammieren
-                    und den verbesserten Zustand stabilisieren. Diese Dehnungen,
-                    die kräftigende und koordinative Elemente enthalten führt
-                    der Patient zu Hause konsequent weiter.
-                  </p>
-                  <p>
-                    3. Maßnahmen vom Arzt oder Heilpraktiker, die unserem Körper
-                    schädigende Stoffe ersparen. Unterstützt wird z.B. mit
-                    Enzymen, Vitaminen, Spurenelementen, Mineralien. Die
-                    Ausscheidung schädlicher und nicht gebrauchter Stoffe wird
-                    gefördert. Dadurch sinkt die Gesamtkörper-Muskelanspannung
-                    (Grundtonus). Die internen muskulären Widerstände werden
-                    reduziert. So wird die Schmerzfreiheit unterstützt.
+                  <p>Hervorzuheben ist die Narbenmobilisation.</p>
+                  <p style={{ fontWeight: "600" }}>
+                    <a href="https://www.pneumatron.de/">www.pneumatron.de/</a>
                   </p>
                 </div>
               </Col>
@@ -428,4 +360,4 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
     );
 }
 
-export default Schmerztherapie_nach_Liebscher_und_Bracht
+export default Saugwellen_Therapie
