@@ -10,12 +10,12 @@
     "icons": [
       {
         "src": "/vercel.svg",
-        "sizes": "192x192",
+        "sizes": "283x64",
         "type": "image/svg"
       },
       {
         "src": "/vercel.svg",
-        "sizes": "512x512",
+        "sizes": "283x64",
         "type": "image/svg"
       }
     ]
