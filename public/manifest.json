@@ -9,8 +9,8 @@
     "start_url": "/",
     "icons": [
       {
-        "src": "/vercel.svg",
-        "sizes": "283x64",
+        "src": "/img/Logo_Vitas_Institut.svg",
+        "sizes": "150x83",
         "type": "image/svg"
       },
       {
