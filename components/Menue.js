@@ -171,7 +171,7 @@ const Menue = () => {
               </li>
               <li className="nav-item">
                 {/*add for Menue Color style={divStyle} */}
-                <a className="nav-link" href="/aktuelles_und_links">
+                <a className="nav-link" href="/aktuelles-und-links">
                   Aktuelles / Links
                 </a>
               </li>
