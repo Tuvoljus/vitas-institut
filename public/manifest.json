@@ -9,13 +9,8 @@
     "start_url": "/",
     "icons": [
       {
-        "src": "/img/Logo_Vitas_Institut.svg",
+        "src": "/Vitas-Institut-Manifest-Logo512x512.svg",
         "sizes": "150x83",
-        "type": "image/svg"
-      },
-      {
-        "src": "/vercel.svg",
-        "sizes": "283x64",
         "type": "image/svg"
       }
     ]
