@@ -1,6 +1,6 @@
 {
-    "name": "Test PWA",
-    "short_name": "Test PWA",
+    "name": "Vitas Institut",
+    "short_name": "Vitas",
     "display": "standalone",
     "orientation": "portrait",
     "purpose": "any maskable",
@@ -9,8 +9,13 @@
     "start_url": "/",
     "icons": [
       {
-        "src": "/Vitas-Institut-Manifest-Logo512x512.svg",
-        "sizes": "150x83",
+        "src": "/vitaslogo512x512.svg",
+        "sizes": "512x512",
+        "type": "image/svg"
+      },
+      {
+        "src": "/vitaslogo144x144.svg",
+        "sizes": "144x144",
         "type": "image/svg"
       }
     ]
