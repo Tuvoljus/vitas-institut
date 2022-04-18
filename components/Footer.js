@@ -26,7 +26,7 @@ const Footer = () => {
                                 <li><AiOutlineMail color="#969696" size="1.3rem"/> <a href="mailTo:bk@vitas-institut.de"> bk@vitas-institut.de</a></li>
                             </ul>
                             
-                        <ul className={[styles.siteLinks]} style={{listStyle: 'none'}}>
+                        {/* <ul className={[styles.siteLinks]} style={{listStyle: 'none'}}>
                             <li>
                                 <Link href="">
                                     <a>
@@ -44,7 +44,7 @@ const Footer = () => {
                                     <a></a>
                                 </Link>
                             </li>
-                       </ul>     
+                       </ul>      */}
                     </div>
                     <div className="col-xs-5 col-sm-5 col-md-2 col-xl-2">
                         <ul className={[styles.siteLinks]} style={{listStyle: 'none'}}>
