@@ -17,6 +17,12 @@
         "src": "/vitaslogo144x144.svg",
         "sizes": "144x144",
         "type": "image/svg"
+      },
+      {
+        "src": "/vitaslogo144x144.png",
+        "sizes": "144x144",
+        "type": "image/png"
       }
+
     ]
   }
