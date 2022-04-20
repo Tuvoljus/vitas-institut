@@ -72,7 +72,7 @@ const Golgi_Punkt_Schmerztherapie = () => {
                     scroll={false}
                   >
                     <a style={{ textDecoration: "none" }}>
-                      Schmerztherapie nach Liebscher %26 Bracht
+                      Schmerztherapie nach Liebscher 	&amp; Bracht
                     </a>
                   </Link>
                 </li>

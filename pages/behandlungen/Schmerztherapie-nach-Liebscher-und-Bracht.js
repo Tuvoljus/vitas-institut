@@ -107,7 +107,7 @@ const Schmerztherapie_nach_Liebscher_und_Bracht = () => {
                     scroll={false}
                   >
                     <a style={{ textDecoration: "none", color: 'rgb(48, 134, 215)' }}>
-                      Schmerztherapie nach Liebscher %26 Bracht
+                      Schmerztherapie nach Liebscher &amp; Bracht
                     </a>
                   </Link>
                 </li>

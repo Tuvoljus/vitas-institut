@@ -77,7 +77,7 @@ const Atemtherapie_der_befreite_Atem = () => {
                     scroll={false}
                   >
                     <a style={{ textDecoration: "none" }}>
-                      Schmerztherapie nach Liebscher & Bracht
+                      Schmerztherapie nach Liebscher 	&amp; Bracht
                     </a>
                   </Link>
                 </li>
