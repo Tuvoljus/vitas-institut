@@ -12,6 +12,7 @@ class MyDocument extends Document {
       <Html lang='de'>
         <Head>
         <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#fff" />
         </Head>
         <body>
           <Main />
