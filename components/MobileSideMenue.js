@@ -89,7 +89,7 @@ const MobileSideMenue = () => {
                       <Nav.Link href="/behandlungen">
                         Einführung Behandlungen
                       </Nav.Link>
-                      <Nav.Link href="/behandlungen/was_kann_alles_behandelt_werden">
+                      <Nav.Link href="/behandlungen/was-kann-alles-behandelt-werden">
                         Was kann alles behandelt werden? - Indikationen
                       </Nav.Link>
                       <Accordion flush>
@@ -100,29 +100,29 @@ const MobileSideMenue = () => {
                             </Nav.Link>
                           </Accordion.Header>
                           <Accordion.Body>
-                            <Nav.Link href="/behandlungen/Schmerztherapie_nach_Liebscher_und_Bracht">
-                              Schmerztherapie nach Liebscher & Bracht
+                            <Nav.Link href="/behandlungen/Schmerztherapie-nach-Liebscher-und-Bracht">
+                              Schmerztherapie nach Liebscher 	&amp; Bracht
                             </Nav.Link>
-                            <Nav.Link href="/behandlungen/Golgi_Punkt_Schmerztherapie">
+                            <Nav.Link href="/behandlungen/Golgi-Punkt-Schmerztherapie">
                               Golgi Punkt Schmerztherapie
                             </Nav.Link>
-                            <Nav.Link href="/behandlungen/Manuelle_Therapie_Marnitz_Cyriax">
+                            <Nav.Link href="/behandlungen/Manuelle-Therapie-Marnitz-Cyriax">
                               Manuelle Therapie / Marnitz / Cyriax
                             </Nav.Link>
-                            <Nav.Link href="/behandlungen/Methode_Dr_Furter">
+                            <Nav.Link href="/behandlungen/Methode-Dr-Furter">
                               Methode nach Dr. Furter
                             </Nav.Link>
                             <Nav.Link href="/behandlungen/Matrix-Rhythmus-Therapie-MaRhyThe">
                               Matrix-Rhythmus-Therapie MaRhyThe
                             </Nav.Link>
-                            <Nav.Link href="/behandlungen/Novafon_Schallwellenbehandllung">
+                            <Nav.Link href="/behandlungen/Novafon-Schallwellenbehandllung">
                               Novafon Schallwellenbehandllung
                             </Nav.Link>
                           </Accordion.Body>
                         </Accordion.Item>
                       </Accordion>
                       <Nav.Link href="/behandlungen/Massage">Massage</Nav.Link>
-                      <Nav.Link href="/behandlungen/Pneumatische_Pulsations-Massage">
+                      <Nav.Link href="/behandlungen/Pneumatische-Pulsations-Massage">
                         Pneumatische Pulsations-Massage (Pneumatron 200)
                       </Nav.Link>
                       <Accordion flush>
@@ -136,25 +136,25 @@ const MobileSideMenue = () => {
                             <Nav.Link href="/behandlungen/Bindegewebsmassage">
                               Bindegewebsmassage
                             </Nav.Link>
-                            <Nav.Link href="/behandlungen/Colonmassage_Viscerale_Mobilisation">
+                            <Nav.Link href="/behandlungen/Colonmassage-Viscerale-Mobilisation">
                               Colon-Massage / Viscerale Mobilisation
                             </Nav.Link>
                             <Nav.Link href="/behandlungen/Triggerpunktbehandlung">
                               Triggerpunktbehandlung
                             </Nav.Link>
-                            <Nav.Link href="/behandlungen/Saugwellen_Therapie">
+                            <Nav.Link href="/behandlungen/Saugwellen-Therapie">
                               Saugwellen-Therapie
                             </Nav.Link>
                           </Accordion.Body>
                         </Accordion.Item>
                       </Accordion>
-                      <Nav.Link href="/behandlungen/Atemtherapie_der_befreite_Atem">
+                      <Nav.Link href="/behandlungen/Atemtherapie-der-befreite-Atem">
                         Atemtherapie; der befreite Atem
                       </Nav.Link>
-                      <Nav.Link href="/behandlungen/Lymph_Mobilisation_Lymphdrainage">
+                      <Nav.Link href="/behandlungen/Lymph-Mobilisation-Lymphdrainage">
                         Lymph-Mobilisation
                       </Nav.Link>
-                      <Nav.Link href="/behandlungen/Reflexzonen_Therapie">
+                      <Nav.Link href="/behandlungen/Reflexzonen-Therapie">
                         Reflexzonen-Therapie
                       </Nav.Link>
                       <Accordion flush>
@@ -165,19 +165,19 @@ const MobileSideMenue = () => {
                             </Nav.Link>
                           </Accordion.Header>
                           <Accordion.Body>
-                            <Nav.Link href="/behandlungen/Scenar_Therapie">
+                            <Nav.Link href="/behandlungen/Scenar-Therapie">
                               Denas Therapie
                             </Nav.Link>
                           </Accordion.Body>
                         </Accordion.Item>
                       </Accordion>
-                      <Nav.Link href="/behandlungen/Osflow_Schwingungsplatte">
+                      <Nav.Link href="/behandlungen/Osflow-Schwingungsplatte">
                         Osflow Schwingungsplatte
                       </Nav.Link>
                       <Nav.Link href="/behandlungen/Entspannungs-Methoden">
                         Ruhe finden/ Entspannungs-Methoden
                       </Nav.Link>
-                      <Nav.Link href="/behandlungen/Stressreduktion_EFT">
+                      <Nav.Link href="/behandlungen/Stressreduktion-EFT">
                         Ruhe finden/ Stressreduktion / MFT EFT Methode
                       </Nav.Link>
                       <Nav.Link href="/behandlungen/EMDR-Coaching">
