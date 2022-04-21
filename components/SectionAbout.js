@@ -68,9 +68,8 @@ const SectionAbout = () => {
                     width={1024} 
                     height={768}
                     objectFit="cover"
-                    quality="100"
+                    quality="50"
                     alt="HeaderImage Bernhard Käser"                    
-                    priority="100"
                   />
                 </div>
               )}
