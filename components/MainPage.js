@@ -27,6 +27,8 @@ const MainPage = () => {
   const ImagePath = "/img/Header_Bild_Gruen.jpg";
   const ImagePathWebP = "/img_webp/Header_Bild_Gruen.webp";
 
+  const lazyRoot = React.useRef(null)
+
     // const iconStyle = {
     //     color: "#1663b1",
     //     fontSize: "1.4rem"
@@ -262,7 +264,7 @@ const MainPage = () => {
           objectFit="cover"
           quality="100"
           alt="Bernhard Käser Physiotherapeut - Physiopraxis"          
-          priority
+          lazyRoot={lazyRoot}
         />
       </div>
     )}
