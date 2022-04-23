@@ -36,7 +36,7 @@ const MainPage = () => {
     return (
       <>
       <Head>
-        <title>Vitas Institut Bernhard Käser Physiotherapeut - Physiotherapie am Dendlinger Tor</title>
+        <title>Vitas Institut Bernhard Käser Physiotherapeut - Physiotherapie am Sendlinger Tor</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Physiopraxis Altstadt Lehel, Sendlinger Tor Inhaber Bernhard Käser Physiotherapeut. Seit über 35 Jahren behandle ich Menschen mit Herz und Sachverstand!" />
         <meta name="keywords" content="Physiotherapeut Altstadt Lehel Sendlinger Tor" />
