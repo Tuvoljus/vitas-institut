@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 import Row from 'react-bootstrap/Row';
@@ -12,10 +13,12 @@ import SideMenue from '../../components/SideMenue';
 import MobileSideMenue from '../../components/MobileSideMenue';
 
 import dynamic from 'next/dynamic';
+import { useAmp } from 'next/amp';
 import Head from 'next/head';
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'));
 
 const Matrix_Rhythmus_Therapie_MaRhyThe = () => {
+  const isAmp = useAmp();
   return (
     <>
       <Head>
@@ -343,29 +346,83 @@ const Matrix_Rhythmus_Therapie_MaRhyThe = () => {
             ></Col>
             <Col md={7}>
               <div className={inhaltBehandlung}>
-                <h2 className="mx-auto">Matrix-Rhythmus-Therapie MaRhyThe</h2>
+                <h2 className="mx-auto">MaRhyThe Matrix-Rhythmus-Therapie</h2>
 
                 <br />
                 <p>
-                  Die Matrix-Rhythmus-Therapie ist nach langjähriger
-                  Grundlagenforschung über die Zellen an der Uni Erlangen
-                  entwickelt worden.
+                  Die Matrix-Rhythmus-Therapie wirkt von außen auf die
+                  Körperzellen und ihre Umgebung, die Matrix. Das Therapiegerät{' '}
+                  <a href="https://marhythe-systems.de/das-produkt/">
+                    Matrixmobil®
+                  </a>{' '}
+                  mit seinem speziell geformten Resonator erzeugt
+                  mechano-magnetische Schwingungen analog den körpereigenen
                 </p>
                 <p>
-                  Mit einem speziell geformten schwingenden Behandlungskopf wird
-                  in der muskeleigenen Frequenz 8-12 Hertz gearbeitet.
-                  (entspricht der Zittergeschwindigkeit wenn Sie Schüttelfrost
-                  haben) Es werden mechano-magnetische Schwingungen erzeugt.
-                  Diese regen den Stoffwechsel zwischen Zelle und
-                  Umgebungsflüssigkeit (Matrix) an.
+                  Dabei werden u. a. asymmetrische Gewebsdrücke erzeugt, die den
+                  Pump-Saugeffekt simulieren und gleichzeitig Nervenrezeptoren
+                  physiologisch stimulieren.
                 </p>
                 <p>
-                  Die gute Wirksamkeit ist durch mehrere Studien bestätigt
-                  worden. (u.a. Merzedes Benz/ Faber Castell)
+                  Wenn die Eigenschwingung des Körpers und der Zellen wieder in
+                  Takt ist, können die vielfältigen Stoffwechsel, die zwischen
+                  Zellen und deren Umgebungsflüssigkeit (Matrix) notwendig sind,
+                  stattfinden. So normalisieren sich die Stoffwechselprozesse
+                  der betroffenen Körperregion.
                 </p>
-                <p style={{ fontWeight: '600' }}>
+                <p>
+                  Mit anderen Worten: Die Matrix-Rhythmus-Therapie wirkt über
+                  rhythmische Mikro-Extension bis auf die zellbiologische Ebene,
+                  mit dem Effekt, dass zelluläre Mikroprozesse in Takt kommen,
+                  auf die jede Zellregenaration und Heilung angewiesen sind.
+                </p>
+                <p>
+                  <strong>Ergebnis:</strong> Das Gewebe, also Muskeln, Haut,
+                  Sehnen usw. werden wieder durchlässig und geschmeidig und
+                  nehmen so an den Gesundungsvorgängen des Körpers wieder teil.
+                </p>
+                {/* <p style={{ fontWeight: '600' }}>
                   <a href="https://www.marhythe.de/">www.marhythe.de</a>
-                </p>
+                </p> */}
+                {isAmp ? (
+                  <amp-img
+                    layout="responsive"
+                    width="800"
+                    height="600"
+                    src="/img_webp/Matrix_Rhytmus-Therapie_MaRhyThe.webp"
+                    alt="Bernhard Käser Physiotherapeut - Physiopraxis"
+                  />
+                ) : (
+                  <Image
+                    className="rounded-3"
+                    src="/img_avif/Matrix_Rhytmus-Therapie_MaRhyThe.avif"
+                    layout="responsive"
+                    width={800}
+                    height={600}
+                    quality="10"
+                    alt="Bernhard Käser Physiotherapeut - Physiopraxis"
+                  />
+                )}
+                <p></p>
+                {isAmp ? (
+                  <amp-img
+                    layout="responsive"
+                    width="800"
+                    height="600"
+                    src="/img_webp/Matrix_Rhytmus-Therapie_MaRhyThe_Anwendung.webp"
+                    alt="Bernhard Käser Physiotherapeut - Physiopraxis"
+                  />
+                ) : (
+                  <Image
+                    className="rounded-3"
+                    src="/img_avif/Matrix_Rhytmus-Therapie_MaRhyThe_Anwendung.avif"
+                    layout="responsive"
+                    width={800}
+                    height={600}
+                    quality="10"
+                    alt="Bernhard Käser Physiotherapeut - Physiopraxis"
+                  />
+                )}
               </div>
             </Col>
           </Row>
