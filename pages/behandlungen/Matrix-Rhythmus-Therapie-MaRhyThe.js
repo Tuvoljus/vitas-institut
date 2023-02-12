@@ -390,7 +390,7 @@ const Matrix_Rhythmus_Therapie_MaRhyThe = () => {
                     width="800"
                     height="600"
                     src="/img_webp/Matrix_Rhytmus-Therapie_MaRhyThe.webp"
-                    alt="Bernhard Käser Physiotherapeut - Physiopraxis"
+                    alt="Matrix Rhytmus Therapie MaRhyThe - Physiopraxis"
                   />
                 ) : (
                   <Image
@@ -400,7 +400,7 @@ const Matrix_Rhythmus_Therapie_MaRhyThe = () => {
                     width={800}
                     height={600}
                     quality="10"
-                    alt="Bernhard Käser Physiotherapeut - Physiopraxis"
+                    alt="Matrix Rhytmus Therapie MaRhyThe - Physiopraxis"
                   />
                 )}
                 <p></p>
@@ -410,7 +410,7 @@ const Matrix_Rhythmus_Therapie_MaRhyThe = () => {
                     width="800"
                     height="600"
                     src="/img_webp/Matrix_Rhytmus-Therapie_MaRhyThe_Anwendung.webp"
-                    alt="Bernhard Käser Physiotherapeut - Physiopraxis"
+                    alt="Matrix Rhytmus Therapie MaRhyThe - Physiopraxis"
                   />
                 ) : (
                   <Image
@@ -420,7 +420,7 @@ const Matrix_Rhythmus_Therapie_MaRhyThe = () => {
                     width={800}
                     height={600}
                     quality="10"
-                    alt="Bernhard Käser Physiotherapeut - Physiopraxis"
+                    alt="Matrix Rhytmus Therapie MaRhyThe - Physiopraxis"
                   />
                 )}
               </div>
