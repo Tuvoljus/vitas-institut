@@ -112,7 +112,7 @@ const Saugwellen_Therapie = () => {
                           </a>
                         </Link>
                       </li>
-
+                      {/* Matrix-Rhythmus-Therapie */}
                       <li>
                         <Link
                           href="/behandlungen/Matrix-Rhythmus-Therapie-MaRhyThe"

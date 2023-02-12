@@ -112,7 +112,7 @@ const Golgi_Punkt_Schmerztherapie = () => {
                   </Link>
                 </li>
 
-                {/* <li>
+                <li>
                   <Link
                     href="/behandlungen/Matrix-Rhythmus-Therapie-MaRhyThe"
                     replace
@@ -122,7 +122,7 @@ const Golgi_Punkt_Schmerztherapie = () => {
                       Matrix-Rhythmus-Therapie MaRhyThe
                     </a>
                   </Link>
-                </li> */}
+                </li>
 
                 <li>
                   <Link
