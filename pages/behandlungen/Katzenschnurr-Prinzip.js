@@ -152,6 +152,7 @@ const Katzenschnurr_Prinzip = () => {
                     alt="Therapiegerät KST-2010 - Physiopraxis"
                   />
                 )}
+                <p></p>
                 {isAmp ? (
                   <amp-img
                     layout="responsive"

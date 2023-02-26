@@ -399,7 +399,7 @@ const Saugwellen_Therapie = () => {
                     layout="responsive"
                     width="800"
                     height="600"
-                    src="/img_webpPneumatron_200_Saugwellen-Therapie_Anwendung.webp"
+                    src="/img_webp/Pneumatron_200_Saugwellen-Therapie_Anwendung.webp"
                     alt="Pneumatron 200 Saugwellen Therapie Anwendung - Physiopraxis"
                   />
                 ) : (

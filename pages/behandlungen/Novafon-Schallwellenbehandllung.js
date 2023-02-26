@@ -13,10 +13,12 @@ import SideMenue from '../../components/SideMenue';
 import MobileSideMenue from '../../components/MobileSideMenue';
 
 import dynamic from 'next/dynamic';
+import { useAmp } from 'next/amp';
 import Head from 'next/head';
 const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'));
 
 const NovafonSchallwellenbehandllung = () => {
+  const isAmp = useAmp();
   return (
     <>
       <Head>
@@ -375,6 +377,25 @@ const NovafonSchallwellenbehandllung = () => {
                 <p style={{ fontWeight: '600' }}>
                   <a href="https://www.novafon.de/">www.novafon.de</a>
                 </p>
+                {isAmp ? (
+                  <amp-img
+                    layout="responsive"
+                    width="800"
+                    height="600"
+                    src="/img_webp/Novafon Schallwellen Therapie.webp"
+                    alt="Novafon Schallwellen Therapie - Physiopraxis"
+                  />
+                ) : (
+                  <Image
+                    className="rounded-3"
+                    src="/img_avif/Novafon Schallwellen Therapie.avif"
+                    layout="responsive"
+                    width={800}
+                    height={600}
+                    quality="10"
+                    alt="Novafon Schallwellen Therapie - Physiopraxis"
+                  />
+                )}
               </div>
             </Col>
           </Row>
