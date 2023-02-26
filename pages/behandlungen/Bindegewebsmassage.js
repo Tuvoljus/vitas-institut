@@ -185,7 +185,7 @@ const Bindegewebsmassage = (props) => {
                       </li>
                       <li>
                         <Link
-                          href="/behandlungen/Colonmassage-Viscerale_Mobilisation"
+                          href="/behandlungen/Colonmassage-Viscerale-Mobilisation"
                           replace
                           scroll={false}
                         >
@@ -331,6 +331,19 @@ const Bindegewebsmassage = (props) => {
                       scroll={false}
                     >
                       <a style={{ textDecoration: 'none' }}>EMDR-Coaching</a>
+                    </Link>
+                  </Card.Header>
+                </Card>
+                <Card>
+                  <Card.Header>
+                    <Link
+                      href="/behandlungen/Katzenschnurr-Prinzip"
+                      replace
+                      scroll={false}
+                    >
+                      <a style={{ textDecoration: 'none' }}>
+                        Katzenschnurr-Prinzip
+                      </a>
                     </Link>
                   </Card.Header>
                 </Card>

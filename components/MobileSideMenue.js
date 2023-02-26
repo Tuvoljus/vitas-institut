@@ -11,7 +11,7 @@ import { BsFillCaretRightFill } from '@react-icons/all-files/bs/BsFillCaretRight
 
 const MobileSideMenue = () => {
   const [show, setShow] = useState(false);
-  const [transform, setTransform] = useState("translate(0,60px)")
+  const [transform, setTransform] = useState('translate(0,60px)');
 
   const [scrollTop, setScrollTop] = useState(80);
 
@@ -23,28 +23,28 @@ const MobileSideMenue = () => {
     // transition: "1s ease-in-out",
     // MozTransition: "5s ease-in-out",
     // webkitTransition:" 5s ease-in-out",
-    transition: "width 2s, height 2s, transform 1s",
-    transform: transform ,
-    marginLeft: "-1rem",
-    position: "fixed",
-    textAlign:"center",
-    top: "90%",
-    color:" #a0d5e1",
-    fontSize: "50px"
-  }
+    transition: 'width 2s, height 2s, transform 1s',
+    transform: transform,
+    marginLeft: '-1rem',
+    position: 'fixed',
+    textAlign: 'center',
+    top: '90%',
+    color: ' #a0d5e1',
+    fontSize: '50px',
+  };
 
   useEffect(() => {
     function onScroll() {
       let currentPosition = window.pageYOffset;
       if (currentPosition > 100) {
-        setTransform("translate(0,-10px)")
+        setTransform('translate(0,-10px)');
       } else {
-        setTransform("translate(0,60px)")
+        setTransform('translate(0,60px)');
       }
-    };
+    }
 
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
   }, [scrollTop]);
 
   return (
@@ -58,14 +58,13 @@ const MobileSideMenue = () => {
               <div>
                 <Link href="#">
                   <a onClick={handleShow} style={sideIcon}>
-                    
-                      <div>
-                        <BsFillCaretRightFill
-                          data-bs-toggle="offcanvas"
-                          aria-label="offcanvas"
-                        />                      
-                      </div>
-                      
+                    <div>
+                      <BsFillCaretRightFill
+                        data-bs-toggle="offcanvas"
+                        aria-label="offcanvas"
+                      />
+                    </div>
+
                     {/* <BsChevronDoubleRight
                         data-bs-toggle="offcanvas"
                         aria-label="offcanvas"
@@ -182,6 +181,9 @@ const MobileSideMenue = () => {
                       </Nav.Link>
                       <Nav.Link href="/behandlungen/EMDR-Coaching">
                         EMDR-Coaching
+                      </Nav.Link>
+                      <Nav.Link href="/behandlungen/Katzenschnurr-Prinzip">
+                        Katzenschnurr-Prinzip
                       </Nav.Link>
                     </NavItem>
                   </Nav>

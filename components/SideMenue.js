@@ -305,6 +305,17 @@ const SideMenue = ({ children, eventKey, onClick }) => {
             </Link>
           </Card.Header>
         </Card>
+        <Card>
+          <Card.Header>
+            <Link
+              href="/behandlungen/Katzenschnurr-Prinzip"
+              replace
+              scroll={false}
+            >
+              <a style={{ textDecoration: 'none' }}>Katzenschnurr-Prinzip</a>
+            </Link>
+          </Card.Header>
+        </Card>
       </Accordion>
     </>
   );
