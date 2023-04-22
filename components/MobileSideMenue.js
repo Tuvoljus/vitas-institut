@@ -185,6 +185,9 @@ const MobileSideMenue = () => {
                       <Nav.Link href="/behandlungen/Katzenschnurr-Prinzip">
                         Katzenschnurr-Prinzip
                       </Nav.Link>
+                      <Nav.Link href="/behandlungen/Behandlungen-nach-Reflexzonen">
+                        Behandlungen nach Reflexzonen
+                      </Nav.Link>
                     </NavItem>
                   </Nav>
                 </Offcanvas.Body>

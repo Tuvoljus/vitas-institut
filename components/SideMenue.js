@@ -316,6 +316,19 @@ const SideMenue = ({ children, eventKey, onClick }) => {
             </Link>
           </Card.Header>
         </Card>
+        <Card>
+          <Card.Header>
+            <Link
+              href="/behandlungen/Behandlungen-nach-Reflexzonen"
+              replace
+              scroll={false}
+            >
+              <a style={{ textDecoration: 'none' }}>
+                Behandlungen nach Reflexzonen
+              </a>
+            </Link>
+          </Card.Header>
+        </Card>
       </Accordion>
     </>
   );
