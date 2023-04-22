@@ -1,42 +1,48 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link"
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Container  from 'react-bootstrap/Container'
-import Accordion from 'react-bootstrap/Accordion'
-import Card from 'react-bootstrap/Card'
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Accordion from 'react-bootstrap/Accordion';
+import Card from 'react-bootstrap/Card';
 
-import { vl, heading, inhaltBehandlung, imageDropShadow } from "../../scss/styles.module.scss";
-import SideMenue from "../../components/SideMenue";
-import MobileSideMenue from "../../components/MobileSideMenue";
+import {
+  vl,
+  heading,
+  inhaltBehandlung,
+  imageDropShadow,
+} from '../../scss/styles.module.scss';
+import SideMenue from '../../components/SideMenue';
+import MobileSideMenue from '../../components/MobileSideMenue';
 
-import dynamic from 'next/dynamic'
-import Head from "next/head";
-const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
+import dynamic from 'next/dynamic';
+import { useAmp } from 'next/amp';
+import Head from 'next/head';
+const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'));
 
-const Stressreduktion_EFT = () => {  
+const Stressreduktion_EFT = () => {
+  const isAmp = useAmp();
   return (
     <>
-    <Head>
-    <title>Physiopraxis - Stressreduktion EFT</title>
-    </Head>
+      <Head>
+        <title>Physiopraxis - Stressreduktion EFT</title>
+      </Head>
       <HeaderPicture text="Stressreduktion mit EFT" />
       <section>
         <Container>
           <Row>
             {/* Sitemenue */}
-            <Col md={4} className="d-none d-sm-block">                            
-              <SideMenue />                            
+            <Col md={4} className="d-none d-sm-block">
+              <SideMenue />
             </Col>
-                        {/* Main Content */}
+            {/* Main Content */}
             <Col
-                md={1}
-                className={`d-none d-sm-block ${vl}`}
-                style={{ color: "black" }}                
-            >
-            </Col>
+              md={1}
+              className={`d-none d-sm-block ${vl}`}
+              style={{ color: 'black' }}
+            ></Col>
             <Col md={7}>
               <div className={inhaltBehandlung}>
                 <h2 className="mx-auto">Stressreduktion mit EFT</h2>
@@ -51,7 +57,7 @@ const Stressreduktion_EFT = () => {
                 </p>
                 <p>
                   Jeder kann diese Methoden erlernen und an sich selbst und
-                  anderen ausführen. Sie gehören in die{" "}
+                  anderen ausführen. Sie gehören in die{' '}
                   <b>emotionale Hausapotheke</b> für jedermann. Berühren oder
                   sanftes Klopfen von Akupunkturpunkten ist dabei der
                   körperliche Aspekt.
@@ -63,8 +69,8 @@ const Stressreduktion_EFT = () => {
                   weiterer hervorragender Techniken!!
                 </p>
                 <p>
-                  EFT stammt aus Amerika und wurde von Gary Graig entwickelt.{" "}
-                  <a href="https://www.eft-info.com/">www.official-eft.de</a>{" "}
+                  EFT stammt aus Amerika und wurde von Gary Graig entwickelt.{' '}
+                  <a href="https://www.eft-info.com/">www.official-eft.de</a>{' '}
                   MET ist der von Rainer Franke in Europa verwendete Begriff für
                   EFT. ED xTM und NEAM stammen von Fred Gallo, der zu Beginn der
                   energetischen Psychologie die wesentlichen Impulse gab.
@@ -88,20 +94,20 @@ const Stressreduktion_EFT = () => {
                   Weiterentwicklung WWT (Wunderworttechnik)
                 </p>
                 <p>
-                  Mit WWT und MFT können wir klarer zu Entscheidungen kommen.{" "}
+                  Mit WWT und MFT können wir klarer zu Entscheidungen kommen.{' '}
                   <b>
                     Es ermöglicht uns den Übergang von (automatischem) Reagieren
                     zu (aktivem) Agieren.
                   </b>
                 </p>
                 <p>
-                  Die energetischen Methoden machen{" "}
+                  Die energetischen Methoden machen{' '}
                   <b>keine Heilversprechungen</b>. Die Methoden ergänzen Arzt
                   und Therapeut. EFT/ BSFF behandeln psychologisch- seelische
                   Probleme, keine medizinischen. Viele körperlichen
                   Schwierigkeiten werden emotional, seelisch verursacht. Bei der
                   Behandlung solcher Probleme können sich energetische Methoden
-                  als <b>sehr wirkungsvolle Instrumente</b> erweisen.{" "}
+                  als <b>sehr wirkungsvolle Instrumente</b> erweisen.{' '}
                 </p>
                 <p>
                   Die &ldquo;energetische Psychologie&ldquo; kann einzeln oder
@@ -133,7 +139,7 @@ const Stressreduktion_EFT = () => {
                 <p>
                   Typische unterbewußte Programme lauten:
                   <br />
-                  <ul style={{ listStyleType: "-" }}>
+                  <ul style={{ listStyleType: '-' }}>
                     <li>
                       ich glaube nicht, daß mir diese einfache Methode helfen
                       kann
@@ -162,7 +168,7 @@ const Stressreduktion_EFT = () => {
                   lösen sich, die mit diesen Beschwerden einhergehen.
                 </p>
                 <p>
-                  {" "}
+                  {' '}
                   Die Methoden der &ldquo;energetischen Psychologie&ldquo; haben
                   nachweislich geholfen bei:
                   <ul>
@@ -219,6 +225,25 @@ const Stressreduktion_EFT = () => {
                     PSYCHOTHERAPEUTEN!!
                   </b>
                 </p>
+                {isAmp ? (
+                  <amp-img
+                    layout="responsive"
+                    width="800"
+                    height="1067"
+                    src="/img_webp/Hirni_905.webp"
+                    alt="Stressreduktion mit EFT - Physiopraxis"
+                  />
+                ) : (
+                  <Image
+                    className="rounded-3"
+                    src="/img_avif/Hirni_905.avif"
+                    layout="responsive"
+                    width={800}
+                    height={1067}
+                    quality="10"
+                    alt="Stressreduktion mit EFT - Physiopraxis"
+                  />
+                )}
               </div>
             </Col>
           </Row>
@@ -229,4 +254,4 @@ const Stressreduktion_EFT = () => {
   );
 };
 
-export default Stressreduktion_EFT
+export default Stressreduktion_EFT;

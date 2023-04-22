@@ -105,7 +105,7 @@ const Manuelle_Therapie_Marnitz_Cyriax = () => {
                           scroll={false}
                         >
                           <a style={{ textDecoration: 'none' }}>
-                            Schmerztherapie nach Liebscher %26 Bracht
+                            Schmerztherapie nach Liebscher & Bracht
                           </a>
                         </Link>
                       </li>
