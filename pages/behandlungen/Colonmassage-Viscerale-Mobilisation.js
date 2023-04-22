@@ -72,7 +72,7 @@ const Colonmassage_Viscerale_Mobilisation = () => {
                           scroll={false}
                         >
                           <a style={{ textDecoration: 'none' }}>
-                            Schmerztherapie nach Liebscher %26 Bracht
+                            Schmerztherapie nach Liebscher & Bracht
                           </a>
                         </Link>
                       </li>

@@ -156,7 +156,10 @@ const MobileSideMenue = () => {
                       <Nav.Link href="/behandlungen/Reflexzonen_Therapie">
                         Reflexzonen-Therapie
                       </Nav.Link>
-                      <Accordion flush>
+                      <Nav.Link href="/behandlungen/Farbpunktur">
+                        Farbpunktur
+                      </Nav.Link>
+                      {/* <Accordion flush>
                         <Accordion.Item eventKey="0">
                           <Accordion.Header>
                             <Nav.Link style={{ paddingLeft: '0' }}>
@@ -169,7 +172,7 @@ const MobileSideMenue = () => {
                             </Nav.Link>
                           </Accordion.Body>
                         </Accordion.Item>
-                      </Accordion>
+                      </Accordion> */}
                       <Nav.Link href="/behandlungen/Osflow_Schwingungsplatte">
                         Osflow Schwingungsplatte
                       </Nav.Link>

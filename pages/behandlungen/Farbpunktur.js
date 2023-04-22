@@ -19,14 +19,14 @@ const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'));
 
 // export const config = { amp: 'hybrid' }
 
-const Behandlungen_nach_Reflexzonen = () => {
+const Farbpunktur = () => {
   const isAmp = useAmp();
   return (
     <>
       <Head>
-        <title>Behandlungen-nach-Reflexzonen</title>
+        <title>Farbpunktur</title>
       </Head>
-      <HeaderPicture text="Behandlungen nach Reflexzonen" />
+      <HeaderPicture text="Farbpunktur" />
       <section>
         <Container>
           <Row>
@@ -42,55 +42,31 @@ const Behandlungen_nach_Reflexzonen = () => {
             ></Col>
             <Col md={7}>
               <div className={inhaltBehandlung}>
-                <h2 className="mx-auto">
-                  Powertube®-Hochfrequenztechnologie Quick Zap
-                </h2>
+                <h2 className="mx-auto">Reflexzonen oder Akupunktur-Punkte</h2>
                 <br />
 
                 <p>
-                  Nutzen Sie die einzigartige Powertube®-Hochfrequenztechnologie
-                  zur individuellen Selbstbehandlung aller Körperregionen.
-                  Schmerzen können vielfältige Ursachen haben. Die Powertube ist
-                  Ihr perfekter mobiler Begleiter für die Therapie von Schmerzen
-                  in allen Körperregionen.
+                  Reflexzonen oder Akupunktur-Punkte können nicht nur mit den
+                  Händen therapiert werden, sondern auch mit einem
+                  Farbakupunktur-Gerät.
                 </p>
                 {isAmp ? (
                   <amp-img
                     layout="responsive"
                     width="800"
                     height="600"
-                    src="/img_webp/Powertube.webp"
-                    alt="Powertube - Physiopraxis"
+                    src="/img_webp/Farbpunktur.webp"
+                    alt="Farbpunktur - Physiopraxis"
                   />
                 ) : (
                   <Image
                     className="rounded-3"
-                    src="/img_avif/Powertube.avif"
+                    src="/img_avif/Farbpunktur.avif"
                     layout="responsive"
                     width={800}
                     height={600}
                     quality="10"
-                    alt="Powertube Hochfrequenztechnologie - Physiopraxis"
-                  />
-                )}
-                <p></p>
-                {isAmp ? (
-                  <amp-img
-                    layout="responsive"
-                    width="800"
-                    height="600"
-                    src="/img_webp/Powertube_2.webp"
-                    alt=" Powertube Hochfrequenztechnologie - Physiopraxis"
-                  />
-                ) : (
-                  <Image
-                    className="rounded-3"
-                    src="/img_avif/Powertube_2.avif"
-                    layout="responsive"
-                    width={800}
-                    height={600}
-                    quality="10"
-                    alt=" Powertube Hochfrequenztechnologie- Physiopraxis"
+                    alt="Farbpunktur - Physiopraxis"
                   />
                 )}
               </div>
@@ -103,4 +79,4 @@ const Behandlungen_nach_Reflexzonen = () => {
   );
 };
 
-export default Behandlungen_nach_Reflexzonen;
+export default Farbpunktur;

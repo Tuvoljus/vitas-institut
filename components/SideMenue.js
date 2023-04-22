@@ -61,7 +61,7 @@ const SideMenue = ({ children, eventKey, onClick }) => {
                   scroll={false}
                 >
                   <a style={{ textDecoration: 'none' }}>
-                    Schmerztherapie nach Liebscher %26 Bracht
+                    Schmerztherapie nach Liebscher & Bracht
                   </a>
                 </Link>
               </li>
@@ -235,6 +235,13 @@ const SideMenue = ({ children, eventKey, onClick }) => {
               scroll={false}
             >
               <a style={{ textDecoration: 'none' }}>Reflexzonen-Therapie</a>
+            </Link>
+          </Card.Header>
+        </Card>
+        <Card>
+          <Card.Header>
+            <Link href="/behandlungen/Farbpunktur" replace scroll={false}>
+              <a style={{ textDecoration: 'none' }}>Farbpunktur</a>
             </Link>
           </Card.Header>
         </Card>
