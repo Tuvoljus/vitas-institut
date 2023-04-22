@@ -182,8 +182,8 @@ const MobileSideMenue = () => {
                       <Nav.Link href="/behandlungen/Stressreduktion_EFT">
                         Ruhe finden/ Stressreduktion / MFT EFT Methode
                       </Nav.Link>
-                      <Nav.Link href="/behandlungen/EMDR-Coaching">
-                        EMDR-Coaching
+                      <Nav.Link href="/behandlungen/EMDR-EMI-Coaching">
+                        EMDR / EMI Coaching
                       </Nav.Link>
                       <Nav.Link href="/behandlungen/Katzenschnurr-Prinzip">
                         Katzenschnurr-Prinzip

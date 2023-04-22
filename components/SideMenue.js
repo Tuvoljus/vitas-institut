@@ -307,8 +307,8 @@ const SideMenue = ({ children, eventKey, onClick }) => {
         </Card>
         <Card>
           <Card.Header>
-            <Link href="/behandlungen/EMDR-Coaching" replace scroll={false}>
-              <a style={{ textDecoration: 'none' }}>EMDR-Coaching</a>
+            <Link href="/behandlungen/EMDR-EMI-Coaching" replace scroll={false}>
+              <a style={{ textDecoration: 'none' }}>EMDR / EMI /Coaching</a>
             </Link>
           </Card.Header>
         </Card>

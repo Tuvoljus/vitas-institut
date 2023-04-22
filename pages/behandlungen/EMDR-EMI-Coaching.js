@@ -1,49 +1,46 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Container  from 'react-bootstrap/Container';
-import Accordion from 'react-bootstrap/Accordion'
-import Card from 'react-bootstrap/Card'
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Accordion from 'react-bootstrap/Accordion';
+import Card from 'react-bootstrap/Card';
 
-import { vl, heading, inhaltBehandlung } from "../../scss/styles.module.scss";
-import SideMenue from "../../components/SideMenue";
-import MobileSideMenue from "../../components/MobileSideMenue"
+import { vl, heading, inhaltBehandlung } from '../../scss/styles.module.scss';
+import SideMenue from '../../components/SideMenue';
+import MobileSideMenue from '../../components/MobileSideMenue';
 
-import dynamic from 'next/dynamic'
-import Head from "next/head";
-const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'))
+import dynamic from 'next/dynamic';
+import Head from 'next/head';
+const HeaderPicture = dynamic(() => import('../../components/HeaderPicture'));
 
 // export const config = { amp: 'hybrid' }
 
-const EMDR_Coaching = () => {
-
+const EMDR_Emi_Coaching = () => {
   return (
-    <>      
-    <Head>
-    <title>EMDR Coaching</title>
-    </Head>
-      <HeaderPicture text="EMDR-Coaching"/>
+    <>
+      <Head>
+        <title>EMDR / EMI Coaching</title>
+      </Head>
+      <HeaderPicture text="EMDR-Coaching" />
       <section>
         <Container>
           <Row>
             {/* Sitemenue */}
-            <Col md={4} className="d-none d-sm-block">                            
-            <SideMenue />
-            
+            <Col md={4} className="d-none d-sm-block">
+              <SideMenue />
             </Col>
-                        {/* Main Content */}
-                        <Col
-                            md={1}
-                            className={`d-none d-sm-block ${vl}`}
-                            style={{ color: "black" }}                
-                        >
-                        </Col>
+            {/* Main Content */}
+            <Col
+              md={1}
+              className={`d-none d-sm-block ${vl}`}
+              style={{ color: 'black' }}
+            ></Col>
             <Col md={7}>
               <div className={inhaltBehandlung}>
-                <h2 className="mx-auto">EMDR-Coaching</h2>
+                <h2 className="mx-auto">EMDR / EMI Coaching</h2>
 
                 <br />
                 <p>
@@ -65,7 +62,7 @@ const EMDR_Coaching = () => {
                   Auch zum Ressourcen aufspüren, oder einfach um das Denken und
                   Fühlen wieder anzukurbeln, ist EMDR ideal.
                 </p>
-                <p style={{ fontWeight: "600" }}>
+                <p style={{ fontWeight: '600' }}>
                   <a href="https://www.wingwave.com/coaching/was-ist-wingwave.html">
                     www.wingwave.com/coaching/was-ist-wingwave
                   </a>
@@ -91,4 +88,4 @@ const EMDR_Coaching = () => {
   );
 };
 
-export default EMDR_Coaching
+export default EMDR_Emi_Coaching;
