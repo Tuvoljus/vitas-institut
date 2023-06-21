@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from "react";
-import Logo from "../public/img/Logo_Vitas_Institut.svg";
-import CopyMailTo from "react-copy-mailto";
-import { GiSmartphone } from "@react-icons/all-files/gi/GiSmartphone";
-import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
+import React, { useState, useEffect } from 'react';
+import Logo from '../public/img/Logo_Vitas_Institut.svg';
+import CopyMailTo from 'react-copy-mailto';
+import { GiSmartphone } from '@react-icons/all-files/gi/GiSmartphone';
+import { AiOutlineMail } from '@react-icons/all-files/ai/AiOutlineMail';
 // import { GiSmartphone } from 'react-icons/gi'
-import Link from "next/link";
+import Link from 'next/link';
 
 const Menue = () => {
-  const [openedCollapse, setOpenedCollapse] = useState("");
-  const [customToggler, setCustomToggler] = useState("");
-  const [customBorder, setCustomBorder] = useState("");
-  const [fixedTop, setFixedTop] = useState("");
-  const [marginTop, setMarginTop] = useState("");
+  const [openedCollapse, setOpenedCollapse] = useState('');
+  const [customToggler, setCustomToggler] = useState('');
+  const [customBorder, setCustomBorder] = useState('');
+  const [fixedTop, setFixedTop] = useState('');
+  const [marginTop, setMarginTop] = useState('');
 
   const showBlog = () => {
-    if (openedCollapse != "show") {
-      setOpenedCollapse("show");
+    if (openedCollapse != 'show') {
+      setOpenedCollapse('show');
     } else {
-      setOpenedCollapse("");
+      setOpenedCollapse('');
     }
   };
 
@@ -47,23 +47,23 @@ const Menue = () => {
       let currentPosition = window.pageYOffset; // or use document.documentElement.scrollTop;
       if (currentPosition > 80) {
         // downscroll code
-        setCustomBorder("blue");
-        setCustomToggler("custom-toggler");
+        setCustomBorder('blue');
+        setCustomToggler('custom-toggler');
         // setScrolling('c-bg');
-        setBrandColor("#1663b1");
+        setBrandColor('#1663b1');
       } else {
         // upscroll code
-        setCustomBorder("");
-        setCustomToggler("");
+        setCustomBorder('');
+        setCustomToggler('');
         // setScrolling('');
-        setBrandColor("");
+        setBrandColor('');
       }
       if (currentPosition > 80) {
-        setFixedTop("sticky-top");
-        setMarginTop("40");
+        setFixedTop('sticky-top');
+        setMarginTop('40');
       } else {
-        setFixedTop("");
-        setMarginTop("40px");
+        setFixedTop('');
+        setMarginTop('40px');
       }
     }
 
@@ -85,29 +85,29 @@ const Menue = () => {
       };
     };
 
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
   }, [scrollTop]);
 
   return (
     <>
-      <div className="container" style={{ paddingTop: "1rem" }}>
+      <div className="container" style={{ paddingTop: '1rem' }}>
         <div className="row">
           <div className="col-2 col-md-2 col-xl-2">
             <Logo />
           </div>
           <div className="col-md-2 col-xl-2 align-self-center">
-            <GiSmartphone />{" "}
+            <GiSmartphone />{' '}
             <a
-              rel={"nofollow"}
-              itemProp={"telephone"}
+              rel={'nofollow'}
+              itemProp={'telephone'}
               href="tel:089 - 23 23 06 70"
               style={{ textDecoration: 'none' }}
             >
               089 - 23 23 06 70
-            </a>{" "}
+            </a>{' '}
             <br />
-            <AiOutlineMail />{" "}
+            <AiOutlineMail />{' '}
             <CopyMailTo
               email="bk@vitas-institut.de"
               defaultTooltip="klicken zum Kopieren der Email"
@@ -171,8 +171,14 @@ const Menue = () => {
               </li>
               <li className="nav-item">
                 {/*add for Menue Color style={divStyle} */}
-                <a className="nav-link" href="/aktuelles-und-links">
-                  Aktuelles / Links
+                <a className="nav-link" href="/aktuelles">
+                  Aktuelles
+                </a>
+              </li>
+              <li className="nav-item">
+                {/*add for Menue Color style={divStyle} */}
+                <a className="nav-link" href="/links">
+                  Links
                 </a>
               </li>
               <li className="nav-item">
