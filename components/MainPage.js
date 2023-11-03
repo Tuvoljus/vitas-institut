@@ -35,7 +35,7 @@ const MainPage = () => {
       <Head>
         <title>
           Vitas Institut Bernhard Käser Physiotherapeut - Physiotherapie am
-          Dendlinger Tor
+          Sendlinger Tor
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
